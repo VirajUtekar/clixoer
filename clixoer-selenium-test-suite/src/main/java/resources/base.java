@@ -55,7 +55,7 @@ public class base {
 		}
 
 		else if (browserName.equalsIgnoreCase("firefox")) {
-			System.out.println("Tests to run in Firefox");
+			System.out.println("Tests to run in Firefox Browser");
 			// System Property for FirefoxDriver
 			System.setProperty("webdriver.gecko.driver",
 					(System.getProperty("user.dir") + "\\src\\main\\java\\resources\\geckodriver.exe"));
