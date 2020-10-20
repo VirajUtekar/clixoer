@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <listeners>
     <listener class-name="com.clix.clixoerwebsite.Listeners"/>
   </listeners>
-  <test thread-count="5" name="TestHomepage(failed)" parallel="tests">
+  <test thread-count="5" name="TestHomepage(failed)">
     <classes>
       <class name="com.clix.clixoerwebsite.HomePage">
         <methods>
+          <include name="countEnglishModules"/>
+          <include name="checkEnglishContentChecked"/>
           <include name="countLinks"/>
-          <include name="verifyEnglishmodulesinEnglish"/>
+          <include name="verifyEnglishmodulesinEnglishcheckbox"/>
           <include name="teardown"/>
           <include name="basePageNavigation"/>
           <include name="bringup"/>
@@ -17,4 +19,52 @@
       </class> <!-- com.clix.clixoerwebsite.HomePage -->
     </classes>
   </test> <!-- TestHomepage(failed) -->
+  <test thread-count="5" name="TestHomepagemaths(failed)">
+    <classes>
+      <class name="com.clix.clixoerwebsite.CheckMathsCheckboxContent">
+        <methods>
+          <include name="countLinks"/>
+          <include name="basePageNavigation"/>
+          <include name="bringup"/>
+          <include name="countMathsModules"/>
+          <include name="teardown"/>
+          <include name="verifyMathsmodulesinEnglishcheckbox"/>
+          <include name="checkMathsContentChecked"/>
+        </methods>
+      </class> <!-- com.clix.clixoerwebsite.CheckMathsCheckboxContent -->
+    </classes>
+  </test> <!-- TestHomepagemaths(failed) -->
+  <test thread-count="5" name="TestHomepageLinks(failed)">
+    <classes>
+      <class name="com.clix.clixoerwebsite.HomePageLinks">
+        <methods>
+          <include name="countLinkss"/>
+          <include name="teardown"/>
+          <include name="bringup"/>
+        </methods>
+      </class> <!-- com.clix.clixoerwebsite.HomePageLinks -->
+    </classes>
+  </test> <!-- TestHomepageLinks(failed) -->
+  <test thread-count="5" name="Test Contactus(failed)">
+    <classes>
+      <class name="com.clix.clixoerwebsite.ValidateContactus">
+        <methods>
+          <include name="bringup"/>
+          <include name="teardown"/>
+          <include name="basePageNavigation"/>
+        </methods>
+      </class> <!-- com.clix.clixoerwebsite.ValidateContactus -->
+    </classes>
+  </test> <!-- Test Contactus(failed) -->
+  <test thread-count="5" name="Test About(failed)">
+    <classes>
+      <class name="com.clix.clixoerwebsite.AboutPageTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="basePageNavigation"/>
+          <include name="bringup"/>
+        </methods>
+      </class> <!-- com.clix.clixoerwebsite.AboutPageTest -->
+    </classes>
+  </test> <!-- Test About(failed) -->
 </suite> <!-- Failed suite [Suite] -->

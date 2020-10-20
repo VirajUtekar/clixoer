@@ -4,7 +4,12 @@
 <listeners>
 <listener class-name="com.clix.clixoerwebsite.Listeners"/>
 </listeners>
-	<test thread-count="5" name="Test Sample">
+<test thread-count="5" name="TestHomepagemaths">
+		<classes>
+			<class name="com.clix.clixoerwebsite.CheckMathsCheckboxContent" />
+		</classes>
+	</test>
+	<!-- <test thread-count="5" name="Test Sample">
 		<classes>
 			<class name="com.clix.clixoerwebsite.AppTest" />
 		</classes>
@@ -19,7 +24,7 @@
 			<class name="com.clix.clixoerwebsite.CheckMathsCheckboxContent" />
 		</classes>
 	</test>
-	<!-- <test thread-count="5" name="TestHomepageLinks">
+	<test thread-count="5" name="TestHomepageLinks">
 		<classes>
 			<class name="com.clix.clixoerwebsite.HomePageLinks" />
 		</classes>
