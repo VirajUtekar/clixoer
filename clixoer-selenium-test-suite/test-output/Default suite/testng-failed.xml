@@ -3,10 +3,51 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+      <class name="com.clix.clixoerwebsite.HomePageLinks">
+        <methods>
+          <include name="countLinkss"/>
+          <include name="teardown"/>
+          <include name="bringup"/>
+        </methods>
+      </class> <!-- com.clix.clixoerwebsite.HomePageLinks -->
+      <class name="com.clix.clixoerwebsite.ValidateContactus">
+        <methods>
+          <include name="bringup"/>
+          <include name="teardown"/>
+          <include name="basePageNavigation"/>
+        </methods>
+      </class> <!-- com.clix.clixoerwebsite.ValidateContactus -->
+      <class name="com.clix.clixoerwebsite.HomePage">
+        <methods>
+          <include name="countEnglishModules"/>
+          <include name="checkEnglishContentChecked"/>
+          <include name="countLinks"/>
+          <include name="verifyEnglishmodulesinEnglishcheckbox"/>
+          <include name="teardown"/>
+          <include name="basePageNavigation"/>
+          <include name="bringup"/>
+        </methods>
+      </class> <!-- com.clix.clixoerwebsite.HomePage -->
+      <class name="com.clix.clixoerwebsite.CheckMathsCheckboxContent">
+        <methods>
+          <include name="countLinks"/>
+          <include name="basePageNavigation"/>
+          <include name="bringup"/>
+          <include name="countMathsModules"/>
+          <include name="teardown"/>
+          <include name="verifyMathsmodulesinEnglishcheckbox"/>
+          <include name="checkMathsContentChecked"/>
+        </methods>
+      </class> <!-- com.clix.clixoerwebsite.CheckMathsCheckboxContent -->
+      <class name="resources.ExtentReporterNG">
+        <methods>
+          <include name="initialDemo"/>
+        </methods>
+      </class> <!-- resources.ExtentReporterNG -->
       <class name="com.clix.clixoerwebsite.AboutPageTest">
         <methods>
           <include name="teardown"/>
-          <include name="basePageNavigation" invocation-numbers="0 1"/>
+          <include name="basePageNavigation"/>
           <include name="bringup"/>
         </methods>
       </class> <!-- com.clix.clixoerwebsite.AboutPageTest -->

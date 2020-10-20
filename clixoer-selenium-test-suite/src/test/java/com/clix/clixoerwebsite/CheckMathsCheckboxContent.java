@@ -85,22 +85,28 @@ public void checkMathsContentChecked()
 	landingpage.getMathscheckbox().click();
 	WebDriverWait wait = new WebDriverWait(driver, 15);
 	wait.until(ExpectedConditions.textToBePresentInElementLocated(By.cssSelector("#jar > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div > div:nth-of-type(1)"), "Geometric"));
-	System.out.println("Content Checked"+driver.findElement(By.cssSelector("#jar > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div > div:nth-of-type(1)")).getText());															   
+	System.out.println("Content Checked "+driver.findElement(By.cssSelector("#jar > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div > div:nth-of-type(1)")).getText());															   
 	
 	String gr1text =landingpage.getGr1().getText();
 	gr1text.trim().replace("\r","").replace("\n","");
-	Assert.assertTrue(landingpage.getEb1().isDisplayed());	
-	Assert.assertEquals(gr1text,"Geometric Reasoning Part I");
+	Assert.assertTrue(landingpage.getEb1().isDisplayed());
+	String gr1expected1="Geometric Reasoning";
+	String gr1expected2="Part I";
+	String gr1expected=gr1expected1+"\n"+gr1expected2;
+	Assert.assertEquals(gr1text,gr1expected);
 
 	
 	String gr2text =landingpage.getGr2().getText();
 	gr2text.trim().replace("\r","").replace("\n","");
-	Assert.assertTrue(landingpage.getGr2().isDisplayed());		
-	Assert.assertEquals(gr2text,"Geometric Reasoning Part II");
+	Assert.assertTrue(landingpage.getGr2().isDisplayed());
+	String gr2expected1="Geometric Reasoning";
+	String gr2expected2="Part II";
+	String gr2expected=gr2expected1+"\n"+gr2expected2;
+	Assert.assertEquals(gr2text,gr2expected);
 	
 	String letext =landingpage.getLe().getText();
 	letext.trim().replace("\r","").replace("\n","");
-	Assert.assertTrue(landingpage.getLe().isDisplayed());		
+	Assert.assertTrue(landingpage.getLe().isDisplayed());	
 	Assert.assertEquals(letext,"Linear Equations");
 	
 	String prtext =landingpage.getPr().getText();
