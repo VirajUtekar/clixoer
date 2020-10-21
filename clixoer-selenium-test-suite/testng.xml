@@ -4,9 +4,19 @@
 <listeners>
 <listener class-name="com.clix.clixoerwebsite.Listeners"/>
 </listeners>
+<test thread-count="5" name="TestHomepageenglish">
+		<classes>
+			<class name="com.clix.clixoerwebsite.CheckEnglishCheckboxContent" />
+		</classes>
+	</test>
 <test thread-count="5" name="TestHomepagemaths">
 		<classes>
 			<class name="com.clix.clixoerwebsite.CheckMathsCheckboxContent" />
+		</classes>
+	</test>
+<test thread-count="5" name="TestHomepagescience">
+		<classes>
+			<class name="com.clix.clixoerwebsite.CheckScienceCheckboxContent" />
 		</classes>
 	</test>
 	<!-- <test thread-count="5" name="Test Sample">
