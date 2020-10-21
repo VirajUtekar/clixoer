@@ -32,6 +32,12 @@ public class LandingPage {
 	private By gr2 = By.xpath("//*[@id=\"jar\"]/div/div[2]/div/div[2]/div/div[1]");
 	private By pr = By.xpath("//*[@id=\"jar\"]/div/div[3]/div/div[2]/div/div[1]");
 	private By le = By.xpath("//*[@id=\"jar\"]/div/div[4]/div/div[2]/div/div[1]");
+	private By as = By.xpath("//*[@id=\"jar\"]/div/div[1]/div/div[2]/div/div[1]");
+	private By ba = By.xpath("//*[@id=\"jar\"]/div/div[2]/div/div[2]/div/div[1]");
+	private By es = By.xpath("//*[@id=\"jar\"]/div/div[3]/div/div[2]/div/div[1]");
+	private By hd = By.xpath("//*[@id=\"jar\"]/div/div[4]/div/div[2]/div/div[1]");
+	private By sd = By.xpath("//*[@id=\"jar\"]/div/div[5]/div/div[2]/div/div[1]");
+	private By um = By.xpath("//*[@id=\"jar\"]/div/div[6]/div/div[2]/div/div[1]");
 
 	 // END of Nav Bar Page Objects
 	 
@@ -95,7 +101,7 @@ public class LandingPage {
 		 return driver.findElement(mathscheckbox);
 		 
 	 }
-	 public WebElement getmathscheckbox()
+	 public WebElement getSciencecheckbox()
 	 {
 		 return driver.findElement(sciencecheckbox);
 		 
@@ -117,6 +123,31 @@ public class LandingPage {
 		 return driver.findElement(le);
 	 }
 	 
+	 public WebElement getAs()
+	 {
+		 return driver.findElement(as);
+	 }
+	 public WebElement getBa()
+	 {
+		 return driver.findElement(ba);
+	 }
+	 public WebElement getEs()
+	 {
+		 return driver.findElement(es);
+	 }
+	 public WebElement getHd()
+	 {
+		 return driver.findElement(hd);
+	 }
+	 public WebElement getSd()
+	 {
+		 return driver.findElement(sd);
+	 }
+	 public WebElement getUm()
+	 {
+		 return driver.findElement(um);
+	 }
+	
 	 
 	 
 }
