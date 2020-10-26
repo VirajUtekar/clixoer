@@ -6,10 +6,10 @@
 </listeners>
 <test thread-count="5" name="TestHomepageenglish">
 		<classes>
-			<class name="com.clix.clixoerwebsite.CheckEnglishCheckboxContent" />
+			<class name="com.clix.clixoerwebsite.CheckEnglishCheckboxContentinHindi" />
 		</classes>
 	</test>
-<test thread-count="5" name="TestHomepagemaths">
+<!--<test thread-count="5" name="TestHomepagemaths">
 		<classes>
 			<class name="com.clix.clixoerwebsite.CheckMathsCheckboxContent" />
 		</classes>
@@ -24,7 +24,7 @@
 			<class name="com.clix.clixoerwebsite.Checki2cCheckboxContent" />
 		</classes>
 	</test>
-	<!-- <test thread-count="5" name="Test Sample">
+	 <test thread-count="5" name="Test Sample">
 		<classes>
 			<class name="com.clix.clixoerwebsite.AppTest" />
 		</classes>

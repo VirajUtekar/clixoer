@@ -21,7 +21,7 @@ import pageObjects.LandingPage;
 import resources.base;
 
 
-public class CheckScienceCheckboxContent extends base{
+public class Checki2cCheckboxContentinEnglish extends base{
 	public WebDriver driver;
 	public LandingPage landingpage;
 	
@@ -60,16 +60,16 @@ public void bringup() throws IOException
 
 	
 	@Test
-	public void verifySciencemodulesinEnglishcheckbox()
+	public void verifyi2cmodulesinEnglishcheckbox()
 	
 
 	{
 		
 		
 		
-		if (landingpage.getSciencecheckbox().isDisplayed())
+		if (landingpage.geti2ccheckbox().isDisplayed())
 		{
-		log.info("Check Box Exists since its visible"+landingpage.getSciencecheckbox().isDisplayed());
+		log.info("Check Box Exists since its visible"+landingpage.geti2ccheckbox().isDisplayed());
 		
 		
 		}
@@ -80,63 +80,40 @@ public void bringup() throws IOException
 
 	
 @Test
-public void checkScienceContentChecked()
+public void checki2cContentChecked()
 {
-	landingpage.getSciencecheckbox().click();
+	landingpage.geti2ccheckbox().click();
 	WebDriverWait wait = new WebDriverWait(driver, 15);
-	wait.until(ExpectedConditions.textToBePresentInElementLocated(By.cssSelector("#jar > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div > div:nth-of-type(1)"), "Atomic"));
+	wait.until(ExpectedConditions.textToBePresentInElementLocated(By.cssSelector("#jar > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div > div:nth-of-type(1)"), "i2C"));
 	System.out.println("Content Checked "+driver.findElement(By.cssSelector("#jar > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div > div:nth-of-type(1)")).getText());															   
 	
 	
-	String astext =landingpage.getAs().getText();
-	astext.trim().replace("\r","").replace("\n","");
+	String i2ctext =landingpage.getAs().getText();
+	i2ctext.trim().replace("\r","").replace("\n","");
 	Assert.assertTrue(landingpage.getAs().isDisplayed());	
-	Assert.assertEquals(astext,"Atomic Structure");
+	Assert.assertEquals(i2ctext,"i2C");
 	
-	String batext =landingpage.getBa().getText();
-	batext.trim().replace("\r","").replace("\n","");
-	Assert.assertTrue(landingpage.getBa().isDisplayed());		
-	Assert.assertEquals(batext,"Basic Astronomy");
 	
-	String estext =landingpage.getEs().getText();
-	estext.trim().replace("\r","").replace("\n","");
-	Assert.assertTrue(landingpage.getEs().isDisplayed());		
-	Assert.assertEquals(estext,"Ecosystem");
 	
-	String hdtext =landingpage.getHd().getText();
-	hdtext.trim().replace("\r","").replace("\n","");
-	Assert.assertTrue(landingpage.getHd().isDisplayed());		
-	Assert.assertEquals(hdtext,"Health and Disease");
-	
-	String sdtext =landingpage.getSd().getText();
-	sdtext.trim().replace("\r","").replace("\n","");
-	Assert.assertTrue(landingpage.getSd().isDisplayed());		
-	Assert.assertEquals(sdtext,"Sound");
-	
-	String umtext =landingpage.getUm().getText();
-	batext.trim().replace("\r","").replace("\n","");
-	Assert.assertTrue(landingpage.getUm().isDisplayed());		
-	Assert.assertEquals(umtext,"Understanding Motion");
-	
-	log.info("Science Modules exists in English Language");
+	log.info("i2c Modules exists in English Language");
 	
 
 }
 
 @Test
-public void countScienceModules()
+public void counti2cModules()
 {
-	landingpage.getSciencecheckbox().click();
+	landingpage.geti2ccheckbox().click();
 	 List<WebElement> links = driver.findElements(By.xpath("//*[@class=\"module_module\"]/div/span/img"));    //Identify the number of Link on webpage and assign into Webelement List 
      
      int linkCount = links.size();     // Count the total Link list on Web Page
      
-     System.out.println("Total Number of Science module count on webpage = "  + linkCount);    //Print the total count of links on webpage
+     System.out.println("Total Number of i2c module count on webpage = "  + linkCount);    //Print the total count of links on webpage
 
-      System.out.println("The number of Science modules is" + linkCount);
-    log.info("The number of Science modules is" + linkCount);
-    assertEquals(linkCount, 6);
-    log.info("Science Modules Checked");
+      System.out.println("The number of i2c modules is" + linkCount);
+    log.info("The number of i2c modules is" + linkCount);
+    assertEquals(linkCount, 1);
+    log.info("i2c Modules Checked");
 }
 
 

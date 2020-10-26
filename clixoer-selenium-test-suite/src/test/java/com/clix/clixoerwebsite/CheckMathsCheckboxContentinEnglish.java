@@ -21,7 +21,7 @@ import pageObjects.LandingPage;
 import resources.base;
 
 
-public class CheckMathsCheckboxContent extends base{
+public class CheckMathsCheckboxContentinEnglish extends base{
 	public WebDriver driver;
 	public LandingPage landingpage;
 	
