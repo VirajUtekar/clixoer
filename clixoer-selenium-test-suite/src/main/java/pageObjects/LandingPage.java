@@ -15,6 +15,9 @@ public class LandingPage {
 		// TODO Auto-generated constructor stub
 	}
 	// Nav Bar Page Objects
+	private By englishlanguage = By.xpath("//*[@id=\"dropdownMenuLink\"]");
+	private By hindilanguage = By.xpath("/html/body/nav[1]/div/ul/div/div/li[2]/form/input[4]");
+	private By telegulanguage = By.xpath("/html/body/nav[1]/div/ul/div/div/li[3]/form/input[4]");
 	private By englishcheckbox = By.xpath("//*[@id=\"English\"]");
 	private By mathscheckbox = By.xpath("//*[@id=\"Mathematics\"]");
 	private By sciencecheckbox = By.xpath("//*[@id=\"Science\"]");
@@ -42,7 +45,21 @@ public class LandingPage {
 
 	 // END of Nav Bar Page Objects
 	 
-	 
+	public WebElement getEnglishLanguage()
+	 {
+		 return driver.findElement(englishlanguage);
+		 
+	 }
+	public WebElement getHindiLanguage()
+	 {
+		 return driver.findElement(hindilanguage);
+		 
+	 }
+	public WebElement getTeleguLanguage()
+	 {
+		 return driver.findElement(telegulanguage);
+		 
+	 }
 	 
 	 
 	

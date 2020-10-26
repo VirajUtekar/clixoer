@@ -21,7 +21,7 @@ import org.testng.annotations.Test;
 import pageObjects.LandingPage;
 import resources.base;
 
-public class CheckEnglishCheckboxContent extends base {
+public class CheckEnglishCheckboxContentinEnglish extends base {
 	public WebDriver driver;
 	public LandingPage landingpage;
 
