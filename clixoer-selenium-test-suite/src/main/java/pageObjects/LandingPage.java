@@ -18,6 +18,7 @@ public class LandingPage {
 	private By englishcheckbox = By.xpath("//*[@id=\"English\"]");
 	private By mathscheckbox = By.xpath("//*[@id=\"Mathematics\"]");
 	private By sciencecheckbox = By.xpath("//*[@id=\"Science\"]");
+	private By i2ccheckbox = By.xpath("//*[@id=\"digital\"]");
 	private By elibrary =By.cssSelector("a[href*='e-library']");
 	private By tisscool =By.cssSelector("a[href*='cool']");
 	private By cooloer =By.cssSelector("a[href*='oer']");
@@ -106,6 +107,13 @@ public class LandingPage {
 		 return driver.findElement(sciencecheckbox);
 		 
 	 }
+	 public WebElement geti2ccheckbox()
+	 {
+		 return driver.findElement(i2ccheckbox);
+		 
+	 }
+	 
+	
 	 public WebElement getGr1()
 	 {
 		 return driver.findElement(gr1);
