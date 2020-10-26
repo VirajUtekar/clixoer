@@ -19,6 +19,11 @@
 			<class name="com.clix.clixoerwebsite.CheckScienceCheckboxContent" />
 		</classes>
 	</test>
+	<test thread-count="5" name="TestHomepageict">
+		<classes>
+			<class name="com.clix.clixoerwebsite.Checki2cCheckboxContent" />
+		</classes>
+	</test>
 	<!-- <test thread-count="5" name="Test Sample">
 		<classes>
 			<class name="com.clix.clixoerwebsite.AppTest" />
