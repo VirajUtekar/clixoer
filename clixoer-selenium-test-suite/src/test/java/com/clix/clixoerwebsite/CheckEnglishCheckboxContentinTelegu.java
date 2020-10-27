@@ -22,7 +22,7 @@ import org.testng.annotations.Test;
 import pageObjects.LandingPage;
 import resources.base;
 
-public class CheckEnglishCheckboxContentinHindi extends base {
+public class CheckEnglishCheckboxContentinTelegu extends base {
 	public WebDriver driver;
 	public LandingPage landingpage;
 
@@ -49,11 +49,11 @@ public class CheckEnglishCheckboxContentinHindi extends base {
 		
 	}
 	@Test
-	public void verifyEnglishmodulesinHindicheckbox()
+	public void verifyEnglishmodulesinTelegucheckbox()
 
 	{
 		landingpage.getEnglishLanguage().click();
-		landingpage.getHindiLanguage().click();
+		landingpage.getTeleguLanguage().click();
 		
 		if (landingpage.getEnglishcheckbox().isDisplayed()) {
 			log.info("Check Box Exists since its visible" + landingpage.getEnglishcheckbox().isDisplayed());
@@ -63,7 +63,7 @@ public class CheckEnglishCheckboxContentinHindi extends base {
 	}
 
 	@Test
-	public void checkEnglishContentCheckedinHindi() {
+	public void checkEnglishContentCheckedinTelegu() {
 		landingpage.getEnglishcheckbox().click();
 		WebDriverWait wait = new WebDriverWait(driver, 15);
 		wait.until(ExpectedConditions.textToBePresentInElementLocated(
@@ -89,7 +89,7 @@ public class CheckEnglishCheckboxContentinHindi extends base {
 	}
 
 	@Test
-	public void countEnglishModulesinHindi() {
+	public void countEnglishModulesinTelegu() {
 		landingpage.getEnglishcheckbox().click();
 		List<WebElement> links = driver.findElements(By.xpath("//*[@class=\"module_module\"]/div/span/img")); // Identify
 																												// the

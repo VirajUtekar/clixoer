@@ -6,7 +6,7 @@
 </listeners>
 <test thread-count="5" name="TestHomepageenglish">
 		<classes>
-			<class name="com.clix.clixoerwebsite.CheckEnglishCheckboxContentinHindi" />
+			<class name="com.clix.clixoerwebsite.CheckEnglishCheckboxContentinTelegu" />
 		</classes>
 	</test>
 <!--<test thread-count="5" name="TestHomepagemaths">
