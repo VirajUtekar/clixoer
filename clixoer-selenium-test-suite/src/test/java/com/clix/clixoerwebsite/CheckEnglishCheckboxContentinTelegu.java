@@ -112,7 +112,7 @@ public class CheckEnglishCheckboxContentinTelegu extends base {
 		System.out.println("The number of English modules is" + linkCount);
 		log.info("The number of modules is" + linkCount);
 		assertEquals(linkCount, 2);
-		log.info("English Modules Checked");
+		log.info("English Modules Checked in Telegu");
 
 	}
 

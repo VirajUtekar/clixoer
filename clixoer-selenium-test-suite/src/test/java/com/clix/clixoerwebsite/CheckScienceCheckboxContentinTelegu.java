@@ -21,7 +21,7 @@ import pageObjects.LandingPage;
 import resources.base;
 
 
-public class CheckScienceCheckboxContentinEnglish extends base{
+public class CheckScienceCheckboxContentinTelegu extends base{
 	public WebDriver driver;
 	public LandingPage landingpage;
 	
@@ -60,11 +60,12 @@ public void bringup() throws IOException
 
 	
 	@Test
-	public void verifySciencemodulesinEnglishcheckbox()
+	public void verifySciencemodulesinTelegucheckbox()
 	
 
 	{
-		
+		landingpage.getEnglishLanguage().click();
+		landingpage.getTeleguLanguage().click();
 		
 		
 		if (landingpage.getSciencecheckbox().isDisplayed())
@@ -118,7 +119,7 @@ public void checkScienceContentChecked()
 	Assert.assertTrue(landingpage.getUm().isDisplayed());		
 	Assert.assertEquals(umtext,"Understanding Motion");
 	
-	log.info("Science Modules exists in English Language");
+	log.info("Science Modules exists in Telegu Language");
 	
 
 }
@@ -136,7 +137,7 @@ public void countScienceModules()
       System.out.println("The number of Science modules is" + linkCount);
     log.info("The number of Science modules is" + linkCount);
     assertEquals(linkCount, 6);
-    log.info("Science Modules Checked in English");
+    log.info("Science Modules Checked in Telegu");
 }
 
 

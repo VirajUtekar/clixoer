@@ -4,27 +4,68 @@
 <listeners>
 <listener class-name="com.clix.clixoerwebsite.Listeners"/>
 </listeners>
-<test thread-count="5" name="TestHomepageenglish">
+ <test thread-count="5" name="TestHomepageenglishinenglish">
+		<classes>
+			<class name="com.clix.clixoerwebsite.CheckEnglishCheckboxContentinEnglish" />
+		</classes>
+	</test>
+	<test thread-count="5" name="TestHomepageenglishinhindi">
+		<classes>
+			<class name="com.clix.clixoerwebsite.CheckEnglishCheckboxContentinHindi" />
+		</classes>
+	</test>
+	<test thread-count="5" name="TestHomepageenglishintelegu">
 		<classes>
 			<class name="com.clix.clixoerwebsite.CheckEnglishCheckboxContentinTelegu" />
 		</classes>
 	</test>
-<!--<test thread-count="5" name="TestHomepagemaths">
+	
+<test thread-count="5" name="TestHomepagemathsinenglish">
 		<classes>
-			<class name="com.clix.clixoerwebsite.CheckMathsCheckboxContent" />
+			<class name="com.clix.clixoerwebsite.CheckMathsCheckboxContentinEnglish" />
 		</classes>
 	</test>
-<test thread-count="5" name="TestHomepagescience">
+	<test thread-count="5" name="TestHomepagemathsinhindi">
 		<classes>
-			<class name="com.clix.clixoerwebsite.CheckScienceCheckboxContent" />
+			<class name="com.clix.clixoerwebsite.CheckMathsCheckboxContentinHindi" />
 		</classes>
 	</test>
-	<test thread-count="5" name="TestHomepageict">
+	<test thread-count="5" name="TestHomepagemathsintelegu">
 		<classes>
-			<class name="com.clix.clixoerwebsite.Checki2cCheckboxContent" />
+			<class name="com.clix.clixoerwebsite.CheckMathsCheckboxContentinTelegu" />
 		</classes>
 	</test>
-	 <test thread-count="5" name="Test Sample">
+<test thread-count="5" name="TestHomepagescienceinenglish">
+		<classes>
+			<class name="com.clix.clixoerwebsite.CheckScienceCheckboxContentinEnglish" />
+		</classes>
+	</test>
+	<test thread-count="5" name="TestHomepagescienceinhindi">
+		<classes>
+			<class name="com.clix.clixoerwebsite.CheckScienceCheckboxContentinHindi" />
+		</classes>
+	</test>
+	<test thread-count="5" name="TestHomepagescienceintelegu">
+		<classes>
+			<class name="com.clix.clixoerwebsite.CheckScienceCheckboxContentinTelegu" />
+		</classes>
+	</test>
+	<test thread-count="5" name="TestHomepageictinenglish">
+		<classes>
+			<class name="com.clix.clixoerwebsite.Checki2cCheckboxContentinEnglish" />
+		</classes>
+	</test>
+	<test thread-count="5" name="TestHomepageictinhindi">
+		<classes>
+			<class name="com.clix.clixoerwebsite.Checki2cCheckboxContentinHindi" />
+		</classes>
+	</test>
+	<test thread-count="5" name="TestHomepageictintelegu">
+		<classes>
+			<class name="com.clix.clixoerwebsite.Checki2cCheckboxContentinTelegu" />
+		</classes>
+	</test>
+	 <!-- <test thread-count="5" name="Test Sample">
 		<classes>
 			<class name="com.clix.clixoerwebsite.AppTest" />
 		</classes>

@@ -132,7 +132,7 @@ public void countMathsModules()
       System.out.println("The number of Maths modules is" + linkCount);
     log.info("The number of Maths modules is" + linkCount);
     assertEquals(linkCount, 4);
-    log.info("Maths Modules Checked");
+    log.info("Maths Modules Checked in English");
 }
 
 
