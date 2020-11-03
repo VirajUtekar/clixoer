@@ -21,7 +21,7 @@ import pageObjects.LandingPage;
 import resources.base;
 
 
-public class CheckScienceCheckboxContentinEnglish extends base{
+public class CheckMathsCheckboxContentinHindi extends base{
 	public WebDriver driver;
 	public LandingPage landingpage;
 	
@@ -60,16 +60,17 @@ public void bringup() throws IOException
 
 	
 	@Test
-	public void verifySciencemodulesinEnglishcheckbox()
+	public void verifyMathsmodulesinHindicheckbox()
 	
 
 	{
+		landingpage.getEnglishLanguage().click();
+		landingpage.getHindiLanguage().click();
 		
 		
-		
-		if (landingpage.getSciencecheckbox().isDisplayed())
+		if (landingpage.getMathscheckbox().isDisplayed())
 		{
-		log.info("Check Box Exists since its visible"+landingpage.getSciencecheckbox().isDisplayed());
+		log.info("Check Box Exists since its visible"+landingpage.getMathscheckbox().isDisplayed());
 		
 		
 		}
@@ -80,63 +81,59 @@ public void bringup() throws IOException
 
 	
 @Test
-public void checkScienceContentChecked()
+public void checkMathsContentChecked()
 {
-	landingpage.getSciencecheckbox().click();
+	landingpage.getMathscheckbox().click();
 	WebDriverWait wait = new WebDriverWait(driver, 15);
-	wait.until(ExpectedConditions.textToBePresentInElementLocated(By.cssSelector("#jar > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div > div:nth-of-type(1)"), "Atomic"));
+	wait.until(ExpectedConditions.textToBePresentInElementLocated(By.cssSelector("#jar > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div > div:nth-of-type(1)"), "Geometric"));
 	System.out.println("Content Checked "+driver.findElement(By.cssSelector("#jar > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div > div:nth-of-type(1)")).getText());															   
 	
+	String gr1text =landingpage.getGr1().getText();
+	gr1text.trim().replace("\r","").replace("\n","");
+	Assert.assertTrue(landingpage.getEb1().isDisplayed());
+	String gr1expected1="Geometric Reasoning";
+	String gr1expected2="Part I";
+	String gr1expected=gr1expected1+"\n"+gr1expected2;
+	Assert.assertEquals(gr1text,gr1expected);
+
 	
-	String astext =landingpage.getAs().getText();
-	astext.trim().replace("\r","").replace("\n","");
-	Assert.assertTrue(landingpage.getAs().isDisplayed());	
-	Assert.assertEquals(astext,"Atomic Structure");
+	String gr2text =landingpage.getGr2().getText();
+	gr2text.trim().replace("\r","").replace("\n","");
+	Assert.assertTrue(landingpage.getGr2().isDisplayed());
+	String gr2expected1="Geometric Reasoning";
+	String gr2expected2="Part II";
+	String gr2expected=gr2expected1+"\n"+gr2expected2;
+	Assert.assertEquals(gr2text,gr2expected);
 	
-	String batext =landingpage.getBa().getText();
-	batext.trim().replace("\r","").replace("\n","");
-	Assert.assertTrue(landingpage.getBa().isDisplayed());		
-	Assert.assertEquals(batext,"Basic Astronomy");
+	String letext =landingpage.getLe().getText();
+	letext.trim().replace("\r","").replace("\n","");
+	Assert.assertTrue(landingpage.getLe().isDisplayed());	
+	Assert.assertEquals(letext,"Linear Equations");
 	
-	String estext =landingpage.getEs().getText();
-	estext.trim().replace("\r","").replace("\n","");
-	Assert.assertTrue(landingpage.getEs().isDisplayed());		
-	Assert.assertEquals(estext,"Ecosystem");
+	String prtext =landingpage.getPr().getText();
+	prtext.trim().replace("\r","").replace("\n","");
+	Assert.assertTrue(landingpage.getPr().isDisplayed());		
+	Assert.assertEquals(prtext,"Proportional Reasoning");
 	
-	String hdtext =landingpage.getHd().getText();
-	hdtext.trim().replace("\r","").replace("\n","");
-	Assert.assertTrue(landingpage.getHd().isDisplayed());		
-	Assert.assertEquals(hdtext,"Health and Disease");
-	
-	String sdtext =landingpage.getSd().getText();
-	sdtext.trim().replace("\r","").replace("\n","");
-	Assert.assertTrue(landingpage.getSd().isDisplayed());		
-	Assert.assertEquals(sdtext,"Sound");
-	
-	String umtext =landingpage.getUm().getText();
-	batext.trim().replace("\r","").replace("\n","");
-	Assert.assertTrue(landingpage.getUm().isDisplayed());		
-	Assert.assertEquals(umtext,"Understanding Motion");
-	
-	log.info("Science Modules exists in English Language");
+	log.info("Maths Modules exists in Hindi Language");
 	
 
 }
 
 @Test
-public void countScienceModules()
+public void countMathsModules()
 {
-	landingpage.getSciencecheckbox().click();
+	landingpage.getMathscheckbox().click();
 	 List<WebElement> links = driver.findElements(By.xpath("//*[@class=\"module_module\"]/div/span/img"));    //Identify the number of Link on webpage and assign into Webelement List 
      
      int linkCount = links.size();     // Count the total Link list on Web Page
      
-     System.out.println("Total Number of Science module count on webpage = "  + linkCount);    //Print the total count of links on webpage
+     System.out.println("Total Number of Maths module count on webpage = "  + linkCount);    //Print the total count of links on webpage
 
-      System.out.println("The number of Science modules is" + linkCount);
-    log.info("The number of Science modules is" + linkCount);
-    assertEquals(linkCount, 6);
-    log.info("Science Modules Checked in English");
+      System.out.println("The number of Maths modules is" + linkCount);
+    log.info("The number of Maths modules is" + linkCount);
+    assertEquals(linkCount, 4);
+    log.info("Maths Modules Checked in Hindi");
 }
 
 

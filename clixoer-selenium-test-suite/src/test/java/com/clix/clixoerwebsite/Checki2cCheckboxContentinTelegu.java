@@ -21,7 +21,7 @@ import pageObjects.LandingPage;
 import resources.base;
 
 
-public class Checki2cCheckboxContentinEnglish extends base{
+public class Checki2cCheckboxContentinTelegu extends base{
 	public WebDriver driver;
 	public LandingPage landingpage;
 	
@@ -46,25 +46,15 @@ public void bringup() throws IOException
 		landingpage = new LandingPage(driver);
 				
 	}
-	@Test
-
-	public void countLinks()
-	{
-		 List<WebElement> links = driver.findElements(By.xpath("//a"));    //Identify the number of Link on webpage and assign into Webelement List 
-         
-         int linkCount = links.size();     // Count the total Link list on Web Page
-         
-         System.out.println("Total Number of link count on webpage by one class = "  + linkCount);    //Print the total count of links on webpage
-	    log.info("The number of links is" + linkCount);
-	}
 
 	
 	@Test
-	public void verifyi2cmodulesinEnglishcheckbox()
+	public void verifyi2cmodulesinTelegucheckbox()
 	
 
 	{
-		
+		landingpage.getEnglishLanguage().click();
+		landingpage.getTeleguLanguage().click();
 		
 		
 		if (landingpage.geti2ccheckbox().isDisplayed())
@@ -95,8 +85,7 @@ public void checki2cContentChecked()
 	
 	
 	
-	log.info("i2c Modules exists in English Language");
-	System.out.println("i2c Modules exists in English Language");
+	log.info("i2c Modules exists in Telegu Language");
 	
 
 }
@@ -104,6 +93,8 @@ public void checki2cContentChecked()
 @Test
 public void counti2cModules() throws InterruptedException
 {
+	
+	
 	Thread.sleep(1000);
 	 List<WebElement> links = driver.findElements(By.xpath("//*[@class=\"module_module\"]/div/span/img"));    //Identify the number of Link on webpage and assign into Webelement List 
      
@@ -114,9 +105,13 @@ public void counti2cModules() throws InterruptedException
       System.out.println("The number of i2c modules is" + linkCount);
     log.info("The number of i2c modules is" + linkCount);
     assertEquals(linkCount, 1);
-    log.info("i2c Modules Checked in English");
-    System.out.println("i2c Modules exists in English Language Counted");
-}	
+    log.info("i2c Modules Checked in Telegu");
+}
+
+
+	
+
+	
 
 @AfterTest
 
