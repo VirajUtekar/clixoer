@@ -20,7 +20,7 @@ public class AboutPage {
 	private By phone = By.name("phone");
 	private By message = By.name("message");
 	private By sendbutton = By.id("send-message");
-	private By messagesentalert = By.xpath("/html/body/div[8]");
+	private By messagesentalert = By.xpath("/html/body/div[9]");
 	
 	
 	
