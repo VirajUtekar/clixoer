@@ -42,6 +42,8 @@ public class LandingPage {
 	private By hd = By.xpath("//*[@id=\"jar\"]/div/div[4]/div/div[2]/div/div[1]");
 	private By sd = By.xpath("//*[@id=\"jar\"]/div/div[5]/div/div[2]/div/div[1]");
 	private By um = By.xpath("//*[@id=\"jar\"]/div/div[6]/div/div[2]/div/div[1]");
+	private By ribbon = By.xpath("/html/body/div[3]/div/div/div[1]/button");
+
 
 	 // END of Nav Bar Page Objects
 	 
@@ -171,6 +173,10 @@ public class LandingPage {
 	 public WebElement getUm()
 	 {
 		 return driver.findElement(um);
+	 }
+	 public WebElement getRibbon()
+	 {
+		 return driver.findElement(ribbon);
 	 }
 	
 	 

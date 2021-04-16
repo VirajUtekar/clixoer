@@ -4,12 +4,17 @@
 <listeners>
 <listener class-name="com.clix.clixoerwebsite.Listeners"/>
 </listeners>
- <test thread-count="5" name="TestHomepageenglishinenglish">
+<!--<test thread-count="5" name="CucumberTest">
+		<classes>
+			<class name="cucumberOptions.TestRunner" />
+		</classes>
+	</test>  -->
+<!--  <test thread-count="5" name="TestHomepageenglishinenglish">
 		<classes>
 			<class name="com.clix.clixoerwebsite.CheckEnglishCheckboxContentinEnglish" />
 		</classes>
 	</test>
-	<test thread-count="5" name="TestHomepageenglishinhindi">
+	 <test thread-count="5" name="TestHomepageenglishinhindi">
 		<classes>
 			<class name="com.clix.clixoerwebsite.CheckEnglishCheckboxContentinHindi" />
 		</classes>
@@ -65,19 +70,24 @@
 			<class name="com.clix.clixoerwebsite.Checki2cCheckboxContentinTelegu" />
 		</classes>
 	</test>
-	 <!-- <test thread-count="5" name="Test Sample">
+	 <test thread-count="5" name="Test Sample">
 		<classes>
 			<class name="com.clix.clixoerwebsite.AppTest" />
 		</classes>
 	</test>
-	<test thread-count="5" name="TestHomepage">
+	<test thread-count="5" name="TestHomepagemathsinEnglish">
 		<classes>
-			<class name="com.clix.clixoerwebsite.HomePage" />
+			<class name="com.clix.clixoerwebsite.CheckMathsCheckboxContentinEnglish" />
 		</classes>
 	</test>
-	<test thread-count="5" name="TestHomepagemaths">
+	<test thread-count="5" name="TestHomepagemathsinHindi">
 		<classes>
-			<class name="com.clix.clixoerwebsite.CheckMathsCheckboxContent" />
+			<class name="com.clix.clixoerwebsite.CheckMathsCheckboxContentinHindi" />
+		</classes>
+	</test>
+	<test thread-count="5" name="TestHomepagemathsinTelegu">
+		<classes>
+			<class name="com.clix.clixoerwebsite.CheckMathsCheckboxContentinTelegu" />
 		</classes>
 	</test>
 	<test thread-count="5" name="TestHomepageLinks">
@@ -85,15 +95,15 @@
 			<class name="com.clix.clixoerwebsite.HomePageLinks" />
 		</classes>
 	</test> 
-	<test thread-count="5" name="Test Contactus">
-		<classes>
-			<class name="com.clix.clixoerwebsite.ValidateContactus" />
-		</classes>
-	</test>
 	<test thread-count="5" name="Test About">
 		<classes>
 			<class name="com.clix.clixoerwebsite.AboutPageTest" />
 		</classes>
 	</test> -->
+	<test thread-count="5" name="Test Contactus">
+		<classes>
+			<class name="com.clix.clixoerwebsite.ValidateContactus" />
+		</classes>
+	</test>
  <!-- Test -->
 </suite> <!-- Suite -->

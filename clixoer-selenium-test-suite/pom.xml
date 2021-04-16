@@ -13,6 +13,9 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		 <maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<cucumber.version>5.7.0</cucumber.version>
 	</properties>
 	<repositories>
 		<repository>
@@ -32,7 +35,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>3.0.0-M5</version>
+				<version>3.0.0-M3</version>
 				<configuration>
 					<suiteXmlFiles>
 						<suiteXmlFile>testng.xml</suiteXmlFile>
@@ -56,9 +59,56 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
+			<version>4.11</version>
 			<scope>test</scope>
 		</dependency>
+	
+	<dependency>
+	<groupId>tech.grasshopper</groupId>
+   <artifactId>extentreports-cucumber5-adapter</artifactId>
+   <version>1.3.1</version>
+   <exclusions>
+   <exclusion>
+   <groupId>io.cucumber</groupId>
+			<artifactId>cucumber-core</artifactId>
+   </exclusion>
+   <exclusion>
+   <groupId>io.cucumber</groupId>
+			<artifactId>cucumber-java</artifactId>
+   </exclusion>
+   <exclusion>
+   <groupId>io.cucumber</groupId>
+			<artifactId>cucumber-junit</artifactId>
+   </exclusion>
+   </exclusions>
+</dependency>	
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>${cucumber.version}</version>
+</dependency>
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-junit</artifactId>
+    <version>${cucumber.version}</version>
+    <scope>test</scope>
+</dependency>
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-testng</artifactId>
+    <version>${cucumber.version}</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-core</artifactId>
+			<version>${cucumber.version}</version>
+		</dependency>
+		
 
 
 
@@ -96,6 +146,18 @@
     <artifactId>extentreports</artifactId>
     <version>4.1.7</version>
 </dependency>
+<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports-cucumber4-adapter -->
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports-cucumber4-adapter</artifactId>
+    <version>1.2.1</version>
+</dependency>
+<dependency>
+ <groupId>com.aventstack</groupId>
+ <artifactId>extentreports-testng-adapter</artifactId>
+  <version>1.0.3</version>
+   </dependency>
+
 
 
 

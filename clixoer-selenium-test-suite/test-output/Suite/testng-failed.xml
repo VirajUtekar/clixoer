@@ -4,36 +4,201 @@
   <listeners>
     <listener class-name="com.clix.clixoerwebsite.Listeners"/>
   </listeners>
-  <test thread-count="5" name="TestHomepage(failed)">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.clix.clixoerwebsite.HomePage">
+      <class name="com.clix.clixoerwebsite.HomePageLinks">
         <methods>
+          <include name="countLinkss"/>
+          <include name="teardown"/>
+          <include name="bringup"/>
+        </methods>
+      </class> <!-- com.clix.clixoerwebsite.HomePageLinks -->
+      <class name="com.clix.clixoerwebsite.AboutPageTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="basePageNavigation"/>
+          <include name="bringup"/>
+        </methods>
+      </class> <!-- com.clix.clixoerwebsite.AboutPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+  <test thread-count="5" name="TestHomepageenglishinenglish(failed)">
+    <classes>
+      <class name="com.clix.clixoerwebsite.CheckEnglishCheckboxContentinEnglish">
+        <methods>
+          <include name="basePageNavigation"/>
           <include name="countEnglishModules"/>
           <include name="checkEnglishContentChecked"/>
           <include name="countLinks"/>
           <include name="verifyEnglishmodulesinEnglishcheckbox"/>
           <include name="teardown"/>
+          <include name="bringup"/>
+        </methods>
+      </class> <!-- com.clix.clixoerwebsite.CheckEnglishCheckboxContentinEnglish -->
+    </classes>
+  </test> <!-- TestHomepageenglishinenglish(failed) -->
+  <test thread-count="5" name="TestHomepageenglishinhindi(failed)">
+    <classes>
+      <class name="com.clix.clixoerwebsite.CheckEnglishCheckboxContentinHindi">
+        <methods>
+          <include name="basePageNavigation"/>
+          <include name="bringup"/>
+          <include name="checkEnglishContentCheckedinHindi"/>
+          <include name="verifyEnglishmodulesinHindicheckbox"/>
+          <include name="teardown"/>
+          <include name="countEnglishModulesinHindi"/>
+        </methods>
+      </class> <!-- com.clix.clixoerwebsite.CheckEnglishCheckboxContentinHindi -->
+    </classes>
+  </test> <!-- TestHomepageenglishinhindi(failed) -->
+  <test thread-count="5" name="TestHomepageenglishintelegu(failed)">
+    <classes>
+      <class name="com.clix.clixoerwebsite.CheckEnglishCheckboxContentinTelegu">
+        <methods>
+          <include name="basePageNavigation"/>
+          <include name="verifyEnglishmodulesinTelegucheckbox"/>
+          <include name="bringup"/>
+          <include name="teardown"/>
+          <include name="countEnglishModulesinTelegu"/>
+          <include name="checkEnglishContentCheckedinTelegu"/>
+        </methods>
+      </class> <!-- com.clix.clixoerwebsite.CheckEnglishCheckboxContentinTelegu -->
+    </classes>
+  </test> <!-- TestHomepageenglishintelegu(failed) -->
+  <test thread-count="5" name="TestHomepagemathsinenglish(failed)">
+    <classes>
+      <class name="com.clix.clixoerwebsite.CheckMathsCheckboxContentinEnglish">
+        <methods>
+          <include name="checkMathsContentChecked"/>
+          <include name="bringup"/>
+          <include name="teardown"/>
+          <include name="verifyMathsmodulesinEnglishcheckbox"/>
+          <include name="countMathsModules"/>
+          <include name="basePageNavigation"/>
+          <include name="countLinks"/>
+        </methods>
+      </class> <!-- com.clix.clixoerwebsite.CheckMathsCheckboxContentinEnglish -->
+    </classes>
+  </test> <!-- TestHomepagemathsinenglish(failed) -->
+  <test thread-count="5" name="TestHomepagemathsinhindi(failed)">
+    <classes>
+      <class name="com.clix.clixoerwebsite.CheckMathsCheckboxContentinHindi">
+        <methods>
+          <include name="countMathsModules"/>
+          <include name="basePageNavigation"/>
+          <include name="bringup"/>
+          <include name="verifyMathsmodulesinHindicheckbox"/>
+          <include name="teardown"/>
+          <include name="checkMathsContentChecked"/>
+          <include name="countLinks"/>
+        </methods>
+      </class> <!-- com.clix.clixoerwebsite.CheckMathsCheckboxContentinHindi -->
+    </classes>
+  </test> <!-- TestHomepagemathsinhindi(failed) -->
+  <test thread-count="5" name="TestHomepagemathsintelegu(failed)">
+    <classes>
+      <class name="com.clix.clixoerwebsite.CheckMathsCheckboxContentinTelegu">
+        <methods>
+          <include name="checkMathsContentChecked"/>
+          <include name="bringup"/>
+          <include name="countLinks"/>
+          <include name="basePageNavigation"/>
+          <include name="teardown"/>
+          <include name="verifyMathsmodulesinTelegucheckbox"/>
+          <include name="countMathsModules"/>
+        </methods>
+      </class> <!-- com.clix.clixoerwebsite.CheckMathsCheckboxContentinTelegu -->
+    </classes>
+  </test> <!-- TestHomepagemathsintelegu(failed) -->
+  <test thread-count="5" name="TestHomepagescienceinenglish(failed)">
+    <classes>
+      <class name="com.clix.clixoerwebsite.CheckScienceCheckboxContentinEnglish">
+        <methods>
+          <include name="basePageNavigation"/>
+          <include name="bringup"/>
+          <include name="teardown"/>
+          <include name="checkScienceContentChecked"/>
+          <include name="countScienceModules"/>
+          <include name="verifySciencemodulesinEnglishcheckbox"/>
+          <include name="countLinks"/>
+        </methods>
+      </class> <!-- com.clix.clixoerwebsite.CheckScienceCheckboxContentinEnglish -->
+    </classes>
+  </test> <!-- TestHomepagescienceinenglish(failed) -->
+  <test thread-count="5" name="TestHomepagescienceinhindi(failed)">
+    <classes>
+      <class name="com.clix.clixoerwebsite.CheckScienceCheckboxContentinHindi">
+        <methods>
+          <include name="countLinks"/>
+          <include name="verifySciencemodulesinHindicheckbox"/>
+          <include name="teardown"/>
+          <include name="checkScienceContentChecked"/>
+          <include name="countScienceModules"/>
           <include name="basePageNavigation"/>
           <include name="bringup"/>
         </methods>
-      </class> <!-- com.clix.clixoerwebsite.HomePage -->
+      </class> <!-- com.clix.clixoerwebsite.CheckScienceCheckboxContentinHindi -->
     </classes>
-  </test> <!-- TestHomepage(failed) -->
-  <test thread-count="5" name="TestHomepagemaths(failed)">
+  </test> <!-- TestHomepagescienceinhindi(failed) -->
+  <test thread-count="5" name="TestHomepagescienceintelegu(failed)">
     <classes>
-      <class name="com.clix.clixoerwebsite.CheckMathsCheckboxContent">
+      <class name="com.clix.clixoerwebsite.CheckScienceCheckboxContentinTelegu">
         <methods>
+          <include name="countLinks"/>
+          <include name="verifySciencemodulesinTelegucheckbox"/>
+          <include name="basePageNavigation"/>
+          <include name="bringup"/>
+          <include name="checkScienceContentChecked"/>
+          <include name="countScienceModules"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.clix.clixoerwebsite.CheckScienceCheckboxContentinTelegu -->
+    </classes>
+  </test> <!-- TestHomepagescienceintelegu(failed) -->
+  <test thread-count="5" name="TestHomepageictinenglish(failed)">
+    <classes>
+      <class name="com.clix.clixoerwebsite.Checki2cCheckboxContentinEnglish">
+        <methods>
+          <include name="counti2cModules"/>
+          <include name="checki2cContentChecked"/>
           <include name="countLinks"/>
           <include name="basePageNavigation"/>
           <include name="bringup"/>
-          <include name="countMathsModules"/>
+          <include name="verifyi2cmodulesinEnglishcheckbox"/>
           <include name="teardown"/>
-          <include name="verifyMathsmodulesinEnglishcheckbox"/>
-          <include name="checkMathsContentChecked"/>
         </methods>
-      </class> <!-- com.clix.clixoerwebsite.CheckMathsCheckboxContent -->
+      </class> <!-- com.clix.clixoerwebsite.Checki2cCheckboxContentinEnglish -->
     </classes>
-  </test> <!-- TestHomepagemaths(failed) -->
+  </test> <!-- TestHomepageictinenglish(failed) -->
+  <test thread-count="5" name="TestHomepageictinhindi(failed)">
+    <classes>
+      <class name="com.clix.clixoerwebsite.Checki2cCheckboxContentinHindi">
+        <methods>
+          <include name="checki2cContentChecked"/>
+          <include name="bringup"/>
+          <include name="teardown"/>
+          <include name="basePageNavigation"/>
+          <include name="countLinks"/>
+          <include name="counti2cModules"/>
+          <include name="verifyi2cmodulesinHindicheckbox"/>
+        </methods>
+      </class> <!-- com.clix.clixoerwebsite.Checki2cCheckboxContentinHindi -->
+    </classes>
+  </test> <!-- TestHomepageictinhindi(failed) -->
+  <test thread-count="5" name="TestHomepageictintelegu(failed)">
+    <classes>
+      <class name="com.clix.clixoerwebsite.Checki2cCheckboxContentinTelegu">
+        <methods>
+          <include name="counti2cModules"/>
+          <include name="bringup"/>
+          <include name="basePageNavigation"/>
+          <include name="verifyi2cmodulesinTelegucheckbox"/>
+          <include name="teardown"/>
+          <include name="checki2cContentChecked"/>
+        </methods>
+      </class> <!-- com.clix.clixoerwebsite.Checki2cCheckboxContentinTelegu -->
+    </classes>
+  </test> <!-- TestHomepageictintelegu(failed) -->
   <test thread-count="5" name="TestHomepageLinks(failed)">
     <classes>
       <class name="com.clix.clixoerwebsite.HomePageLinks">
