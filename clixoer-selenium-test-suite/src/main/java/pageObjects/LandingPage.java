@@ -43,6 +43,14 @@ public class LandingPage {
 	private By sd = By.xpath("//*[@id=\"jar\"]/div/div[5]/div/div[2]/div/div[1]");
 	private By um = By.xpath("//*[@id=\"jar\"]/div/div[6]/div/div[2]/div/div[1]");
 	private By ribbon = By.xpath("/html/body/div[3]/div/div/div[1]/button");
+	private By modules = By.xpath("/html/body/div[4]/div[2]/div[1]/nav/ul/section/li[1]/a");
+	private By interactives = By.xpath("/html/body/div[4]/div[2]/div[1]/nav/ul/section/li[2]/a");
+	private By handbooks = By.xpath("/html/body/div[4]/div[2]/div[1]/nav/ul/section/li[3]/a");
+	
+	private By prev = By.xpath("/html/body/nav[2]/ul/li[1]");
+	private By pagnation = By.xpath("/html/body/nav[2]/ul/li[2]");
+	private By next = By.xpath("/html/body/nav[2]/ul/li[4]/a");
+	
 
 
 	 // END of Nav Bar Page Objects
@@ -178,7 +186,27 @@ public class LandingPage {
 	 {
 		 return driver.findElement(ribbon);
 	 }
-	
+	 public WebElement getInteractives()
+	 {
+		 return driver.findElement(interactives);
+	 }
+	 public WebElement getHandbooks()
+	 {
+		 return driver.findElement(handbooks);
+	 }
+	 public WebElement getModules()
+	 {
+		 return driver.findElement(modules);
+	 }
+
+	public WebElement getPrevButton()
+	{
+		return driver.findElement(prev);
+	}
+	public WebElement getNextButton()
+	{
+		return driver.findElement(next);
+	}
 	 
 	 
 }
