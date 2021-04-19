@@ -99,10 +99,27 @@
 		<classes>
 			<class name="com.clix.clixoerwebsite.AboutPageTest" />
 		</classes>
-	</test> -->
+	</test> 
 	<test thread-count="5" name="Test Contactus">
 		<classes>
 			<class name="com.clix.clixoerwebsite.ValidateContactus" />
+		</classes>
+	</test>-->
+	<!-- <test thread-count="5" name="Test HomePageModulesCheck">
+		<classes>
+			<class name="com.clix.clixoerwebsite.HomePageModulesCheck" />
+		</classes>
+	</test> 
+	-->
+<!-- 	<test thread-count="5" name="Test HomePageModulesCheck">
+		<classes>
+			<class name="com.clix.clixoerwebsite.HomePageModulesCheck" />
+		</classes>
+	</test>
+	 -->
+	 <test thread-count="5" name="Test CheckPaginationContent">
+		<classes>
+			<class name="com.clix.clixoerwebsite.CheckPaginationContent" />
 		</classes>
 	</test>
  <!-- Test -->
