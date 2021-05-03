@@ -122,5 +122,10 @@
 			<class name="com.clix.clixoerwebsite.CheckPaginationContent" />
 		</classes>
 	</test>
+	<test thread-count="5" name="Test Interactives">
+		<classes>
+			<class name="com.clix.clixoerwebsite.CheckInteractives" />
+		</classes>
+	</test>
  <!-- Test -->
 </suite> <!-- Suite -->
