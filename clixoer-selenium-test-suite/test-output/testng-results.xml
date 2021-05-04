@@ -1,45 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="57831" started-at="2021-05-03T07:24:16Z" finished-at="2021-05-03T07:25:13Z">
+  <suite name="Suite" duration-ms="30575" started-at="2021-05-04T04:34:17Z" finished-at="2021-05-04T04:34:47Z">
     <groups>
     </groups>
-    <test name="Test CheckPaginationContent" duration-ms="28148" started-at="2021-05-03T07:24:16Z" finished-at="2021-05-03T07:24:44Z">
-      <class name="com.clix.clixoerwebsite.CheckPaginationContent">
-        <test-method status="PASS" signature="bringup()[pri:0, instance:com.clix.clixoerwebsite.CheckPaginationContent@35e847]" name="bringup" is-config="true" duration-ms="6324" started-at="2021-05-03T07:24:16Z" finished-at="2021-05-03T07:24:22Z">
+    <test name="Test Handbooks" duration-ms="30575" started-at="2021-05-04T04:34:17Z" finished-at="2021-05-04T04:34:47Z">
+      <class name="com.clix.clixoerwebsite.HandbooksValidation">
+        <test-method status="PASS" signature="bringup()[pri:0, instance:com.clix.clixoerwebsite.HandbooksValidation@35e847]" name="bringup" is-config="true" duration-ms="7720" started-at="2021-05-04T04:34:17Z" finished-at="2021-05-04T04:34:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bringup -->
-        <test-method status="PASS" signature="checkPagnationExists()[pri:0, instance:com.clix.clixoerwebsite.CheckPaginationContent@35e847]" name="checkPagnationExists" duration-ms="21044" started-at="2021-05-03T07:24:22Z" finished-at="2021-05-03T07:24:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkPagnationExists -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.clix.clixoerwebsite.CheckPaginationContent@35e847]" name="teardown" is-config="true" duration-ms="758" started-at="2021-05-03T07:24:43Z" finished-at="2021-05-03T07:24:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.clix.clixoerwebsite.CheckPaginationContent -->
-    </test> <!-- Test CheckPaginationContent -->
-    <test name="Test Interactives" duration-ms="29380" started-at="2021-05-03T07:24:44Z" finished-at="2021-05-03T07:25:13Z">
-      <class name="com.clix.clixoerwebsite.CheckInteractives">
-        <test-method status="PASS" signature="bringup()[pri:0, instance:com.clix.clixoerwebsite.CheckInteractives@1faa6af]" name="bringup" is-config="true" duration-ms="6625" started-at="2021-05-03T07:24:44Z" finished-at="2021-05-03T07:24:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bringup -->
-        <test-method status="PASS" signature="checkModuleExist()[pri:0, instance:com.clix.clixoerwebsite.CheckInteractives@1faa6af]" name="checkModuleExist" duration-ms="1316" started-at="2021-05-03T07:24:51Z" finished-at="2021-05-03T07:24:52Z">
+        <test-method status="PASS" signature="checkModuleExist()[pri:0, instance:com.clix.clixoerwebsite.HandbooksValidation@35e847]" name="checkModuleExist" duration-ms="1527" started-at="2021-05-04T04:34:24Z" finished-at="2021-05-04T04:34:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkModuleExist -->
-        <test-method status="PASS" signature="checkPaginationInteractives()[pri:0, instance:com.clix.clixoerwebsite.CheckInteractives@1faa6af]" name="checkPaginationInteractives" duration-ms="21287" started-at="2021-05-03T07:24:52Z" finished-at="2021-05-03T07:25:13Z">
+        <test-method status="PASS" signature="checkPaginationInteractives()[pri:0, instance:com.clix.clixoerwebsite.HandbooksValidation@35e847]" name="checkPaginationInteractives" duration-ms="21175" started-at="2021-05-04T04:34:26Z" finished-at="2021-05-04T04:34:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkPaginationInteractives -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.clix.clixoerwebsite.CheckInteractives@1faa6af]" name="teardown" is-config="true" duration-ms="148" started-at="2021-05-03T07:25:13Z" finished-at="2021-05-03T07:25:13Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.clix.clixoerwebsite.HandbooksValidation@35e847]" name="teardown" is-config="true" duration-ms="124" started-at="2021-05-04T04:34:47Z" finished-at="2021-05-04T04:34:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.clix.clixoerwebsite.CheckInteractives -->
-    </test> <!-- Test Interactives -->
+      </class> <!-- com.clix.clixoerwebsite.HandbooksValidation -->
+    </test> <!-- Test Handbooks -->
   </suite> <!-- Suite -->
 </testng-results>
