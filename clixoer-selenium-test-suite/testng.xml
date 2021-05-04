@@ -116,7 +116,7 @@
 			<class name="com.clix.clixoerwebsite.HomePageModulesCheck" />
 		</classes>
 	</test>
-	 -->
+	 
 	 <test thread-count="5" name="Test CheckPaginationContent">
 		<classes>
 			<class name="com.clix.clixoerwebsite.CheckPaginationContent" />
@@ -125,6 +125,11 @@
 	<test thread-count="5" name="Test Interactives">
 		<classes>
 			<class name="com.clix.clixoerwebsite.CheckInteractives" />
+		</classes>
+	</test> -->
+	<test thread-count="5" name="Test Handbooks">
+		<classes>
+			<class name="com.clix.clixoerwebsite.HandbooksValidation" />
 		</classes>
 	</test>
  <!-- Test -->
