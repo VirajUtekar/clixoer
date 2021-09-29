@@ -98,8 +98,6 @@ public class HandbooksValidation extends base {
 		for (String name : titlenames)
 		{
 			System.out.println(name);
-			
-			
 		}
 	
 		System.out.println(titlenames.size());

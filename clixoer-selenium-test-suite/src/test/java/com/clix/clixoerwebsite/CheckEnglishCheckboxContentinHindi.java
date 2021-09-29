@@ -49,7 +49,9 @@ public class CheckEnglishCheckboxContentinHindi extends base {
 	public void verifyEnglishmodulesinHindicheckbox()
 
 	{
-		landingpage.getEnglishLanguage().click();
+		
+		landingpage.getLanguageMenuOption().click();
+		
 		landingpage.getHindiLanguage().click();
 		
 		if (landingpage.getEnglishcheckbox().isDisplayed()) {

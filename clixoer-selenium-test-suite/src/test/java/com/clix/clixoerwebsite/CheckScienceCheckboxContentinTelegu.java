@@ -64,7 +64,7 @@ public void bringup() throws IOException
 	
 
 	{
-		landingpage.getEnglishLanguage().click();
+		landingpage.getLanguageMenuOption().click();
 		landingpage.getTeleguLanguage().click();
 		
 		

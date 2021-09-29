@@ -64,20 +64,14 @@ public void bringup() throws IOException
 	
 
 	{
-		landingpage.getEnglishLanguage().click();
+		landingpage.getLanguageMenuOption().click();
 		landingpage.getHindiLanguage().click();
-		
-		
 		
 		if (landingpage.geti2ccheckbox().isDisplayed())
 		{
 		log.info("Check Box Exists since its visible"+landingpage.geti2ccheckbox().isDisplayed());
-		
-		
-		}
 
-		
-		
+		}		
 	}
 
 	
