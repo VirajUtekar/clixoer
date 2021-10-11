@@ -2,6 +2,7 @@ package pageObjects;
 
 import java.util.List;
 
+import org.apache.http.util.ByteArrayBuffer;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -15,7 +16,9 @@ public class LandingPage {
 		// TODO Auto-generated constructor stub
 	}
 	// Nav Bar Page Objects
-	private By englishlanguage = By.xpath("//*[@id=\"dropdownMenuLink\"]");
+	
+	private By languageSelectBox = By.cssSelector("nav#navbar > div > ul > div ");
+	private By englishlanguage = By.cssSelector("nav#navbar > div > ul > div > div > li:nth-Child(1) > form > input:nth-Child(4)");
 	private By hindilanguage = By.xpath("/html/body/nav[1]/div/ul/div/div/li[2]/form/input[4]");
 	private By telegulanguage = By.xpath("/html/body/nav[1]/div/ul/div/div/li[3]/form/input[4]");
 	private By englishcheckbox = By.xpath("//*[@id=\"English\"]");
@@ -55,6 +58,10 @@ public class LandingPage {
 
 	 // END of Nav Bar Page Objects
 	 
+	public WebElement getLanguageMenuOption() {
+		return driver.findElement(languageSelectBox);
+	}
+	
 	public WebElement getEnglishLanguage()
 	 {
 		 return driver.findElement(englishlanguage);

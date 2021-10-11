@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="30575" started-at="2021-05-04T04:34:17Z" finished-at="2021-05-04T04:34:47Z">
+  <suite started-at="2021-09-29T17:04:21 IST" name="Suite" finished-at="2021-09-29T17:04:43 IST" duration-ms="22717">
     <groups>
     </groups>
-    <test name="Test Handbooks" duration-ms="30575" started-at="2021-05-04T04:34:17Z" finished-at="2021-05-04T04:34:47Z">
-      <class name="com.clix.clixoerwebsite.HandbooksValidation">
-        <test-method status="PASS" signature="bringup()[pri:0, instance:com.clix.clixoerwebsite.HandbooksValidation@35e847]" name="bringup" is-config="true" duration-ms="7720" started-at="2021-05-04T04:34:17Z" finished-at="2021-05-04T04:34:24Z">
+    <test started-at="2021-09-29T17:04:21 IST" name="Test DomainModulesPagination" finished-at="2021-09-29T17:04:43 IST" duration-ms="22717">
+      <class name="com.clix.clixoerwebsite.DomainModulesPagination">
+        <test-method is-config="true" signature="navigateToUrl()[pri:0, instance:com.clix.clixoerwebsite.DomainModulesPagination@66b7550d]" started-at="2021-09-29T17:04:21 IST" name="navigateToUrl" finished-at="2021-09-29T17:04:38 IST" duration-ms="17591" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bringup -->
-        <test-method status="PASS" signature="checkModuleExist()[pri:0, instance:com.clix.clixoerwebsite.HandbooksValidation@35e847]" name="checkModuleExist" duration-ms="1527" started-at="2021-05-04T04:34:24Z" finished-at="2021-05-04T04:34:26Z">
+        </test-method> <!-- navigateToUrl -->
+        <test-method signature="verifyThePaginationOptions()[pri:0, instance:com.clix.clixoerwebsite.DomainModulesPagination@66b7550d]" started-at="2021-09-29T17:04:38 IST" name="verifyThePaginationOptions" finished-at="2021-09-29T17:04:43 IST" duration-ms="4821" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkModuleExist -->
-        <test-method status="PASS" signature="checkPaginationInteractives()[pri:0, instance:com.clix.clixoerwebsite.HandbooksValidation@35e847]" name="checkPaginationInteractives" duration-ms="21175" started-at="2021-05-04T04:34:26Z" finished-at="2021-05-04T04:34:47Z">
+        </test-method> <!-- verifyThePaginationOptions -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:com.clix.clixoerwebsite.DomainModulesPagination@66b7550d]" started-at="2021-09-29T17:04:43 IST" name="terminate" finished-at="2021-09-29T17:04:43 IST" duration-ms="241" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkPaginationInteractives -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.clix.clixoerwebsite.HandbooksValidation@35e847]" name="teardown" is-config="true" duration-ms="124" started-at="2021-05-04T04:34:47Z" finished-at="2021-05-04T04:34:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.clix.clixoerwebsite.HandbooksValidation -->
-    </test> <!-- Test Handbooks -->
+        </test-method> <!-- terminate -->
+      </class> <!-- com.clix.clixoerwebsite.DomainModulesPagination -->
+    </test> <!-- Test DomainModulesPagination -->
   </suite> <!-- Suite -->
 </testng-results>

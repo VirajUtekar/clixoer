@@ -21,29 +21,41 @@ public class AboutPageTest extends base {
 	public void bringup() throws IOException
 	{
 		driver = initializeDriver();
+		log.info("driver is been initialized");
 		driver.get(prop.getProperty("url"));
+		log.info("site url is been navigated");
 	}
 	@Test(dataProvider="getData")
 	public void basePageNavigation(String firstname,String lastname,String email,String phone,String message) throws IOException
 	{
 		
 		driver.navigate().refresh();
-		driver.manage().window().fullscreen();
-		LandingPage landingpage = new LandingPage(driver);
+		log.info("site is been refreshed");
 		
+		driver.manage().window().fullscreen();
+		log.info("browser window is been maximized");
+		
+		LandingPage landingpage = new LandingPage(driver);
 		
 		landingpage.getAbout().click();
 		//List<WebElement> allElements = driver.findElements(By.cssSelector("*"));
 		//System.out.println(allElements);
-		driver.manage().window().fullscreen();
+		//driver.manage().window().fullscreen();
 		
 		AboutPage aboutpage = new AboutPage(driver);
+		
 		aboutpage.getFirstName().sendKeys(firstname);
+		log.info("first name is been entered into field");
 		aboutpage.getLastName().sendKeys(lastname);
+		log.info("last name is been entered into field");
 		aboutpage.getEmail().sendKeys(email);
+		log.info("email is been entered into field");
 		aboutpage.getPhone().sendKeys(phone);
+		log.info("phone number is been entered into field");
 		aboutpage.getMessage().sendKeys(message);
+		log.info("message is been entered into field");
 		aboutpage.getSendButton().click();
+		log.info("submit button is been clicked");
 		//driver.close();
 		//driver.quit();
 		
@@ -73,6 +85,7 @@ public class AboutPageTest extends base {
 	public void teardown()
 	{
 		driver.close();
+		log.info("browser is been quit");
 	}
 
 	

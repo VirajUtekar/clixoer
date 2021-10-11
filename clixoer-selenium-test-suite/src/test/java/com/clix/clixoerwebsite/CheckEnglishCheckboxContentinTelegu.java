@@ -46,10 +46,12 @@ public class CheckEnglishCheckboxContentinTelegu extends base {
 		
 	}
 	@Test
-	public void verifyEnglishmodulesinTelegucheckbox()
+	public void verifyEnglishmodulesinTelegucheckbox() throws InterruptedException
 
 	{
-		landingpage.getEnglishLanguage().click();
+		
+		landingpage.getLanguageMenuOption().click();
+		
 		landingpage.getTeleguLanguage().click();
 		
 		if (landingpage.getEnglishcheckbox().isDisplayed()) {

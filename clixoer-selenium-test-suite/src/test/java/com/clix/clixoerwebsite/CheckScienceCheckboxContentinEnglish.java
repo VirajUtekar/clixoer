@@ -64,9 +64,7 @@ public void bringup() throws IOException
 	
 
 	{
-		
-		
-		
+	
 		if (landingpage.getSciencecheckbox().isDisplayed())
 		{
 		log.info("Check Box Exists since its visible"+landingpage.getSciencecheckbox().isDisplayed());

@@ -20,21 +20,28 @@ public class base {
 	public Properties prop;
 
 	public WebDriver initializeDriver() throws IOException {
+		
 		prop = new Properties();
-
-		FileInputStream fis = new FileInputStream(
-				System.getProperty("user.dir") + "\\src\\main\\java\\resources\\data.properties");
+		
+		String file = System.getProperty("user.dir") + "/src/main/java/resources/data.properties";
+		
+		FileInputStream fis = new FileInputStream(file);
+		
 		prop.load(fis);
+		
 		//String browserName = System.getProperty("browser");
+		
 		String browserName = prop.getProperty("browser");
-		String url = prop.getProperty("url");
+		
 		System.out.println(browserName);
 
 		if (browserName.contains("chrome")) {
 
 			// execute in chrome
-			System.setProperty("webdriver.chrome.driver",
-					(System.getProperty("user.dir") + "\\src\\main\\java\\resources\\chromedriver.exe"));
+			
+			String ch = System.getProperty("user.dir") + "/src/main/java/resources/chromedriver";
+			
+			System.setProperty("webdriver.chrome.driver",ch);
 
 			if (browserName.contains("chromeheadless")) {
 

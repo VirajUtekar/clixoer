@@ -26,6 +26,7 @@ public class Checki2cCheckboxContentinTelegu extends base{
 	public LandingPage landingpage;
 	
 	public static Logger log = LogManager.getLogger(base.class.getName());
+	
 @BeforeTest
 public void bringup() throws IOException
 {
@@ -53,7 +54,7 @@ public void bringup() throws IOException
 	
 
 	{
-		landingpage.getEnglishLanguage().click();
+		landingpage.getLanguageMenuOption().click();
 		landingpage.getTeleguLanguage().click();
 		
 		
