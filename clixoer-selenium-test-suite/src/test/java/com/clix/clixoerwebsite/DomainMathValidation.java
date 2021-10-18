@@ -74,8 +74,8 @@ public class DomainMathValidation extends base {
 		
 		DomainPage dp = new DomainPage(driver);
 		int mathDomainPageLinkCount = dp.getMathDomainPageLinks().size();
-		Assert.assertEquals(mathDomainPageLinkCount,101);
-		log.info("number of links in domain Math page is 101");
+		Assert.assertEquals(mathDomainPageLinkCount,102);
+		log.info("number of links in domain Math page is",+mathDomainPageLinkCount);
 		System.out.println("The Number of Links in domain Math page is:" +mathDomainPageLinkCount);
 	}
 	

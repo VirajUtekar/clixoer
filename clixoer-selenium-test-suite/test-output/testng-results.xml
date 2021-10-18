@@ -1,25 +1,1132 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="126" passed="123" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-09-29T17:04:21 IST" name="Suite" finished-at="2021-09-29T17:04:43 IST" duration-ms="22717">
+  <suite started-at="2021-10-18T13:16:23 IST" name="Suite" finished-at="2021-10-18T13:25:59 IST" duration-ms="576090">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@1e1a0406]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2021-09-29T17:04:21 IST" name="Test DomainModulesPagination" finished-at="2021-09-29T17:04:43 IST" duration-ms="22717">
-      <class name="com.clix.clixoerwebsite.DomainModulesPagination">
-        <test-method is-config="true" signature="navigateToUrl()[pri:0, instance:com.clix.clixoerwebsite.DomainModulesPagination@66b7550d]" started-at="2021-09-29T17:04:21 IST" name="navigateToUrl" finished-at="2021-09-29T17:04:38 IST" duration-ms="17591" status="PASS">
+    <test started-at="2021-10-18T13:16:23 IST" name="CucumberTest" finished-at="2021-10-18T13:16:48 IST" duration-ms="24935">
+      <class name="cucumberOptions.TestRunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:cucumberOptions.TestRunner@1e1a0406]" started-at="2021-10-18T13:16:23 IST" name="setUpClass" finished-at="2021-10-18T13:16:24 IST" duration-ms="269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@1e1a0406]" started-at="2021-10-18T13:16:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-18T13:16:32 IST" duration-ms="8196" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Home Page Loading"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Navigate to Help Page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@1e1a0406]" started-at="2021-10-18T13:16:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-18T13:16:37 IST" duration-ms="5461" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Help Page Validation"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Navigate to Help Page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@1e1a0406]" started-at="2021-10-18T13:16:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-18T13:16:42 IST" duration-ms="5095" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Help Page Validation"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Navigate to Help Page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberOptions.TestRunner@1e1a0406]" started-at="2021-10-18T13:16:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-18T13:16:48 IST" duration-ms="5188" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Help Page Validation"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Navigate to Help Page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumberOptions.TestRunner@1e1a0406]" started-at="2021-10-18T13:16:48 IST" name="tearDownClass" finished-at="2021-10-18T13:16:48 IST" duration-ms="668" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- cucumberOptions.TestRunner -->
+    </test> <!-- CucumberTest -->
+    <test started-at="2021-10-18T13:16:48 IST" name="TestHomepageenglishinenglish" finished-at="2021-10-18T13:16:57 IST" duration-ms="8890">
+      <class name="com.clix.clixoerwebsite.CheckEnglishCheckboxContentinEnglish">
+        <test-method is-config="true" signature="bringup()[pri:0, instance:com.clix.clixoerwebsite.CheckEnglishCheckboxContentinEnglish@2b491fee]" started-at="2021-10-18T13:16:48 IST" name="bringup" finished-at="2021-10-18T13:16:54 IST" duration-ms="5690" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bringup -->
+        <test-method signature="basePageNavigation()[pri:0, instance:com.clix.clixoerwebsite.CheckEnglishCheckboxContentinEnglish@2b491fee]" started-at="2021-10-18T13:16:54 IST" name="basePageNavigation" finished-at="2021-10-18T13:16:56 IST" duration-ms="1438" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method signature="checkEnglishContentChecked()[pri:0, instance:com.clix.clixoerwebsite.CheckEnglishCheckboxContentinEnglish@2b491fee]" started-at="2021-10-18T13:16:56 IST" name="checkEnglishContentChecked" finished-at="2021-10-18T13:16:57 IST" duration-ms="1178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkEnglishContentChecked -->
+        <test-method signature="countEnglishModules()[pri:0, instance:com.clix.clixoerwebsite.CheckEnglishCheckboxContentinEnglish@2b491fee]" started-at="2021-10-18T13:16:57 IST" name="countEnglishModules" finished-at="2021-10-18T13:16:57 IST" duration-ms="127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countEnglishModules -->
+        <test-method signature="countLinks()[pri:0, instance:com.clix.clixoerwebsite.CheckEnglishCheckboxContentinEnglish@2b491fee]" started-at="2021-10-18T13:16:57 IST" name="countLinks" finished-at="2021-10-18T13:16:57 IST" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countLinks -->
+        <test-method signature="verifyEnglishmodulesinEnglishcheckbox()[pri:0, instance:com.clix.clixoerwebsite.CheckEnglishCheckboxContentinEnglish@2b491fee]" started-at="2021-10-18T13:16:57 IST" name="verifyEnglishmodulesinEnglishcheckbox" finished-at="2021-10-18T13:16:57 IST" duration-ms="136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEnglishmodulesinEnglishcheckbox -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.clix.clixoerwebsite.CheckEnglishCheckboxContentinEnglish@2b491fee]" started-at="2021-10-18T13:16:57 IST" name="teardown" finished-at="2021-10-18T13:16:57 IST" duration-ms="271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.clix.clixoerwebsite.CheckEnglishCheckboxContentinEnglish -->
+    </test> <!-- TestHomepageenglishinenglish -->
+    <test started-at="2021-10-18T13:16:59 IST" name="TestHomepageenglishinhindi" finished-at="2021-10-18T13:17:08 IST" duration-ms="9751">
+      <class name="com.clix.clixoerwebsite.CheckEnglishCheckboxContentinHindi">
+        <test-method is-config="true" signature="bringup()[pri:0, instance:com.clix.clixoerwebsite.CheckEnglishCheckboxContentinHindi@34a97744]" started-at="2021-10-18T13:16:59 IST" name="bringup" finished-at="2021-10-18T13:17:03 IST" duration-ms="4206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bringup -->
+        <test-method signature="basePageNavigation()[pri:0, instance:com.clix.clixoerwebsite.CheckEnglishCheckboxContentinHindi@34a97744]" started-at="2021-10-18T13:17:03 IST" name="basePageNavigation" finished-at="2021-10-18T13:17:04 IST" duration-ms="1388" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method signature="checkEnglishContentCheckedinHindi()[pri:0, instance:com.clix.clixoerwebsite.CheckEnglishCheckboxContentinHindi@34a97744]" started-at="2021-10-18T13:17:04 IST" name="checkEnglishContentCheckedinHindi" finished-at="2021-10-18T13:17:05 IST" duration-ms="1159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkEnglishContentCheckedinHindi -->
+        <test-method signature="countEnglishModulesinHindi()[pri:0, instance:com.clix.clixoerwebsite.CheckEnglishCheckboxContentinHindi@34a97744]" started-at="2021-10-18T13:17:05 IST" name="countEnglishModulesinHindi" finished-at="2021-10-18T13:17:06 IST" duration-ms="136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countEnglishModulesinHindi -->
+        <test-method signature="verifyEnglishmodulesinHindicheckbox()[pri:0, instance:com.clix.clixoerwebsite.CheckEnglishCheckboxContentinHindi@34a97744]" started-at="2021-10-18T13:17:06 IST" name="verifyEnglishmodulesinHindicheckbox" finished-at="2021-10-18T13:17:08 IST" duration-ms="2633" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEnglishmodulesinHindicheckbox -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.clix.clixoerwebsite.CheckEnglishCheckboxContentinHindi@34a97744]" started-at="2021-10-18T13:17:08 IST" name="teardown" finished-at="2021-10-18T13:17:08 IST" duration-ms="219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.clix.clixoerwebsite.CheckEnglishCheckboxContentinHindi -->
+    </test> <!-- TestHomepageenglishinhindi -->
+    <test started-at="2021-10-18T13:17:09 IST" name="TestHomepageenglishintelegu" finished-at="2021-10-18T13:17:18 IST" duration-ms="9958">
+      <class name="com.clix.clixoerwebsite.CheckEnglishCheckboxContentinTelegu">
+        <test-method is-config="true" signature="bringup()[pri:0, instance:com.clix.clixoerwebsite.CheckEnglishCheckboxContentinTelegu@34a1d21f]" started-at="2021-10-18T13:17:09 IST" name="bringup" finished-at="2021-10-18T13:17:13 IST" duration-ms="4590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bringup -->
+        <test-method signature="basePageNavigation()[pri:0, instance:com.clix.clixoerwebsite.CheckEnglishCheckboxContentinTelegu@34a1d21f]" started-at="2021-10-18T13:17:13 IST" name="basePageNavigation" finished-at="2021-10-18T13:17:14 IST" duration-ms="1342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method signature="checkEnglishContentCheckedinTelegu()[pri:0, instance:com.clix.clixoerwebsite.CheckEnglishCheckboxContentinTelegu@34a1d21f]" started-at="2021-10-18T13:17:14 IST" name="checkEnglishContentCheckedinTelegu" finished-at="2021-10-18T13:17:16 IST" duration-ms="1121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkEnglishContentCheckedinTelegu -->
+        <test-method signature="countEnglishModulesinTelegu()[pri:0, instance:com.clix.clixoerwebsite.CheckEnglishCheckboxContentinTelegu@34a1d21f]" started-at="2021-10-18T13:17:16 IST" name="countEnglishModulesinTelegu" finished-at="2021-10-18T13:17:16 IST" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countEnglishModulesinTelegu -->
+        <test-method signature="verifyEnglishmodulesinTelegucheckbox()[pri:0, instance:com.clix.clixoerwebsite.CheckEnglishCheckboxContentinTelegu@34a1d21f]" started-at="2021-10-18T13:17:16 IST" name="verifyEnglishmodulesinTelegucheckbox" finished-at="2021-10-18T13:17:18 IST" duration-ms="2497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEnglishmodulesinTelegucheckbox -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.clix.clixoerwebsite.CheckEnglishCheckboxContentinTelegu@34a1d21f]" started-at="2021-10-18T13:17:18 IST" name="teardown" finished-at="2021-10-18T13:17:18 IST" duration-ms="281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.clix.clixoerwebsite.CheckEnglishCheckboxContentinTelegu -->
+    </test> <!-- TestHomepageenglishintelegu -->
+    <test started-at="2021-10-18T13:17:19 IST" name="TestHomepagemathsinenglish" finished-at="2021-10-18T13:17:26 IST" duration-ms="7497">
+      <class name="com.clix.clixoerwebsite.CheckMathsCheckboxContentinEnglish">
+        <test-method is-config="true" signature="bringup()[pri:0, instance:com.clix.clixoerwebsite.CheckMathsCheckboxContentinEnglish@44e3760b]" started-at="2021-10-18T13:17:19 IST" name="bringup" finished-at="2021-10-18T13:17:23 IST" duration-ms="4235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bringup -->
+        <test-method signature="basePageNavigation()[pri:0, instance:com.clix.clixoerwebsite.CheckMathsCheckboxContentinEnglish@44e3760b]" started-at="2021-10-18T13:17:23 IST" name="basePageNavigation" finished-at="2021-10-18T13:17:24 IST" duration-ms="1415" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method signature="checkMathsContentChecked()[pri:0, instance:com.clix.clixoerwebsite.CheckMathsCheckboxContentinEnglish@44e3760b]" started-at="2021-10-18T13:17:24 IST" name="checkMathsContentChecked" finished-at="2021-10-18T13:17:26 IST" duration-ms="1339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkMathsContentChecked -->
+        <test-method signature="countLinks()[pri:0, instance:com.clix.clixoerwebsite.CheckMathsCheckboxContentinEnglish@44e3760b]" started-at="2021-10-18T13:17:26 IST" name="countLinks" finished-at="2021-10-18T13:17:26 IST" duration-ms="48" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countLinks -->
+        <test-method signature="countMathsModules()[pri:0, instance:com.clix.clixoerwebsite.CheckMathsCheckboxContentinEnglish@44e3760b]" started-at="2021-10-18T13:17:26 IST" name="countMathsModules" finished-at="2021-10-18T13:17:26 IST" duration-ms="130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countMathsModules -->
+        <test-method signature="verifyMathsmodulesinEnglishcheckbox()[pri:0, instance:com.clix.clixoerwebsite.CheckMathsCheckboxContentinEnglish@44e3760b]" started-at="2021-10-18T13:17:26 IST" name="verifyMathsmodulesinEnglishcheckbox" finished-at="2021-10-18T13:17:26 IST" duration-ms="86" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMathsmodulesinEnglishcheckbox -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.clix.clixoerwebsite.CheckMathsCheckboxContentinEnglish@44e3760b]" started-at="2021-10-18T13:17:26 IST" name="teardown" finished-at="2021-10-18T13:17:26 IST" duration-ms="234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.clix.clixoerwebsite.CheckMathsCheckboxContentinEnglish -->
+    </test> <!-- TestHomepagemathsinenglish -->
+    <test started-at="2021-10-18T13:17:26 IST" name="TestHomepagemathsinhindi" finished-at="2021-10-18T13:17:36 IST" duration-ms="10293">
+      <class name="com.clix.clixoerwebsite.CheckMathsCheckboxContentinHindi">
+        <test-method is-config="true" signature="bringup()[pri:0, instance:com.clix.clixoerwebsite.CheckMathsCheckboxContentinHindi@24bdb479]" started-at="2021-10-18T13:17:26 IST" name="bringup" finished-at="2021-10-18T13:17:31 IST" duration-ms="4468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bringup -->
+        <test-method signature="basePageNavigation()[pri:0, instance:com.clix.clixoerwebsite.CheckMathsCheckboxContentinHindi@24bdb479]" started-at="2021-10-18T13:17:31 IST" name="basePageNavigation" finished-at="2021-10-18T13:17:32 IST" duration-ms="1330" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method signature="checkMathsContentChecked()[pri:0, instance:com.clix.clixoerwebsite.CheckMathsCheckboxContentinHindi@24bdb479]" started-at="2021-10-18T13:17:32 IST" name="checkMathsContentChecked" finished-at="2021-10-18T13:17:33 IST" duration-ms="1436" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkMathsContentChecked -->
+        <test-method signature="countLinks()[pri:0, instance:com.clix.clixoerwebsite.CheckMathsCheckboxContentinHindi@24bdb479]" started-at="2021-10-18T13:17:33 IST" name="countLinks" finished-at="2021-10-18T13:17:33 IST" duration-ms="54" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countLinks -->
+        <test-method signature="countMathsModules()[pri:0, instance:com.clix.clixoerwebsite.CheckMathsCheckboxContentinHindi@24bdb479]" started-at="2021-10-18T13:17:33 IST" name="countMathsModules" finished-at="2021-10-18T13:17:34 IST" duration-ms="172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countMathsModules -->
+        <test-method signature="verifyMathsmodulesinHindicheckbox()[pri:0, instance:com.clix.clixoerwebsite.CheckMathsCheckboxContentinHindi@24bdb479]" started-at="2021-10-18T13:17:34 IST" name="verifyMathsmodulesinHindicheckbox" finished-at="2021-10-18T13:17:36 IST" duration-ms="2602" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMathsmodulesinHindicheckbox -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.clix.clixoerwebsite.CheckMathsCheckboxContentinHindi@24bdb479]" started-at="2021-10-18T13:17:36 IST" name="teardown" finished-at="2021-10-18T13:17:36 IST" duration-ms="219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.clix.clixoerwebsite.CheckMathsCheckboxContentinHindi -->
+    </test> <!-- TestHomepagemathsinhindi -->
+    <test started-at="2021-10-18T13:17:36 IST" name="TestHomepagemathsintelegu" finished-at="2021-10-18T13:17:47 IST" duration-ms="10349">
+      <class name="com.clix.clixoerwebsite.CheckMathsCheckboxContentinTelegu">
+        <test-method is-config="true" signature="bringup()[pri:0, instance:com.clix.clixoerwebsite.CheckMathsCheckboxContentinTelegu@533377b]" started-at="2021-10-18T13:17:36 IST" name="bringup" finished-at="2021-10-18T13:17:41 IST" duration-ms="4397" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bringup -->
+        <test-method signature="basePageNavigation()[pri:0, instance:com.clix.clixoerwebsite.CheckMathsCheckboxContentinTelegu@533377b]" started-at="2021-10-18T13:17:41 IST" name="basePageNavigation" finished-at="2021-10-18T13:17:42 IST" duration-ms="1413" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method signature="checkMathsContentChecked()[pri:0, instance:com.clix.clixoerwebsite.CheckMathsCheckboxContentinTelegu@533377b]" started-at="2021-10-18T13:17:42 IST" name="checkMathsContentChecked" finished-at="2021-10-18T13:17:43 IST" duration-ms="1258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkMathsContentChecked -->
+        <test-method signature="countLinks()[pri:0, instance:com.clix.clixoerwebsite.CheckMathsCheckboxContentinTelegu@533377b]" started-at="2021-10-18T13:17:43 IST" name="countLinks" finished-at="2021-10-18T13:17:44 IST" duration-ms="36" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countLinks -->
+        <test-method signature="countMathsModules()[pri:0, instance:com.clix.clixoerwebsite.CheckMathsCheckboxContentinTelegu@533377b]" started-at="2021-10-18T13:17:44 IST" name="countMathsModules" finished-at="2021-10-18T13:17:44 IST" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countMathsModules -->
+        <test-method signature="verifyMathsmodulesinTelegucheckbox()[pri:0, instance:com.clix.clixoerwebsite.CheckMathsCheckboxContentinTelegu@533377b]" started-at="2021-10-18T13:17:44 IST" name="verifyMathsmodulesinTelegucheckbox" finished-at="2021-10-18T13:17:47 IST" duration-ms="2885" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMathsmodulesinTelegucheckbox -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.clix.clixoerwebsite.CheckMathsCheckboxContentinTelegu@533377b]" started-at="2021-10-18T13:17:47 IST" name="teardown" finished-at="2021-10-18T13:17:47 IST" duration-ms="230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.clix.clixoerwebsite.CheckMathsCheckboxContentinTelegu -->
+    </test> <!-- TestHomepagemathsintelegu -->
+    <test started-at="2021-10-18T13:17:47 IST" name="TestHomepagescienceinenglish" finished-at="2021-10-18T13:17:55 IST" duration-ms="8415">
+      <class name="com.clix.clixoerwebsite.CheckScienceCheckboxContentinEnglish">
+        <test-method is-config="true" signature="bringup()[pri:0, instance:com.clix.clixoerwebsite.CheckScienceCheckboxContentinEnglish@9bd0fa6]" started-at="2021-10-18T13:17:47 IST" name="bringup" finished-at="2021-10-18T13:17:51 IST" duration-ms="4155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bringup -->
+        <test-method signature="basePageNavigation()[pri:0, instance:com.clix.clixoerwebsite.CheckScienceCheckboxContentinEnglish@9bd0fa6]" started-at="2021-10-18T13:17:51 IST" name="basePageNavigation" finished-at="2021-10-18T13:17:53 IST" duration-ms="1616" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method signature="checkScienceContentChecked()[pri:0, instance:com.clix.clixoerwebsite.CheckScienceCheckboxContentinEnglish@9bd0fa6]" started-at="2021-10-18T13:17:53 IST" name="checkScienceContentChecked" finished-at="2021-10-18T13:17:55 IST" duration-ms="2077" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkScienceContentChecked -->
+        <test-method signature="countLinks()[pri:0, instance:com.clix.clixoerwebsite.CheckScienceCheckboxContentinEnglish@9bd0fa6]" started-at="2021-10-18T13:17:55 IST" name="countLinks" finished-at="2021-10-18T13:17:55 IST" duration-ms="40" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countLinks -->
+        <test-method signature="countScienceModules()[pri:0, instance:com.clix.clixoerwebsite.CheckScienceCheckboxContentinEnglish@9bd0fa6]" started-at="2021-10-18T13:17:55 IST" name="countScienceModules" finished-at="2021-10-18T13:17:55 IST" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countScienceModules -->
+        <test-method signature="verifySciencemodulesinEnglishcheckbox()[pri:0, instance:com.clix.clixoerwebsite.CheckScienceCheckboxContentinEnglish@9bd0fa6]" started-at="2021-10-18T13:17:55 IST" name="verifySciencemodulesinEnglishcheckbox" finished-at="2021-10-18T13:17:55 IST" duration-ms="174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySciencemodulesinEnglishcheckbox -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.clix.clixoerwebsite.CheckScienceCheckboxContentinEnglish@9bd0fa6]" started-at="2021-10-18T13:17:55 IST" name="teardown" finished-at="2021-10-18T13:17:55 IST" duration-ms="220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.clix.clixoerwebsite.CheckScienceCheckboxContentinEnglish -->
+    </test> <!-- TestHomepagescienceinenglish -->
+    <test started-at="2021-10-18T13:17:55 IST" name="TestHomepagescienceinhindi" finished-at="2021-10-18T13:18:05 IST" duration-ms="10117">
+      <class name="com.clix.clixoerwebsite.CheckScienceCheckboxContentinHindi">
+        <test-method is-config="true" signature="bringup()[pri:0, instance:com.clix.clixoerwebsite.CheckScienceCheckboxContentinHindi@659eef7]" started-at="2021-10-18T13:17:55 IST" name="bringup" finished-at="2021-10-18T13:18:00 IST" duration-ms="4328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bringup -->
+        <test-method signature="basePageNavigation()[pri:0, instance:com.clix.clixoerwebsite.CheckScienceCheckboxContentinHindi@659eef7]" started-at="2021-10-18T13:18:00 IST" name="basePageNavigation" finished-at="2021-10-18T13:18:01 IST" duration-ms="1447" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method signature="checkScienceContentChecked()[pri:0, instance:com.clix.clixoerwebsite.CheckScienceCheckboxContentinHindi@659eef7]" started-at="2021-10-18T13:18:01 IST" name="checkScienceContentChecked" finished-at="2021-10-18T13:18:02 IST" duration-ms="1429" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkScienceContentChecked -->
+        <test-method signature="countLinks()[pri:0, instance:com.clix.clixoerwebsite.CheckScienceCheckboxContentinHindi@659eef7]" started-at="2021-10-18T13:18:03 IST" name="countLinks" finished-at="2021-10-18T13:18:03 IST" duration-ms="42" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countLinks -->
+        <test-method signature="countScienceModules()[pri:0, instance:com.clix.clixoerwebsite.CheckScienceCheckboxContentinHindi@659eef7]" started-at="2021-10-18T13:18:03 IST" name="countScienceModules" finished-at="2021-10-18T13:18:03 IST" duration-ms="131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countScienceModules -->
+        <test-method signature="verifySciencemodulesinHindicheckbox()[pri:0, instance:com.clix.clixoerwebsite.CheckScienceCheckboxContentinHindi@659eef7]" started-at="2021-10-18T13:18:03 IST" name="verifySciencemodulesinHindicheckbox" finished-at="2021-10-18T13:18:05 IST" duration-ms="2446" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySciencemodulesinHindicheckbox -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.clix.clixoerwebsite.CheckScienceCheckboxContentinHindi@659eef7]" started-at="2021-10-18T13:18:05 IST" name="teardown" finished-at="2021-10-18T13:18:05 IST" duration-ms="283" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.clix.clixoerwebsite.CheckScienceCheckboxContentinHindi -->
+    </test> <!-- TestHomepagescienceinhindi -->
+    <test started-at="2021-10-18T13:18:05 IST" name="TestHomepagescienceintelegu" finished-at="2021-10-18T13:18:17 IST" duration-ms="11282">
+      <class name="com.clix.clixoerwebsite.CheckScienceCheckboxContentinTelegu">
+        <test-method is-config="true" signature="bringup()[pri:0, instance:com.clix.clixoerwebsite.CheckScienceCheckboxContentinTelegu@1992eaf4]" started-at="2021-10-18T13:18:05 IST" name="bringup" finished-at="2021-10-18T13:18:10 IST" duration-ms="5019" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bringup -->
+        <test-method signature="basePageNavigation()[pri:0, instance:com.clix.clixoerwebsite.CheckScienceCheckboxContentinTelegu@1992eaf4]" started-at="2021-10-18T13:18:10 IST" name="basePageNavigation" finished-at="2021-10-18T13:18:12 IST" duration-ms="1475" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method signature="checkScienceContentChecked()[pri:0, instance:com.clix.clixoerwebsite.CheckScienceCheckboxContentinTelegu@1992eaf4]" started-at="2021-10-18T13:18:12 IST" name="checkScienceContentChecked" finished-at="2021-10-18T13:18:14 IST" duration-ms="1601" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkScienceContentChecked -->
+        <test-method signature="countLinks()[pri:0, instance:com.clix.clixoerwebsite.CheckScienceCheckboxContentinTelegu@1992eaf4]" started-at="2021-10-18T13:18:14 IST" name="countLinks" finished-at="2021-10-18T13:18:14 IST" duration-ms="42" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countLinks -->
+        <test-method signature="countScienceModules()[pri:0, instance:com.clix.clixoerwebsite.CheckScienceCheckboxContentinTelegu@1992eaf4]" started-at="2021-10-18T13:18:14 IST" name="countScienceModules" finished-at="2021-10-18T13:18:14 IST" duration-ms="145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countScienceModules -->
+        <test-method signature="verifySciencemodulesinTelegucheckbox()[pri:0, instance:com.clix.clixoerwebsite.CheckScienceCheckboxContentinTelegu@1992eaf4]" started-at="2021-10-18T13:18:14 IST" name="verifySciencemodulesinTelegucheckbox" finished-at="2021-10-18T13:18:16 IST" duration-ms="2714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySciencemodulesinTelegucheckbox -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.clix.clixoerwebsite.CheckScienceCheckboxContentinTelegu@1992eaf4]" started-at="2021-10-18T13:18:16 IST" name="teardown" finished-at="2021-10-18T13:18:17 IST" duration-ms="272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.clix.clixoerwebsite.CheckScienceCheckboxContentinTelegu -->
+    </test> <!-- TestHomepagescienceintelegu -->
+    <test started-at="2021-10-18T13:18:17 IST" name="TestHomepageictinenglish" finished-at="2021-10-18T13:18:24 IST" duration-ms="6969">
+      <class name="com.clix.clixoerwebsite.Checki2cCheckboxContentinEnglish">
+        <test-method is-config="true" signature="bringup()[pri:0, instance:com.clix.clixoerwebsite.Checki2cCheckboxContentinEnglish@18245eb0]" started-at="2021-10-18T13:18:17 IST" name="bringup" finished-at="2021-10-18T13:18:21 IST" duration-ms="3725" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bringup -->
+        <test-method signature="basePageNavigation()[pri:0, instance:com.clix.clixoerwebsite.Checki2cCheckboxContentinEnglish@18245eb0]" started-at="2021-10-18T13:18:21 IST" name="basePageNavigation" finished-at="2021-10-18T13:18:22 IST" duration-ms="1322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method signature="checki2cContentChecked()[pri:0, instance:com.clix.clixoerwebsite.Checki2cCheckboxContentinEnglish@18245eb0]" started-at="2021-10-18T13:18:22 IST" name="checki2cContentChecked" finished-at="2021-10-18T13:18:22 IST" duration-ms="461" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checki2cContentChecked -->
+        <test-method signature="countLinks()[pri:0, instance:com.clix.clixoerwebsite.Checki2cCheckboxContentinEnglish@18245eb0]" started-at="2021-10-18T13:18:22 IST" name="countLinks" finished-at="2021-10-18T13:18:22 IST" duration-ms="55" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countLinks -->
+        <test-method signature="counti2cModules()[pri:0, instance:com.clix.clixoerwebsite.Checki2cCheckboxContentinEnglish@18245eb0]" started-at="2021-10-18T13:18:22 IST" name="counti2cModules" finished-at="2021-10-18T13:18:23 IST" duration-ms="1030" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- counti2cModules -->
+        <test-method signature="verifyi2cmodulesinEnglishcheckbox()[pri:0, instance:com.clix.clixoerwebsite.Checki2cCheckboxContentinEnglish@18245eb0]" started-at="2021-10-18T13:18:23 IST" name="verifyi2cmodulesinEnglishcheckbox" finished-at="2021-10-18T13:18:23 IST" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyi2cmodulesinEnglishcheckbox -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.clix.clixoerwebsite.Checki2cCheckboxContentinEnglish@18245eb0]" started-at="2021-10-18T13:18:23 IST" name="teardown" finished-at="2021-10-18T13:18:24 IST" duration-ms="283" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.clix.clixoerwebsite.Checki2cCheckboxContentinEnglish -->
+    </test> <!-- TestHomepageictinenglish -->
+    <test started-at="2021-10-18T13:18:24 IST" name="TestHomepageictinhindi" finished-at="2021-10-18T13:18:34 IST" duration-ms="10151">
+      <class name="com.clix.clixoerwebsite.Checki2cCheckboxContentinHindi">
+        <test-method is-config="true" signature="bringup()[pri:0, instance:com.clix.clixoerwebsite.Checki2cCheckboxContentinHindi@4ae33a11]" started-at="2021-10-18T13:18:24 IST" name="bringup" finished-at="2021-10-18T13:18:29 IST" duration-ms="5139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bringup -->
+        <test-method signature="basePageNavigation()[pri:0, instance:com.clix.clixoerwebsite.Checki2cCheckboxContentinHindi@4ae33a11]" started-at="2021-10-18T13:18:29 IST" name="basePageNavigation" finished-at="2021-10-18T13:18:30 IST" duration-ms="1448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method signature="checki2cContentChecked()[pri:0, instance:com.clix.clixoerwebsite.Checki2cCheckboxContentinHindi@4ae33a11]" started-at="2021-10-18T13:18:30 IST" name="checki2cContentChecked" finished-at="2021-10-18T13:18:31 IST" duration-ms="400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checki2cContentChecked -->
+        <test-method signature="countLinks()[pri:0, instance:com.clix.clixoerwebsite.Checki2cCheckboxContentinHindi@4ae33a11]" started-at="2021-10-18T13:18:31 IST" name="countLinks" finished-at="2021-10-18T13:18:31 IST" duration-ms="42" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countLinks -->
+        <test-method signature="counti2cModules()[pri:0, instance:com.clix.clixoerwebsite.Checki2cCheckboxContentinHindi@4ae33a11]" started-at="2021-10-18T13:18:31 IST" name="counti2cModules" finished-at="2021-10-18T13:18:32 IST" duration-ms="1023" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- counti2cModules -->
+        <test-method signature="verifyi2cmodulesinHindicheckbox()[pri:0, instance:com.clix.clixoerwebsite.Checki2cCheckboxContentinHindi@4ae33a11]" started-at="2021-10-18T13:18:32 IST" name="verifyi2cmodulesinHindicheckbox" finished-at="2021-10-18T13:18:34 IST" duration-ms="1894" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyi2cmodulesinHindicheckbox -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.clix.clixoerwebsite.Checki2cCheckboxContentinHindi@4ae33a11]" started-at="2021-10-18T13:18:34 IST" name="teardown" finished-at="2021-10-18T13:18:34 IST" duration-ms="195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.clix.clixoerwebsite.Checki2cCheckboxContentinHindi -->
+    </test> <!-- TestHomepageictinhindi -->
+    <test started-at="2021-10-18T13:18:34 IST" name="TestHomepageictintelegu" finished-at="2021-10-18T13:18:44 IST" duration-ms="9578">
+      <class name="com.clix.clixoerwebsite.Checki2cCheckboxContentinTelegu">
+        <test-method is-config="true" signature="bringup()[pri:0, instance:com.clix.clixoerwebsite.Checki2cCheckboxContentinTelegu@2a3591c5]" started-at="2021-10-18T13:18:34 IST" name="bringup" finished-at="2021-10-18T13:18:39 IST" duration-ms="4792" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bringup -->
+        <test-method signature="basePageNavigation()[pri:0, instance:com.clix.clixoerwebsite.Checki2cCheckboxContentinTelegu@2a3591c5]" started-at="2021-10-18T13:18:39 IST" name="basePageNavigation" finished-at="2021-10-18T13:18:40 IST" duration-ms="1390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method signature="checki2cContentChecked()[pri:0, instance:com.clix.clixoerwebsite.Checki2cCheckboxContentinTelegu@2a3591c5]" started-at="2021-10-18T13:18:40 IST" name="checki2cContentChecked" finished-at="2021-10-18T13:18:41 IST" duration-ms="453" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checki2cContentChecked -->
+        <test-method signature="counti2cModules()[pri:0, instance:com.clix.clixoerwebsite.Checki2cCheckboxContentinTelegu@2a3591c5]" started-at="2021-10-18T13:18:41 IST" name="counti2cModules" finished-at="2021-10-18T13:18:42 IST" duration-ms="1028" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- counti2cModules -->
+        <test-method signature="verifyi2cmodulesinTelegucheckbox()[pri:0, instance:com.clix.clixoerwebsite.Checki2cCheckboxContentinTelegu@2a3591c5]" started-at="2021-10-18T13:18:42 IST" name="verifyi2cmodulesinTelegucheckbox" finished-at="2021-10-18T13:18:43 IST" duration-ms="1830" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyi2cmodulesinTelegucheckbox -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.clix.clixoerwebsite.Checki2cCheckboxContentinTelegu@2a3591c5]" started-at="2021-10-18T13:18:43 IST" name="teardown" finished-at="2021-10-18T13:18:44 IST" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.clix.clixoerwebsite.Checki2cCheckboxContentinTelegu -->
+    </test> <!-- TestHomepageictintelegu -->
+    <test started-at="2021-10-18T13:18:44 IST" name="TestHomepagemathsinEnglish" finished-at="2021-10-18T13:18:52 IST" duration-ms="8064">
+      <class name="com.clix.clixoerwebsite.CheckMathsCheckboxContentinEnglish">
+        <test-method is-config="true" signature="bringup()[pri:0, instance:com.clix.clixoerwebsite.CheckMathsCheckboxContentinEnglish@186978a6]" started-at="2021-10-18T13:18:44 IST" name="bringup" finished-at="2021-10-18T13:18:48 IST" duration-ms="4862" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bringup -->
+        <test-method signature="basePageNavigation()[pri:0, instance:com.clix.clixoerwebsite.CheckMathsCheckboxContentinEnglish@186978a6]" started-at="2021-10-18T13:18:48 IST" name="basePageNavigation" finished-at="2021-10-18T13:18:50 IST" duration-ms="1396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method signature="checkMathsContentChecked()[pri:0, instance:com.clix.clixoerwebsite.CheckMathsCheckboxContentinEnglish@186978a6]" started-at="2021-10-18T13:18:50 IST" name="checkMathsContentChecked" finished-at="2021-10-18T13:18:51 IST" duration-ms="1357" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkMathsContentChecked -->
+        <test-method signature="countLinks()[pri:0, instance:com.clix.clixoerwebsite.CheckMathsCheckboxContentinEnglish@186978a6]" started-at="2021-10-18T13:18:51 IST" name="countLinks" finished-at="2021-10-18T13:18:51 IST" duration-ms="44" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countLinks -->
+        <test-method signature="countMathsModules()[pri:0, instance:com.clix.clixoerwebsite.CheckMathsCheckboxContentinEnglish@186978a6]" started-at="2021-10-18T13:18:51 IST" name="countMathsModules" finished-at="2021-10-18T13:18:51 IST" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countMathsModules -->
+        <test-method signature="verifyMathsmodulesinEnglishcheckbox()[pri:0, instance:com.clix.clixoerwebsite.CheckMathsCheckboxContentinEnglish@186978a6]" started-at="2021-10-18T13:18:51 IST" name="verifyMathsmodulesinEnglishcheckbox" finished-at="2021-10-18T13:18:52 IST" duration-ms="90" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMathsmodulesinEnglishcheckbox -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.clix.clixoerwebsite.CheckMathsCheckboxContentinEnglish@186978a6]" started-at="2021-10-18T13:18:52 IST" name="teardown" finished-at="2021-10-18T13:18:52 IST" duration-ms="168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.clix.clixoerwebsite.CheckMathsCheckboxContentinEnglish -->
+    </test> <!-- TestHomepagemathsinEnglish -->
+    <test started-at="2021-10-18T13:18:52 IST" name="TestHomepagemathsinHindi" finished-at="2021-10-18T13:19:01 IST" duration-ms="9242">
+      <class name="com.clix.clixoerwebsite.CheckMathsCheckboxContentinHindi">
+        <test-method is-config="true" signature="bringup()[pri:0, instance:com.clix.clixoerwebsite.CheckMathsCheckboxContentinHindi@297ea53a]" started-at="2021-10-18T13:18:52 IST" name="bringup" finished-at="2021-10-18T13:18:55 IST" duration-ms="3555" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bringup -->
+        <test-method signature="basePageNavigation()[pri:0, instance:com.clix.clixoerwebsite.CheckMathsCheckboxContentinHindi@297ea53a]" started-at="2021-10-18T13:18:55 IST" name="basePageNavigation" finished-at="2021-10-18T13:18:57 IST" duration-ms="1296" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method signature="checkMathsContentChecked()[pri:0, instance:com.clix.clixoerwebsite.CheckMathsCheckboxContentinHindi@297ea53a]" started-at="2021-10-18T13:18:57 IST" name="checkMathsContentChecked" finished-at="2021-10-18T13:18:58 IST" duration-ms="1249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkMathsContentChecked -->
+        <test-method signature="countLinks()[pri:0, instance:com.clix.clixoerwebsite.CheckMathsCheckboxContentinHindi@297ea53a]" started-at="2021-10-18T13:18:58 IST" name="countLinks" finished-at="2021-10-18T13:18:58 IST" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countLinks -->
+        <test-method signature="countMathsModules()[pri:0, instance:com.clix.clixoerwebsite.CheckMathsCheckboxContentinHindi@297ea53a]" started-at="2021-10-18T13:18:58 IST" name="countMathsModules" finished-at="2021-10-18T13:18:58 IST" duration-ms="129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countMathsModules -->
+        <test-method signature="verifyMathsmodulesinHindicheckbox()[pri:0, instance:com.clix.clixoerwebsite.CheckMathsCheckboxContentinHindi@297ea53a]" started-at="2021-10-18T13:18:58 IST" name="verifyMathsmodulesinHindicheckbox" finished-at="2021-10-18T13:19:01 IST" duration-ms="2756" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMathsmodulesinHindicheckbox -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.clix.clixoerwebsite.CheckMathsCheckboxContentinHindi@297ea53a]" started-at="2021-10-18T13:19:01 IST" name="teardown" finished-at="2021-10-18T13:19:01 IST" duration-ms="221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.clix.clixoerwebsite.CheckMathsCheckboxContentinHindi -->
+    </test> <!-- TestHomepagemathsinHindi -->
+    <test started-at="2021-10-18T13:19:01 IST" name="TestHomepagemathsinTelegu" finished-at="2021-10-18T13:19:11 IST" duration-ms="9822">
+      <class name="com.clix.clixoerwebsite.CheckMathsCheckboxContentinTelegu">
+        <test-method is-config="true" signature="bringup()[pri:0, instance:com.clix.clixoerwebsite.CheckMathsCheckboxContentinTelegu@28276e50]" started-at="2021-10-18T13:19:01 IST" name="bringup" finished-at="2021-10-18T13:19:05 IST" duration-ms="4207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bringup -->
+        <test-method signature="basePageNavigation()[pri:0, instance:com.clix.clixoerwebsite.CheckMathsCheckboxContentinTelegu@28276e50]" started-at="2021-10-18T13:19:05 IST" name="basePageNavigation" finished-at="2021-10-18T13:19:07 IST" duration-ms="1405" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method signature="checkMathsContentChecked()[pri:0, instance:com.clix.clixoerwebsite.CheckMathsCheckboxContentinTelegu@28276e50]" started-at="2021-10-18T13:19:07 IST" name="checkMathsContentChecked" finished-at="2021-10-18T13:19:08 IST" duration-ms="1244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkMathsContentChecked -->
+        <test-method signature="countLinks()[pri:0, instance:com.clix.clixoerwebsite.CheckMathsCheckboxContentinTelegu@28276e50]" started-at="2021-10-18T13:19:08 IST" name="countLinks" finished-at="2021-10-18T13:19:08 IST" duration-ms="33" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countLinks -->
+        <test-method signature="countMathsModules()[pri:0, instance:com.clix.clixoerwebsite.CheckMathsCheckboxContentinTelegu@28276e50]" started-at="2021-10-18T13:19:08 IST" name="countMathsModules" finished-at="2021-10-18T13:19:08 IST" duration-ms="129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countMathsModules -->
+        <test-method signature="verifyMathsmodulesinTelegucheckbox()[pri:0, instance:com.clix.clixoerwebsite.CheckMathsCheckboxContentinTelegu@28276e50]" started-at="2021-10-18T13:19:08 IST" name="verifyMathsmodulesinTelegucheckbox" finished-at="2021-10-18T13:19:11 IST" duration-ms="2520" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMathsmodulesinTelegucheckbox -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.clix.clixoerwebsite.CheckMathsCheckboxContentinTelegu@28276e50]" started-at="2021-10-18T13:19:11 IST" name="teardown" finished-at="2021-10-18T13:19:11 IST" duration-ms="275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.clix.clixoerwebsite.CheckMathsCheckboxContentinTelegu -->
+    </test> <!-- TestHomepagemathsinTelegu -->
+    <test started-at="2021-10-18T13:19:11 IST" name="TestHomepageLinks" finished-at="2021-10-18T13:19:16 IST" duration-ms="5096">
+      <class name="com.clix.clixoerwebsite.HomePageLinks">
+        <test-method is-config="true" signature="bringup()[pri:0, instance:com.clix.clixoerwebsite.HomePageLinks@7651218e]" started-at="2021-10-18T13:19:11 IST" name="bringup" finished-at="2021-10-18T13:19:16 IST" duration-ms="4806" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bringup -->
+        <test-method signature="countLinkss()[pri:0, instance:com.clix.clixoerwebsite.HomePageLinks@7651218e]" started-at="2021-10-18T13:19:16 IST" name="countLinkss" finished-at="2021-10-18T13:19:16 IST" duration-ms="59" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countLinkss -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.clix.clixoerwebsite.HomePageLinks@7651218e]" started-at="2021-10-18T13:19:16 IST" name="teardown" finished-at="2021-10-18T13:19:16 IST" duration-ms="230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.clix.clixoerwebsite.HomePageLinks -->
+    </test> <!-- TestHomepageLinks -->
+    <test started-at="2021-10-18T13:19:16 IST" name="Test HomePageModulesCheck" finished-at="2021-10-18T13:19:22 IST" duration-ms="5639">
+      <class name="com.clix.clixoerwebsite.HomePageModulesCheck">
+        <test-method is-config="true" signature="bringup()[pri:0, instance:com.clix.clixoerwebsite.HomePageModulesCheck@bcec031]" started-at="2021-10-18T13:19:16 IST" name="bringup" finished-at="2021-10-18T13:19:20 IST" duration-ms="3588" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bringup -->
+        <test-method signature="checkModuleExist()[pri:0, instance:com.clix.clixoerwebsite.HomePageModulesCheck@bcec031]" started-at="2021-10-18T13:19:20 IST" name="checkModuleExist" finished-at="2021-10-18T13:19:21 IST" duration-ms="1778" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkModuleExist -->
+        <test-method signature="checkPrevPaginationDisabled()[pri:0, instance:com.clix.clixoerwebsite.HomePageModulesCheck@bcec031]" started-at="2021-10-18T13:19:21 IST" name="checkPrevPaginationDisabled" finished-at="2021-10-18T13:19:22 IST" duration-ms="176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkPrevPaginationDisabled -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.clix.clixoerwebsite.HomePageModulesCheck@bcec031]" started-at="2021-10-18T13:19:22 IST" name="teardown" finished-at="2021-10-18T13:19:22 IST" duration-ms="92" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.clix.clixoerwebsite.HomePageModulesCheck -->
+    </test> <!-- Test HomePageModulesCheck -->
+    <test started-at="2021-10-18T13:19:22 IST" name="Test CheckPaginationContent" finished-at="2021-10-18T13:19:53 IST" duration-ms="31188">
+      <class name="com.clix.clixoerwebsite.CheckPaginationContent">
+        <test-method is-config="true" signature="bringup()[pri:0, instance:com.clix.clixoerwebsite.CheckPaginationContent@4648ce9]" started-at="2021-10-18T13:19:22 IST" name="bringup" finished-at="2021-10-18T13:19:26 IST" duration-ms="4109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bringup -->
+        <test-method signature="checkPagnationExists()[pri:0, instance:com.clix.clixoerwebsite.CheckPaginationContent@4648ce9]" started-at="2021-10-18T13:19:26 IST" name="checkPagnationExists" finished-at="2021-10-18T13:19:53 IST" duration-ms="26896" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkPagnationExists -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.clix.clixoerwebsite.CheckPaginationContent@4648ce9]" started-at="2021-10-18T13:19:53 IST" name="teardown" finished-at="2021-10-18T13:19:53 IST" duration-ms="181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.clix.clixoerwebsite.CheckPaginationContent -->
+    </test> <!-- Test CheckPaginationContent -->
+    <test started-at="2021-10-18T13:19:53 IST" name="Test Interactives" finished-at="2021-10-18T13:20:21 IST" duration-ms="27815">
+      <class name="com.clix.clixoerwebsite.CheckInteractives">
+        <test-method is-config="true" signature="bringup()[pri:0, instance:com.clix.clixoerwebsite.CheckInteractives@180e6ac4]" started-at="2021-10-18T13:19:53 IST" name="bringup" finished-at="2021-10-18T13:19:57 IST" duration-ms="3752" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bringup -->
+        <test-method signature="checkModuleExist()[pri:0, instance:com.clix.clixoerwebsite.CheckInteractives@180e6ac4]" started-at="2021-10-18T13:19:57 IST" name="checkModuleExist" finished-at="2021-10-18T13:19:59 IST" duration-ms="1911" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkModuleExist -->
+        <test-method signature="checkPaginationInteractives()[pri:0, instance:com.clix.clixoerwebsite.CheckInteractives@180e6ac4]" started-at="2021-10-18T13:19:59 IST" name="checkPaginationInteractives" finished-at="2021-10-18T13:20:20 IST" duration-ms="21878" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkPaginationInteractives -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.clix.clixoerwebsite.CheckInteractives@180e6ac4]" started-at="2021-10-18T13:20:20 IST" name="teardown" finished-at="2021-10-18T13:20:21 IST" duration-ms="269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.clix.clixoerwebsite.CheckInteractives -->
+    </test> <!-- Test Interactives -->
+    <test started-at="2021-10-18T13:20:21 IST" name="Test Handbooks" finished-at="2021-10-18T13:20:49 IST" duration-ms="27804">
+      <class name="com.clix.clixoerwebsite.HandbooksValidation">
+        <test-method is-config="true" signature="bringup()[pri:0, instance:com.clix.clixoerwebsite.HandbooksValidation@d5ae57e]" started-at="2021-10-18T13:20:21 IST" name="bringup" finished-at="2021-10-18T13:20:25 IST" duration-ms="4120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bringup -->
+        <test-method signature="checkModuleExist()[pri:0, instance:com.clix.clixoerwebsite.HandbooksValidation@d5ae57e]" started-at="2021-10-18T13:20:25 IST" name="checkModuleExist" finished-at="2021-10-18T13:20:27 IST" duration-ms="1751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkModuleExist -->
+        <test-method signature="checkPaginationInteractives()[pri:0, instance:com.clix.clixoerwebsite.HandbooksValidation@d5ae57e]" started-at="2021-10-18T13:20:27 IST" name="checkPaginationInteractives" finished-at="2021-10-18T13:20:48 IST" duration-ms="21695" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkPaginationInteractives -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.clix.clixoerwebsite.HandbooksValidation@d5ae57e]" started-at="2021-10-18T13:20:48 IST" name="teardown" finished-at="2021-10-18T13:20:49 IST" duration-ms="235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.clix.clixoerwebsite.HandbooksValidation -->
+    </test> <!-- Test Handbooks -->
+    <test started-at="2021-10-18T13:20:49 IST" name="Test DomainEnglish" finished-at="2021-10-18T13:20:55 IST" duration-ms="6250">
+      <class name="com.clix.clixoerwebsite.DomainEnglishValidation">
+        <test-method is-config="true" signature="navigateToUrl()[pri:0, instance:com.clix.clixoerwebsite.DomainEnglishValidation@2a1edad4]" started-at="2021-10-18T13:20:49 IST" name="navigateToUrl" finished-at="2021-10-18T13:20:52 IST" duration-ms="3542" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToUrl -->
-        <test-method signature="verifyThePaginationOptions()[pri:0, instance:com.clix.clixoerwebsite.DomainModulesPagination@66b7550d]" started-at="2021-09-29T17:04:38 IST" name="verifyThePaginationOptions" finished-at="2021-09-29T17:04:43 IST" duration-ms="4821" status="PASS">
+        <test-method signature="verifyEnglishOptionUnderDomainIsSelected()[pri:0, instance:com.clix.clixoerwebsite.DomainEnglishValidation@2a1edad4]" started-at="2021-10-18T13:20:52 IST" name="verifyEnglishOptionUnderDomainIsSelected" finished-at="2021-10-18T13:20:54 IST" duration-ms="2262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEnglishOptionUnderDomainIsSelected -->
+        <test-method signature="verifyNumberOfLinkOnPage()[pri:0, instance:com.clix.clixoerwebsite.DomainEnglishValidation@2a1edad4]" started-at="2021-10-18T13:20:54 IST" name="verifyNumberOfLinkOnPage" finished-at="2021-10-18T13:20:54 IST" duration-ms="99" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNumberOfLinkOnPage -->
+        <test-method signature="verifyTheNameOfEnglishModules()[pri:0, instance:com.clix.clixoerwebsite.DomainEnglishValidation@2a1edad4]" started-at="2021-10-18T13:20:54 IST" name="verifyTheNameOfEnglishModules" finished-at="2021-10-18T13:20:55 IST" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheNameOfEnglishModules -->
+        <test-method signature="verifyTheNumberOfEnglishModules()[pri:0, instance:com.clix.clixoerwebsite.DomainEnglishValidation@2a1edad4]" started-at="2021-10-18T13:20:55 IST" name="verifyTheNumberOfEnglishModules" finished-at="2021-10-18T13:20:55 IST" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheNumberOfEnglishModules -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:com.clix.clixoerwebsite.DomainEnglishValidation@2a1edad4]" started-at="2021-10-18T13:20:55 IST" name="terminate" finished-at="2021-10-18T13:20:55 IST" duration-ms="189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- com.clix.clixoerwebsite.DomainEnglishValidation -->
+    </test> <!-- Test DomainEnglish -->
+    <test started-at="2021-10-18T13:20:55 IST" name="Test DomainMath" finished-at="2021-10-18T13:21:02 IST" duration-ms="7200">
+      <class name="com.clix.clixoerwebsite.DomainMathValidation">
+        <test-method is-config="true" signature="navigateToUrl()[pri:0, instance:com.clix.clixoerwebsite.DomainMathValidation@3c0fae6c]" started-at="2021-10-18T13:20:55 IST" name="navigateToUrl" finished-at="2021-10-18T13:20:59 IST" duration-ms="4253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToUrl -->
+        <test-method signature="verifyDomainMathOptionIsSelected()[pri:0, instance:com.clix.clixoerwebsite.DomainMathValidation@3c0fae6c]" started-at="2021-10-18T13:20:59 IST" name="verifyDomainMathOptionIsSelected" finished-at="2021-10-18T13:21:02 IST" duration-ms="2552" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDomainMathOptionIsSelected -->
+        <test-method signature="verifyTheNumberOfLinksOnPage()[pri:0, instance:com.clix.clixoerwebsite.DomainMathValidation@3c0fae6c]" started-at="2021-10-18T13:21:02 IST" name="verifyTheNumberOfLinksOnPage" finished-at="2021-10-18T13:21:02 IST" duration-ms="41" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheNumberOfLinksOnPage -->
+        <test-method signature="verifyTheNumberOfMathModules()[pri:0, instance:com.clix.clixoerwebsite.DomainMathValidation@3c0fae6c]" started-at="2021-10-18T13:21:02 IST" name="verifyTheNumberOfMathModules" finished-at="2021-10-18T13:21:02 IST" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheNumberOfMathModules -->
+        <test-method signature="verifyTheTitleOfMathModulePage()[pri:0, instance:com.clix.clixoerwebsite.DomainMathValidation@3c0fae6c]" started-at="2021-10-18T13:21:02 IST" name="verifyTheTitleOfMathModulePage" finished-at="2021-10-18T13:21:02 IST" duration-ms="113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheTitleOfMathModulePage -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:com.clix.clixoerwebsite.DomainMathValidation@3c0fae6c]" started-at="2021-10-18T13:21:02 IST" name="terminate" finished-at="2021-10-18T13:21:02 IST" duration-ms="216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- com.clix.clixoerwebsite.DomainMathValidation -->
+    </test> <!-- Test DomainMath -->
+    <test started-at="2021-10-18T13:21:02 IST" name="Test DomainScience" finished-at="2021-10-18T13:21:29 IST" duration-ms="27195">
+      <class name="com.clix.clixoerwebsite.DomainScienceValidation">
+        <test-method is-config="true" signature="navigateToUrl()[pri:0, instance:com.clix.clixoerwebsite.DomainScienceValidation@716a7124]" started-at="2021-10-18T13:21:02 IST" name="navigateToUrl" finished-at="2021-10-18T13:21:06 IST" duration-ms="3747" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToUrl -->
+        <test-method signature="verifyDomainScienceOptionIsSelected()[pri:0, instance:com.clix.clixoerwebsite.DomainScienceValidation@716a7124]" started-at="2021-10-18T13:21:06 IST" name="verifyDomainScienceOptionIsSelected" finished-at="2021-10-18T13:21:07 IST" duration-ms="1515" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a class=" py-3 nav-link  dropdown-toggle ml-3 fun-name" tabindex="3" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Select asubject domain">...</a> is not clickable at point (941, 355). Other element would receive the click: <img class="img-fluid mx-auto 
+" src="https://clixplatform.tiss.edu/softwares/clixoer_event_popup/event_popup.jpg" style="display:block; " alt="CLIx Anniversary_SM_v3-02.jpg">
+  (Session info: chrome=94.0.4606.61)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'clixserver', ip: '10.1.60.83', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-87-generic', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.61, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: /tmp/.com.google.Chrome.hH6ndr}, goog:chromeOptions: {debuggerAddress: localhost:39329}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e89b14ea57a5f783de15cb3ff50f4fe7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class=" py-3 nav-link  dropdown-toggle ml-3 fun-name" tabindex="3" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Select asubject domain">...</a> is not clickable at point (941, 355). Other element would receive the click: <img class="img-fluid mx-auto 
+" src="https://clixplatform.tiss.edu/softwares/clixoer_event_popup/event_popup.jpg" style="display:block; " alt="CLIx Anniversary_SM_v3-02.jpg">
+  (Session info: chrome=94.0.4606.61)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'clixserver', ip: '10.1.60.83', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-87-generic', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.61, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: /tmp/.com.google.Chrome.hH6ndr}, goog:chromeOptions: {debuggerAddress: localhost:39329}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e89b14ea57a5f783de15cb3ff50f4fe7
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at com.clix.clixoerwebsite.DomainScienceValidation.verifyDomainScienceOptionIsSelected(DomainScienceValidation.java:46)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDomainScienceOptionIsSelected -->
+        <test-method signature="verifyTheNumberOfLinksOnScienceDomainPage()[pri:0, instance:com.clix.clixoerwebsite.DomainScienceValidation@716a7124]" started-at="2021-10-18T13:21:08 IST" name="verifyTheNumberOfLinksOnScienceDomainPage" finished-at="2021-10-18T13:21:08 IST" duration-ms="47" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<243> but was:<132>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<243> but was:<132>
+at org.junit.Assert.fail(Assert.java:89)
+at org.junit.Assert.failNotEquals(Assert.java:835)
+at org.junit.Assert.assertEquals(Assert.java:647)
+at org.junit.Assert.assertEquals(Assert.java:633)
+at com.clix.clixoerwebsite.DomainScienceValidation.verifyTheNumberOfLinksOnScienceDomainPage(DomainScienceValidation.java:76)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheNumberOfLinksOnScienceDomainPage -->
+        <test-method signature="verifyTheNumberOfScienceModules()[pri:0, instance:com.clix.clixoerwebsite.DomainScienceValidation@716a7124]" started-at="2021-10-18T13:21:09 IST" name="verifyTheNumberOfScienceModules" finished-at="2021-10-18T13:21:19 IST" duration-ms="10041" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<0> but was:<6>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<0> but was:<6>
+at org.junit.Assert.fail(Assert.java:89)
+at org.junit.Assert.failNotEquals(Assert.java:835)
+at org.junit.Assert.assertEquals(Assert.java:647)
+at org.junit.Assert.assertEquals(Assert.java:633)
+at com.clix.clixoerwebsite.DomainScienceValidation.verifyTheNumberOfScienceModules(DomainScienceValidation.java:66)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheNumberOfScienceModules -->
+        <test-method signature="verifyTheScienceModuleTitles()[pri:0, instance:com.clix.clixoerwebsite.DomainScienceValidation@716a7124]" started-at="2021-10-18T13:21:19 IST" name="verifyTheScienceModuleTitles" finished-at="2021-10-18T13:21:29 IST" duration-ms="10051" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheScienceModuleTitles -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:com.clix.clixoerwebsite.DomainScienceValidation@716a7124]" started-at="2021-10-18T13:21:29 IST" name="terminate" finished-at="2021-10-18T13:21:29 IST" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- com.clix.clixoerwebsite.DomainScienceValidation -->
+    </test> <!-- Test DomainScience -->
+    <test started-at="2021-10-18T13:21:29 IST" name="Test DomainModulesPagination" finished-at="2021-10-18T13:21:37 IST" duration-ms="7517">
+      <class name="com.clix.clixoerwebsite.DomainModulesPagination">
+        <test-method is-config="true" signature="navigateToUrl()[pri:0, instance:com.clix.clixoerwebsite.DomainModulesPagination@89c10b7]" started-at="2021-10-18T13:21:29 IST" name="navigateToUrl" finished-at="2021-10-18T13:21:33 IST" duration-ms="3717" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToUrl -->
+        <test-method signature="verifyThePaginationOptions()[pri:0, instance:com.clix.clixoerwebsite.DomainModulesPagination@89c10b7]" started-at="2021-10-18T13:21:33 IST" name="verifyThePaginationOptions" finished-at="2021-10-18T13:21:37 IST" duration-ms="3607" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyThePaginationOptions -->
-        <test-method is-config="true" signature="terminate()[pri:0, instance:com.clix.clixoerwebsite.DomainModulesPagination@66b7550d]" started-at="2021-09-29T17:04:43 IST" name="terminate" finished-at="2021-09-29T17:04:43 IST" duration-ms="241" status="PASS">
+        <test-method is-config="true" signature="terminate()[pri:0, instance:com.clix.clixoerwebsite.DomainModulesPagination@89c10b7]" started-at="2021-10-18T13:21:37 IST" name="terminate" finished-at="2021-10-18T13:21:37 IST" duration-ms="190" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminate -->
       </class> <!-- com.clix.clixoerwebsite.DomainModulesPagination -->
     </test> <!-- Test DomainModulesPagination -->
+    <test started-at="2021-10-18T13:21:37 IST" name="Test CoolOerEnglishResourceFilter" finished-at="2021-10-18T13:21:48 IST" duration-ms="11388">
+      <class name="com.clix.clixoerwebsite.CoolOerEnglishResourceFilter">
+        <test-method is-config="true" signature="navigateToUrl()[pri:0, instance:com.clix.clixoerwebsite.CoolOerEnglishResourceFilter@6175619b]" started-at="2021-10-18T13:21:37 IST" name="navigateToUrl" finished-at="2021-10-18T13:21:43 IST" duration-ms="6524" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToUrl -->
+        <test-method signature="verifyEnglishLanguageSupportOptionIsChecked()[pri:0, instance:com.clix.clixoerwebsite.CoolOerEnglishResourceFilter@6175619b]" started-at="2021-10-18T13:21:43 IST" name="verifyEnglishLanguageSupportOptionIsChecked" finished-at="2021-10-18T13:21:44 IST" duration-ms="299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEnglishLanguageSupportOptionIsChecked -->
+        <test-method signature="verifyTheNumberOfLinksOnPageForEnglishFilter()[pri:0, instance:com.clix.clixoerwebsite.CoolOerEnglishResourceFilter@6175619b]" started-at="2021-10-18T13:21:44 IST" name="verifyTheNumberOfLinksOnPageForEnglishFilter" finished-at="2021-10-18T13:21:46 IST" duration-ms="2035" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheNumberOfLinksOnPageForEnglishFilter -->
+        <test-method signature="verifyTheNumberOfResourcesForEnglishFilter()[pri:0, instance:com.clix.clixoerwebsite.CoolOerEnglishResourceFilter@6175619b]" started-at="2021-10-18T13:21:46 IST" name="verifyTheNumberOfResourcesForEnglishFilter" finished-at="2021-10-18T13:21:48 IST" duration-ms="2055" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheNumberOfResourcesForEnglishFilter -->
+        <test-method signature="verifyTheResourcesTitleForEnglishFilter()[pri:0, instance:com.clix.clixoerwebsite.CoolOerEnglishResourceFilter@6175619b]" started-at="2021-10-18T13:21:48 IST" name="verifyTheResourcesTitleForEnglishFilter" finished-at="2021-10-18T13:21:48 IST" duration-ms="146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheResourcesTitleForEnglishFilter -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:com.clix.clixoerwebsite.CoolOerEnglishResourceFilter@6175619b]" started-at="2021-10-18T13:21:48 IST" name="terminate" finished-at="2021-10-18T13:21:48 IST" duration-ms="323" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- com.clix.clixoerwebsite.CoolOerEnglishResourceFilter -->
+    </test> <!-- Test CoolOerEnglishResourceFilter -->
+    <test started-at="2021-10-18T13:21:48 IST" name="Test CoolOerHindiResourceFilter" finished-at="2021-10-18T13:21:59 IST" duration-ms="11103">
+      <class name="com.clix.clixoerwebsite.CoolOerHindiResourceFilter">
+        <test-method is-config="true" signature="navigateToUrl()[pri:0, instance:com.clix.clixoerwebsite.CoolOerHindiResourceFilter@7b139eab]" started-at="2021-10-18T13:21:48 IST" name="navigateToUrl" finished-at="2021-10-18T13:21:55 IST" duration-ms="6315" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToUrl -->
+        <test-method signature="verifyHindiLanguageSupportOptionIsChecked()[pri:0, instance:com.clix.clixoerwebsite.CoolOerHindiResourceFilter@7b139eab]" started-at="2021-10-18T13:21:55 IST" name="verifyHindiLanguageSupportOptionIsChecked" finished-at="2021-10-18T13:21:55 IST" duration-ms="332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHindiLanguageSupportOptionIsChecked -->
+        <test-method signature="verifyTheNumberOfLinksOnPageForHindiFilter()[pri:0, instance:com.clix.clixoerwebsite.CoolOerHindiResourceFilter@7b139eab]" started-at="2021-10-18T13:21:55 IST" name="verifyTheNumberOfLinksOnPageForHindiFilter" finished-at="2021-10-18T13:21:57 IST" duration-ms="2035" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheNumberOfLinksOnPageForHindiFilter -->
+        <test-method signature="verifyTheNumberOfResourcesForHindiFilter()[pri:0, instance:com.clix.clixoerwebsite.CoolOerHindiResourceFilter@7b139eab]" started-at="2021-10-18T13:21:57 IST" name="verifyTheNumberOfResourcesForHindiFilter" finished-at="2021-10-18T13:21:59 IST" duration-ms="2054" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheNumberOfResourcesForHindiFilter -->
+        <test-method signature="verifyTheResourcesTitleForEnglishFilter()[pri:0, instance:com.clix.clixoerwebsite.CoolOerHindiResourceFilter@7b139eab]" started-at="2021-10-18T13:21:59 IST" name="verifyTheResourcesTitleForEnglishFilter" finished-at="2021-10-18T13:21:59 IST" duration-ms="125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheResourcesTitleForEnglishFilter -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:com.clix.clixoerwebsite.CoolOerHindiResourceFilter@7b139eab]" started-at="2021-10-18T13:21:59 IST" name="terminate" finished-at="2021-10-18T13:21:59 IST" duration-ms="230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- com.clix.clixoerwebsite.CoolOerHindiResourceFilter -->
+    </test> <!-- Test CoolOerHindiResourceFilter -->
+    <test started-at="2021-10-18T13:21:59 IST" name="Test CoolOerTeluguResourceFilter" finished-at="2021-10-18T13:22:20 IST" duration-ms="20616">
+      <class name="com.clix.clixoerwebsite.CoolOerTeluguResourceFilter">
+        <test-method is-config="true" signature="navigateToUrl()[pri:0, instance:com.clix.clixoerwebsite.CoolOerTeluguResourceFilter@117e0fe5]" started-at="2021-10-18T13:21:59 IST" name="navigateToUrl" finished-at="2021-10-18T13:22:05 IST" duration-ms="5928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToUrl -->
+        <test-method signature="verifyTeluguLanguageSupportOptionIsChecked()[pri:0, instance:com.clix.clixoerwebsite.CoolOerTeluguResourceFilter@117e0fe5]" started-at="2021-10-18T13:22:05 IST" name="verifyTeluguLanguageSupportOptionIsChecked" finished-at="2021-10-18T13:22:06 IST" duration-ms="369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTeluguLanguageSupportOptionIsChecked -->
+        <test-method signature="verifyTheNumberOfLinksOnPageForTeluguFilter()[pri:0, instance:com.clix.clixoerwebsite.CoolOerTeluguResourceFilter@117e0fe5]" started-at="2021-10-18T13:22:06 IST" name="verifyTheNumberOfLinksOnPageForTeluguFilter" finished-at="2021-10-18T13:22:08 IST" duration-ms="2033" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheNumberOfLinksOnPageForTeluguFilter -->
+        <test-method signature="verifyTheNumberOfResourcesForTeluguFilter()[pri:0, instance:com.clix.clixoerwebsite.CoolOerTeluguResourceFilter@117e0fe5]" started-at="2021-10-18T13:22:08 IST" name="verifyTheNumberOfResourcesForTeluguFilter" finished-at="2021-10-18T13:22:20 IST" duration-ms="12050" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheNumberOfResourcesForTeluguFilter -->
+        <test-method signature="verifyTheResourcesTitleForTeluguFilter()[pri:0, instance:com.clix.clixoerwebsite.CoolOerTeluguResourceFilter@117e0fe5]" started-at="2021-10-18T13:22:20 IST" name="verifyTheResourcesTitleForTeluguFilter" finished-at="2021-10-18T13:22:20 IST" duration-ms="102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheResourcesTitleForTeluguFilter -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:com.clix.clixoerwebsite.CoolOerTeluguResourceFilter@117e0fe5]" started-at="2021-10-18T13:22:20 IST" name="terminate" finished-at="2021-10-18T13:22:20 IST" duration-ms="130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- com.clix.clixoerwebsite.CoolOerTeluguResourceFilter -->
+    </test> <!-- Test CoolOerTeluguResourceFilter -->
+    <test started-at="2021-10-18T13:22:20 IST" name="Test CoolOerTamilResourceFilter" finished-at="2021-10-18T13:22:41 IST" duration-ms="21242">
+      <class name="com.clix.clixoerwebsite.CoolOerTamilResourceFilter">
+        <test-method is-config="true" signature="navigateToUrl()[pri:0, instance:com.clix.clixoerwebsite.CoolOerTamilResourceFilter@184497d1]" started-at="2021-10-18T13:22:20 IST" name="navigateToUrl" finished-at="2021-10-18T13:22:27 IST" duration-ms="6524" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToUrl -->
+        <test-method signature="verifyTamilLanguageSupportOptionIsChecked()[pri:0, instance:com.clix.clixoerwebsite.CoolOerTamilResourceFilter@184497d1]" started-at="2021-10-18T13:22:27 IST" name="verifyTamilLanguageSupportOptionIsChecked" finished-at="2021-10-18T13:22:27 IST" duration-ms="320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTamilLanguageSupportOptionIsChecked -->
+        <test-method signature="verifyTheNumberOfLinksOnPageForTamilFilter()[pri:0, instance:com.clix.clixoerwebsite.CoolOerTamilResourceFilter@184497d1]" started-at="2021-10-18T13:22:27 IST" name="verifyTheNumberOfLinksOnPageForTamilFilter" finished-at="2021-10-18T13:22:29 IST" duration-ms="2033" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheNumberOfLinksOnPageForTamilFilter -->
+        <test-method signature="verifyTheNumberOfResourcesForTamilFilter()[pri:0, instance:com.clix.clixoerwebsite.CoolOerTamilResourceFilter@184497d1]" started-at="2021-10-18T13:22:29 IST" name="verifyTheNumberOfResourcesForTamilFilter" finished-at="2021-10-18T13:22:41 IST" duration-ms="12081" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheNumberOfResourcesForTamilFilter -->
+        <test-method signature="verifyTheResourcesTitleForTamilFilter()[pri:0, instance:com.clix.clixoerwebsite.CoolOerTamilResourceFilter@184497d1]" started-at="2021-10-18T13:22:41 IST" name="verifyTheResourcesTitleForTamilFilter" finished-at="2021-10-18T13:22:41 IST" duration-ms="99" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheResourcesTitleForTamilFilter -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:com.clix.clixoerwebsite.CoolOerTamilResourceFilter@184497d1]" started-at="2021-10-18T13:22:41 IST" name="terminate" finished-at="2021-10-18T13:22:41 IST" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- com.clix.clixoerwebsite.CoolOerTamilResourceFilter -->
+    </test> <!-- Test CoolOerTamilResourceFilter -->
+    <test started-at="2021-10-18T13:22:41 IST" name="Test CoolOerPunjabiResourceFilter" finished-at="2021-10-18T13:23:14 IST" duration-ms="32270">
+      <class name="com.clix.clixoerwebsite.CoolOerPunjabiResourceFilter">
+        <test-method is-config="true" signature="navigateToUrl()[pri:0, instance:com.clix.clixoerwebsite.CoolOerPunjabiResourceFilter@6c67e137]" started-at="2021-10-18T13:22:41 IST" name="navigateToUrl" finished-at="2021-10-18T13:22:49 IST" duration-ms="7667" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToUrl -->
+        <test-method signature="verifyPunjabiLanguageSupportOptionIsChecked()[pri:0, instance:com.clix.clixoerwebsite.CoolOerPunjabiResourceFilter@6c67e137]" started-at="2021-10-18T13:22:49 IST" name="verifyPunjabiLanguageSupportOptionIsChecked" finished-at="2021-10-18T13:22:49 IST" duration-ms="325" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPunjabiLanguageSupportOptionIsChecked -->
+        <test-method signature="verifyTheNumberOfLinksOnPageForPunjabiFilter()[pri:0, instance:com.clix.clixoerwebsite.CoolOerPunjabiResourceFilter@6c67e137]" started-at="2021-10-18T13:22:49 IST" name="verifyTheNumberOfLinksOnPageForPunjabiFilter" finished-at="2021-10-18T13:22:51 IST" duration-ms="2028" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheNumberOfLinksOnPageForPunjabiFilter -->
+        <test-method signature="verifyTheNumberOfResourcesForPunjabiFilter()[pri:0, instance:com.clix.clixoerwebsite.CoolOerPunjabiResourceFilter@6c67e137]" started-at="2021-10-18T13:22:51 IST" name="verifyTheNumberOfResourcesForPunjabiFilter" finished-at="2021-10-18T13:23:13 IST" duration-ms="22064" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheNumberOfResourcesForPunjabiFilter -->
+        <test-method signature="verifyTheResourcesTitleForPunjabiFilter()[pri:0, instance:com.clix.clixoerwebsite.CoolOerPunjabiResourceFilter@6c67e137]" started-at="2021-10-18T13:23:13 IST" name="verifyTheResourcesTitleForPunjabiFilter" finished-at="2021-10-18T13:23:14 IST" duration-ms="56" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheResourcesTitleForPunjabiFilter -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:com.clix.clixoerwebsite.CoolOerPunjabiResourceFilter@6c67e137]" started-at="2021-10-18T13:23:14 IST" name="terminate" finished-at="2021-10-18T13:23:14 IST" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- com.clix.clixoerwebsite.CoolOerPunjabiResourceFilter -->
+    </test> <!-- Test CoolOerPunjabiResourceFilter -->
+    <test started-at="2021-10-18T13:23:14 IST" name="Test FooterAboutLinkValidation" finished-at="2021-10-18T13:23:23 IST" duration-ms="9072">
+      <class name="com.clix.clixoerwebsite.FooterAboutLinkValidation">
+        <test-method is-config="true" signature="navigateToUrl()[pri:0, instance:com.clix.clixoerwebsite.FooterAboutLinkValidation@172ca72b]" started-at="2021-10-18T13:23:14 IST" name="navigateToUrl" finished-at="2021-10-18T13:23:19 IST" duration-ms="5607" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToUrl -->
+        <test-method signature="verifyAboutLinkIsDisplayed()[pri:0, instance:com.clix.clixoerwebsite.FooterAboutLinkValidation@172ca72b]" started-at="2021-10-18T13:23:19 IST" name="verifyAboutLinkIsDisplayed" finished-at="2021-10-18T13:23:20 IST" duration-ms="244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAboutLinkIsDisplayed -->
+        <test-method signature="verifyAboutLinkValidation()[pri:0, instance:com.clix.clixoerwebsite.FooterAboutLinkValidation@172ca72b]" started-at="2021-10-18T13:23:20 IST" name="verifyAboutLinkValidation" finished-at="2021-10-18T13:23:23 IST" duration-ms="3069" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAboutLinkValidation -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:com.clix.clixoerwebsite.FooterAboutLinkValidation@172ca72b]" started-at="2021-10-18T13:23:23 IST" name="terminate" finished-at="2021-10-18T13:23:23 IST" duration-ms="147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- com.clix.clixoerwebsite.FooterAboutLinkValidation -->
+    </test> <!-- Test FooterAboutLinkValidation -->
+    <test started-at="2021-10-18T13:23:23 IST" name="Test FooterCreditLinkValidation" finished-at="2021-10-18T13:23:29 IST" duration-ms="5875">
+      <class name="com.clix.clixoerwebsite.FooterCreditLinkValidation">
+        <test-method is-config="true" signature="navigateToUrl()[pri:0, instance:com.clix.clixoerwebsite.FooterCreditLinkValidation@4204541c]" started-at="2021-10-18T13:23:23 IST" name="navigateToUrl" finished-at="2021-10-18T13:23:27 IST" duration-ms="3836" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToUrl -->
+        <test-method signature="verifyCreditLinkIsDisplayed()[pri:0, instance:com.clix.clixoerwebsite.FooterCreditLinkValidation@4204541c]" started-at="2021-10-18T13:23:27 IST" name="verifyCreditLinkIsDisplayed" finished-at="2021-10-18T13:23:27 IST" duration-ms="186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreditLinkIsDisplayed -->
+        <test-method signature="verifyCreditLinkValidation()[pri:0, instance:com.clix.clixoerwebsite.FooterCreditLinkValidation@4204541c]" started-at="2021-10-18T13:23:27 IST" name="verifyCreditLinkValidation" finished-at="2021-10-18T13:23:29 IST" duration-ms="1710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreditLinkValidation -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:com.clix.clixoerwebsite.FooterCreditLinkValidation@4204541c]" started-at="2021-10-18T13:23:29 IST" name="terminate" finished-at="2021-10-18T13:23:29 IST" duration-ms="138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- com.clix.clixoerwebsite.FooterCreditLinkValidation -->
+    </test> <!-- Test FooterCreditLinkValidation -->
+    <test started-at="2021-10-18T13:23:29 IST" name="Test FooterTermsOfServiceLinkValidation" finished-at="2021-10-18T13:23:36 IST" duration-ms="7089">
+      <class name="com.clix.clixoerwebsite.FooterTermsOfServiceLinkValidation">
+        <test-method is-config="true" signature="navigateToUrl()[pri:0, instance:com.clix.clixoerwebsite.FooterTermsOfServiceLinkValidation@69c79f09]" started-at="2021-10-18T13:23:29 IST" name="navigateToUrl" finished-at="2021-10-18T13:23:34 IST" duration-ms="4902" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToUrl -->
+        <test-method signature="verifyTermsOfServiceLinkIsDisplayed()[pri:0, instance:com.clix.clixoerwebsite.FooterTermsOfServiceLinkValidation@69c79f09]" started-at="2021-10-18T13:23:34 IST" name="verifyTermsOfServiceLinkIsDisplayed" finished-at="2021-10-18T13:23:34 IST" duration-ms="222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTermsOfServiceLinkIsDisplayed -->
+        <test-method signature="verifyTermsOfServiceLinkValidation()[pri:0, instance:com.clix.clixoerwebsite.FooterTermsOfServiceLinkValidation@69c79f09]" started-at="2021-10-18T13:23:34 IST" name="verifyTermsOfServiceLinkValidation" finished-at="2021-10-18T13:23:36 IST" duration-ms="1712" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTermsOfServiceLinkValidation -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:com.clix.clixoerwebsite.FooterTermsOfServiceLinkValidation@69c79f09]" started-at="2021-10-18T13:23:36 IST" name="terminate" finished-at="2021-10-18T13:23:36 IST" duration-ms="249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- com.clix.clixoerwebsite.FooterTermsOfServiceLinkValidation -->
+    </test> <!-- Test FooterTermsOfServiceLinkValidation -->
+    <test started-at="2021-10-18T13:23:36 IST" name="Test FooterPrivacyPolicyLinkValidation" finished-at="2021-10-18T13:23:43 IST" duration-ms="7523">
+      <class name="com.clix.clixoerwebsite.FooterPrivacyPolicyLinkValidation">
+        <test-method is-config="true" signature="navigateToUrl()[pri:0, instance:com.clix.clixoerwebsite.FooterPrivacyPolicyLinkValidation@6a988392]" started-at="2021-10-18T13:23:36 IST" name="navigateToUrl" finished-at="2021-10-18T13:23:41 IST" duration-ms="5211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToUrl -->
+        <test-method signature="verifyPrivacyPolicyLinkIsDisplayed()[pri:0, instance:com.clix.clixoerwebsite.FooterPrivacyPolicyLinkValidation@6a988392]" started-at="2021-10-18T13:23:41 IST" name="verifyPrivacyPolicyLinkIsDisplayed" finished-at="2021-10-18T13:23:41 IST" duration-ms="162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPrivacyPolicyLinkIsDisplayed -->
+        <test-method signature="verifyPrivacyPolicyLinkValidation()[pri:0, instance:com.clix.clixoerwebsite.FooterPrivacyPolicyLinkValidation@6a988392]" started-at="2021-10-18T13:23:41 IST" name="verifyPrivacyPolicyLinkValidation" finished-at="2021-10-18T13:23:43 IST" duration-ms="1950" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPrivacyPolicyLinkValidation -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:com.clix.clixoerwebsite.FooterPrivacyPolicyLinkValidation@6a988392]" started-at="2021-10-18T13:23:43 IST" name="terminate" finished-at="2021-10-18T13:23:43 IST" duration-ms="196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- com.clix.clixoerwebsite.FooterPrivacyPolicyLinkValidation -->
+    </test> <!-- Test FooterPrivacyPolicyLinkValidation -->
+    <test started-at="2021-10-18T13:23:43 IST" name="Test FooterGitLinkValidation" finished-at="2021-10-18T13:25:59 IST" duration-ms="136053">
+      <class name="com.clix.clixoerwebsite.FooterGitLinkValidation">
+        <test-method is-config="true" signature="navigateToUrl()[pri:0, instance:com.clix.clixoerwebsite.FooterGitLinkValidation@33352f32]" started-at="2021-10-18T13:23:43 IST" name="navigateToUrl" finished-at="2021-10-18T13:23:47 IST" duration-ms="3794" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToUrl -->
+        <test-method signature="verifyGitLinkValidation()[pri:0, instance:com.clix.clixoerwebsite.FooterGitLinkValidation@33352f32]" started-at="2021-10-18T13:23:47 IST" name="verifyGitLinkValidation" finished-at="2021-10-18T13:25:59 IST" duration-ms="132024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGitLinkValidation -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:com.clix.clixoerwebsite.FooterGitLinkValidation@33352f32]" started-at="2021-10-18T13:25:59 IST" name="terminate" finished-at="2021-10-18T13:25:59 IST" duration-ms="229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- com.clix.clixoerwebsite.FooterGitLinkValidation -->
+    </test> <!-- Test FooterGitLinkValidation -->
   </suite> <!-- Suite -->
 </testng-results>

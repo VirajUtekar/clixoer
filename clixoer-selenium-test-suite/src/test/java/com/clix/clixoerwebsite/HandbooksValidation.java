@@ -60,10 +60,10 @@ public class HandbooksValidation extends base {
 	
 		Thread.sleep(9000);
 		
-		int paginationsize = driver.findElements(By.cssSelector("body > nav:nth-child(34) > ul > li.page-item> a")).size();
+		int paginationsize = driver.findElements(By.cssSelector("body > nav > ul > li.page-item> a")).size();
 		System.out.println("Size of pagination"+paginationsize);
 		
-		List<WebElement> paginations = driver.findElements(By.cssSelector("body > nav:nth-child(34) > ul > li.page-item> a"));
+		List<WebElement> paginations = driver.findElements(By.cssSelector("body > nav > ul > li.page-item> a"));
 		List<String> names = new ArrayList<String>();
 		List<String> titlenames = new ArrayList<String>();
 		for (WebElement pagination : paginations) {
@@ -74,7 +74,7 @@ public class HandbooksValidation extends base {
 		for (int i = 2 ; i<paginationsize;i++)
 		{ 
 			Thread.sleep(2000);
-			String paginationSelector = "body > nav:nth-child(34) > ul > li:nth-child("+i+")> a";
+			String paginationSelector = "body > nav > ul > li:nth-child("+i+")> a";
 			driver.findElement(By.cssSelector(paginationSelector)).click();
 			Thread.sleep(3000);
 			

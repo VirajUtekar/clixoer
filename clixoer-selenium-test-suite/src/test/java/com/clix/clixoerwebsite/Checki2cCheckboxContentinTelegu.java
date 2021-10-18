@@ -41,31 +41,26 @@ public void bringup() throws IOException
 	
 	public void basePageNavigation() throws IOException
 	{
-		
+	    	
 		driver.navigate().refresh();
 		driver.manage().window().fullscreen();
 		landingpage = new LandingPage(driver);
 				
 	}
-
 	
 	@Test
 	public void verifyi2cmodulesinTelegucheckbox()
 	
-
 	{
+		
 		landingpage.getLanguageMenuOption().click();
 		landingpage.getTeleguLanguage().click();
-		
-		
+	
 		if (landingpage.geti2ccheckbox().isDisplayed())
 		{
 		log.info("Check Box Exists since its visible"+landingpage.geti2ccheckbox().isDisplayed());
 		
-		
 		}
-
-		
 		
 	}
 
@@ -77,42 +72,35 @@ public void checki2cContentChecked()
 	WebDriverWait wait = new WebDriverWait(driver, 15);
 	wait.until(ExpectedConditions.textToBePresentInElementLocated(By.cssSelector("#jar > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div > div:nth-of-type(1)"), "i2C"));
 	System.out.println("Content Checked "+driver.findElement(By.cssSelector("#jar > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div > div:nth-of-type(1)")).getText());															   
-	
-	
+		
 	String i2ctext =landingpage.getAs().getText();
 	i2ctext.trim().replace("\r","").replace("\n","");
 	Assert.assertTrue(landingpage.getAs().isDisplayed());	
 	Assert.assertEquals(i2ctext,"i2C");
 	
-	
-	
 	log.info("i2c Modules exists in Telegu Language");
-	
 
 }
 
-@Test
-public void counti2cModules() throws InterruptedException
-{
-	
-	
-	Thread.sleep(1000);
-	 List<WebElement> links = driver.findElements(By.xpath("//*[@class=\"module_module\"]/div/span/img"));    //Identify the number of Link on webpage and assign into Webelement List 
-     
-     int linkCount = links.size();     // Count the total Link list on Web Page
-     
-     System.out.println("Total Number of i2c module count on webpage = "  + linkCount);    //Print the total count of links on webpage
 
-      System.out.println("The number of i2c modules is" + linkCount);
-    log.info("The number of i2c modules is" + linkCount);
-    assertEquals(linkCount, 1);
-    log.info("i2c Modules Checked in Telegu");
-}
-
-
-	
-
-	
+  @Test 
+  public void counti2cModules() throws InterruptedException{
+   
+	    landingpage = new LandingPage(driver);
+	    
+	  Thread.sleep(1000); 
+   List<WebElement> links = driver.findElements(By.xpath("//*[@class=\"module_module\"]/div/span/img")); //Identify the number of Link on webpage and assign into Webelement List 
+   int linkCount = links.size(); // Count the total Link list on Web Page 
+   
+   System.out.println("Total Number of i2c module count on webpage = " +linkCount); //Print the total count of links on webpage
+   System.out.println("The number of i2c modules is" + linkCount); 
+  
+  log.info("The number of i2c modules is" + linkCount);
+  assertEquals(linkCount, 1);
+  log.info("i2c Modules Checked in Telegu");
+  
+ }
+  
 
 @AfterTest
 
