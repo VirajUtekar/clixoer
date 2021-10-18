@@ -38,8 +38,6 @@ public class CheckPaginationContent extends base {
 	public void checkPagnationExists() throws InterruptedException
 	
 	{
-		
-		
 		driver.navigate().refresh();
 		driver.manage().window().fullscreen();
 		landingpage = new LandingPage(driver);
@@ -51,9 +49,9 @@ public class CheckPaginationContent extends base {
 	
 		Thread.sleep(9000);
 		
-		int paginationsize = driver.findElements(By.cssSelector("body > nav:nth-child(34) > ul > li.page-item> a")).size();
+		int paginationsize = driver.findElements(By.cssSelector("body > nav > ul > li.page-item> a")).size();
 		
-		List<WebElement> paginations = driver.findElements(By.cssSelector("body > nav:nth-child(34) > ul > li.page-item> a"));
+		List<WebElement> paginations = driver.findElements(By.cssSelector("body > nav > ul > li.page-item> a"));
 		List<String> names = new ArrayList<String>();
 		List<String> titlenames = new ArrayList<String>();
 		int p = 2;
@@ -64,7 +62,7 @@ public class CheckPaginationContent extends base {
 		for (int i = 2 ; i<paginationsize;i++)
 		{ 
 			Thread.sleep(2000);
-			String paginationSelector = "body > nav:nth-child(34) > ul > li:nth-child("+i+")> a";
+			String paginationSelector = "body > nav > ul > li:nth-child("+i+")> a";
 			driver.findElement(By.cssSelector(paginationSelector)).click();
 			Thread.sleep(3000);
 			List<WebElement> titles = driver.findElements(By.className("card-header"));
@@ -84,13 +82,11 @@ public class CheckPaginationContent extends base {
 		
 		}
 		System.out.println(titlenames.size());
-		Assert.assertEquals(titlenames.size(),12);
+		Assert.assertEquals(titlenames.size(),13);
 		}
-		
 		
 	
 	@AfterTest
-
 	public void teardown() {
 		driver.quit();
 	

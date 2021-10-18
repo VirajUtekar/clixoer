@@ -73,8 +73,8 @@ public class DomainScienceValidation extends base {
 		
 		DomainPage dp = new DomainPage(driver);
 		int scienceDomainPageLinksCount = dp.getNumberOfScienceDomainPageLinks().size();
-		Assert.assertEquals(scienceDomainPageLinksCount,131);
-		log.info("The Number of science domain page link is 131");
+		Assert.assertEquals(scienceDomainPageLinksCount,132);
+		log.info("The Number of science domain page link is"+scienceDomainPageLinksCount);
 		System.out.println("The Number of science domain page link is:" +scienceDomainPageLinksCount);
 	}
 		

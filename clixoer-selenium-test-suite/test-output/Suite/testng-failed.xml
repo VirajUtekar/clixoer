@@ -4,26 +4,17 @@
   <listeners>
     <listener class-name="com.clix.clixoerwebsite.Listeners"/>
   </listeners>
-  <test thread-count="5" name="Test Contactus(failed)">
+  <test thread-count="5" name="Test DomainScience(failed)">
     <classes>
-      <class name="com.clix.clixoerwebsite.ValidateContactus">
+      <class name="com.clix.clixoerwebsite.DomainScienceValidation">
         <methods>
-          <include name="teardown"/>
-          <include name="basePageNavigation" invocation-numbers="0 1"/>
-          <include name="bringup"/>
-        </methods>
-      </class> <!-- com.clix.clixoerwebsite.ValidateContactus -->
-    </classes>
-  </test> <!-- Test Contactus(failed) -->
-  <test thread-count="5" name="Test DomainModulesPagination(failed)">
-    <classes>
-      <class name="com.clix.clixoerwebsite.DomainModulesPagination">
-        <methods>
-          <include name="navigateToUrl"/>
-          <include name="verifyThePaginationOptions"/>
+          <include name="verifyTheNumberOfLinksOnScienceDomainPage"/>
+          <include name="verifyTheNumberOfScienceModules"/>
           <include name="terminate"/>
+          <include name="navigateToUrl"/>
+          <include name="verifyDomainScienceOptionIsSelected"/>
         </methods>
-      </class> <!-- com.clix.clixoerwebsite.DomainModulesPagination -->
+      </class> <!-- com.clix.clixoerwebsite.DomainScienceValidation -->
     </classes>
-  </test> <!-- Test DomainModulesPagination(failed) -->
+  </test> <!-- Test DomainScience(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -100,12 +100,12 @@
 				<div class="p-2 px-3 text-muted text-sm">Tags</div>
 					<div class="list-item attr">
 						<div class="list-body">
-							<a href="#" class="item-title _500">org.openqa.selenium.ElementClickInterceptedException</a>
+							<a href="#" class="item-title _500">org.openqa.selenium.NoSuchWindowException</a>
 							<div class="item-except text-sm text-muted h-1x">
 								1 tests
 							</div>
 							<div class="tc d-none">
-								<h5 class="mb-4">org.openqa.selenium.ElementClickInterceptedException</h5>
+								<h5 class="mb-4">org.openqa.selenium.NoSuchWindowException</h5>
 								<table class="table">
 									<thead><tr>
 										<th id="status-col"></th>
@@ -117,10 +117,10 @@
 									</tr></thead>
 									<tbody>
 	
-<tr class="s-fail" test-id="10" parent-id="2">
+<tr class="s-fail" test-id="4" parent-id="2">
 	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
-	<td class="_600">When user clicks English tab <br/><span class="text-muted text-sm">Help Page Validation</span></td>
-	<td>0h 0m 1s+272msc</td>
+	<td class="_600">Given user is on landing page <br/><span class="text-muted text-sm">Home Page Loading</span></td>
+	<td>0h 0m 47s+883msc</td>
 	<td></td>
 	<td>
 	</td>
@@ -129,13 +129,14 @@
 <tr class="details">
 	<td colspan="5">
 		
-		<textarea disabled class="code-block">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">...</a> is not clickable at point (71, 38). Other element would receive the click: <img src="/static/ndf/images/Clix_logo.png" class="img-fluid" alt="CLix Logo Elibrary" width="200px">
-  (Session info: chrome=93.0.4577.63)
+		<textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=94.0.4606.61)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'clixserver', ip: '45.33.20.235', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-81-generic', java.version: '11.0.11'
+System info: host: 'clixserver', ip: '10.1.60.83', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-87-generic', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: /tmp/.com.google.Chrome.xuyJyl}, goog:chromeOptions: {debuggerAddress: localhost:44459}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c2c37426ba2e6147059832dffbd89a4f
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.61, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: /tmp/.com.google.Chrome.VizoSF}, goog:chromeOptions: {debuggerAddress: localhost:40591}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e125d89b0a33a36956f0d9cb6e1916cc
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -146,10 +147,10 @@ Session ID: c2c37426ba2e6147059832dffbd89a4f
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at stepDefination.StepDefination.user_clicks_English_tab(StepDefination.java:93)
-	at ✽.user clicks English tab(file:///home/core/Desktop/Automation/clixoer/clixoer-selenium-test-suite/src/test/java/features/help.feature:9)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.fullscreen(RemoteWebDriver.java:841)
+	at stepDefination.StepDefination.user_is_on_landing_page(StepDefination.java:48)
+	at ✽.user is on landing page(file:///home/core/Desktop/Automation/clixoer/clixoer-selenium-test-suite/src/test/java/features/help.feature:4)
 </textarea>
 	</td>
 </tr>
@@ -177,7 +178,7 @@ Session ID: c2c37426ba2e6147059832dffbd89a4f
 						            </div>
 									<ul class="nav nav-xs flex-row no-border pull-right">
 <li><a href="#" class="b-l"><span class="badge badge-pull">ExtentReports</span></a></li>
-<li><a href="#" class="b-l"><span class="badge badge-pull">Sep 28, 2021 10:27:00 PM</span></a></li>
+<li><a href="#" class="b-l"><span class="badge badge-pull">Oct 18, 2021 01:10:02 PM</span></a></li>
 <li><a href="#" class="b-l"><span class="badge badge-pull">4.0</span></a></li>
 								    </ul>
 								</div>

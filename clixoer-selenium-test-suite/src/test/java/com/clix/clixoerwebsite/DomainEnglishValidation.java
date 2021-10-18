@@ -7,8 +7,11 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -41,6 +44,9 @@ public class DomainEnglishValidation extends base{
 		
 		DomainPage dp = new DomainPage(driver);
 		dp = new DomainPage(driver);
+	
+		
+		WebDriverWait w = new WebDriverWait(driver,10);
 		dp.getAdvertisementBannerCloseIcon().click();
 		log.info("Advertisement Banner is closed");
 
@@ -75,9 +81,9 @@ public class DomainEnglishValidation extends base{
 		
 		DomainPage dp = new DomainPage(driver);
 		int pageLinks = dp.getEnglishDomainPageLinks().size();
-		Assert.assertEquals(pageLinks, 71);
+		Assert.assertEquals(pageLinks, 72);
 		System.out.println("The available links on domain English page is" +pageLinks);
-		log.info("The number of link available under domain english page is 71");
+		log.info("The number of link available under domain english page is",+pageLinks);
 	}
 	
 	@Test
@@ -100,7 +106,7 @@ public class DomainEnglishValidation extends base{
 		
 		    	 Assert.assertTrue(true);
 		    	 
-		    	 log.info("modules title that are available into list are Communicative English: Level I and Communicative English: Level II");
+		    	 log.info("modules title that are available into list are:" +titlenames);
 		     }
 		}
 		System.out.println("The Module title that are available into list:" +titlenames);
