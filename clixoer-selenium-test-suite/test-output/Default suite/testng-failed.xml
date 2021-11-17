@@ -1,56 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.clix.clixoerwebsite.HomePageLinks">
+      <class name="com.clix.clixoerwebsite.CoolOerArtFilter">
         <methods>
-          <include name="countLinkss"/>
-          <include name="teardown"/>
-          <include name="bringup"/>
+          <include name="navigateToUrl"/>
+          <include name="terminate"/>
+          <include name="verifyTheArtFilterOptionIsChecked"/>
         </methods>
-      </class> <!-- com.clix.clixoerwebsite.HomePageLinks -->
-      <class name="com.clix.clixoerwebsite.ValidateContactus">
-        <methods>
-          <include name="bringup"/>
-          <include name="teardown"/>
-          <include name="basePageNavigation"/>
-        </methods>
-      </class> <!-- com.clix.clixoerwebsite.ValidateContactus -->
-      <class name="com.clix.clixoerwebsite.HomePage">
-        <methods>
-          <include name="countEnglishModules"/>
-          <include name="checkEnglishContentChecked"/>
-          <include name="countLinks"/>
-          <include name="verifyEnglishmodulesinEnglishcheckbox"/>
-          <include name="teardown"/>
-          <include name="basePageNavigation"/>
-          <include name="bringup"/>
-        </methods>
-      </class> <!-- com.clix.clixoerwebsite.HomePage -->
-      <class name="com.clix.clixoerwebsite.CheckMathsCheckboxContent">
-        <methods>
-          <include name="countLinks"/>
-          <include name="basePageNavigation"/>
-          <include name="bringup"/>
-          <include name="countMathsModules"/>
-          <include name="teardown"/>
-          <include name="verifyMathsmodulesinEnglishcheckbox"/>
-          <include name="checkMathsContentChecked"/>
-        </methods>
-      </class> <!-- com.clix.clixoerwebsite.CheckMathsCheckboxContent -->
-      <class name="resources.ExtentReporterNG">
-        <methods>
-          <include name="initialDemo"/>
-        </methods>
-      </class> <!-- resources.ExtentReporterNG -->
-      <class name="com.clix.clixoerwebsite.AboutPageTest">
-        <methods>
-          <include name="teardown"/>
-          <include name="basePageNavigation"/>
-          <include name="bringup"/>
-        </methods>
-      </class> <!-- com.clix.clixoerwebsite.AboutPageTest -->
+      </class> <!-- com.clix.clixoerwebsite.CoolOerArtFilter -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

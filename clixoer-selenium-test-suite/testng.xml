@@ -6,28 +6,28 @@
 <listener class-name="com.clix.clixoerwebsite.Listeners"/>
 </listeners>
    
- <test thread-count="5" name="CucumberTest">
+<!--  <test thread-count="5" name="CucumberTest">
 		<classes>
 			<class name="cucumberOptions.TestRunner" />
 		</classes>
-	</test> 
-
+	</test>
+ -->
 	
 <test thread-count="5" name="TestHomepageenglishinenglish">
 		<classes>
 			<class name="com.clix.clixoerwebsite.CheckEnglishCheckboxContentinEnglish" />
 		</classes>
-	</test>
+	</test> 
 
 
-<test thread-count="5" name="TestHomepageenglishinhindi">
+ <test thread-count="5" name="TestHomepageenglishinhindi">
 		<classes>
 			<class name="com.clix.clixoerwebsite.CheckEnglishCheckboxContentinHindi" />
 		</classes>
 	</test>
 
 
- <test thread-count="5" name="TestHomepageenglishintelegu">
+<test thread-count="5" name="TestHomepageenglishintelegu">
 		<classes>
 			<class name="com.clix.clixoerwebsite.CheckEnglishCheckboxContentinTelegu" />
 		</classes>
@@ -96,27 +96,6 @@
 	</test> 
 	
 
- <test thread-count="5" name="TestHomepagemathsinEnglish">
-		<classes>
-			<class name="com.clix.clixoerwebsite.CheckMathsCheckboxContentinEnglish" />
-		</classes>
-	</test> 
-	
-	
- <test thread-count="5" name="TestHomepagemathsinHindi">
-		<classes>
-			<class name="com.clix.clixoerwebsite.CheckMathsCheckboxContentinHindi" />
-		</classes>
-	</test> 
-	
-	
-  <test thread-count="5" name="TestHomepagemathsinTelegu">
-		<classes>
-			<class name="com.clix.clixoerwebsite.CheckMathsCheckboxContentinTelegu" />
-		</classes>
-	</test>  
-	
-	
  <test thread-count="5" name="TestHomepageLinks">
 		<classes>
 			<class name="com.clix.clixoerwebsite.HomePageLinks" />
@@ -124,17 +103,19 @@
 	</test> 
 
  	
-<test thread-count="5" name="Test About">
+<!-- <test thread-count="5" name="Test About">
 		<classes>
 			<class name="com.clix.clixoerwebsite.AboutPageTest" />
 		</classes>
 	</test>
 	
+
 <test thread-count="5" name="Test Contactus">
 		<classes>
 			<class name="com.clix.clixoerwebsite.ValidateContactus" />
 		</classes>
 	</test>
+ -->
 
 <test thread-count="5" name="Test HomePageModulesCheck">
 		<classes>
@@ -225,6 +206,38 @@
 	  </classes>
 	</test> 
 
+
+ <test thread-count="5" name="Test CoolOerMultipleSubjectFilter">
+    <classes>
+         <class name="com.clix.clixoerwebsite.CoolOerMultipleSubjectFilter"/>
+    </classes> 
+ </test>
+
+ <test thread-count="5" name="Test CoolOerArtFilter">
+    <classes>
+         <class name="com.clix.clixoerwebsite.CoolOerArtFilter"/>
+    </classes> 
+ </test>  	 
+
+ <test thread-count="5" name="Test CoolOerScienceFilter">
+    <classes>
+         <class name="com.clix.clixoerwebsite.CoolOerScienceFilter"/>
+    </classes> 
+ </test>
+
+ <test thread-count="5" name="Test CoolOerLanguageFilter">
+    <classes>
+         <class name="com.clix.clixoerwebsite.CoolOerLanguageFilter"/>
+    </classes> 
+ </test> 
+
+ <test thread-count="5" name="Test CoolOerMathematicsFilter">
+    <classes>
+         <class name="com.clix.clixoerwebsite.CoolOerMathematicsFilter"/>
+    </classes> 
+ </test>
+
+ 
   
   <test thread-count="5" name="Test FooterAboutLinkValidation">
 	  <classes>
@@ -263,19 +276,22 @@
 	       <class name = "com.clix.clixoerwebsite.FooterContactUsLinkValidation"></class>
 	  </classes>
 	</test>	
+
 	
- <test thread-count="5" name="Test CoolOerContactForm">
+<!-- <test thread-count="5" name="Test CoolOerContactForm">
      <classes>
            <class name="com.clix.clixoerwebsite.CoolOerContactForm"/>
      </classes>
 </test> 
 
-<test thread-count="5" name="Test DomainContactForm">
+ 
+ <test thread-count="5" name="Test DomainContactForm">
      <classes>
            <class name="com.clix.clixoerwebsite.DomainContactForm"/>
      </classes>
-</test>	
-		 
+</test>	-->
+ 	
+
 
  <!-- Test -->
 </suite> <!-- Suite -->

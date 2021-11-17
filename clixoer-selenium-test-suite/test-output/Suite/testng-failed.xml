@@ -4,17 +4,70 @@
   <listeners>
     <listener class-name="com.clix.clixoerwebsite.Listeners"/>
   </listeners>
-  <test thread-count="5" name="Test DomainScience(failed)">
+  <test thread-count="5" name="TestHomepageenglishinhindi(failed)">
     <classes>
-      <class name="com.clix.clixoerwebsite.DomainScienceValidation">
+      <class name="com.clix.clixoerwebsite.CheckEnglishCheckboxContentinHindi">
         <methods>
-          <include name="verifyTheNumberOfLinksOnScienceDomainPage"/>
-          <include name="verifyTheNumberOfScienceModules"/>
-          <include name="terminate"/>
-          <include name="navigateToUrl"/>
-          <include name="verifyDomainScienceOptionIsSelected"/>
+          <include name="bringup"/>
+          <include name="verifyEnglishmodulesinHindicheckbox"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- com.clix.clixoerwebsite.DomainScienceValidation -->
+      </class> <!-- com.clix.clixoerwebsite.CheckEnglishCheckboxContentinHindi -->
     </classes>
-  </test> <!-- Test DomainScience(failed) -->
+  </test> <!-- TestHomepageenglishinhindi(failed) -->
+  <test thread-count="5" name="TestHomepagemathsinhindi(failed)">
+    <classes>
+      <class name="com.clix.clixoerwebsite.CheckMathsCheckboxContentinHindi">
+        <methods>
+          <include name="verifyMathsmodulesinHindicheckbox"/>
+          <include name="bringup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.clix.clixoerwebsite.CheckMathsCheckboxContentinHindi -->
+    </classes>
+  </test> <!-- TestHomepagemathsinhindi(failed) -->
+  <test thread-count="5" name="TestHomepagemathsintelegu(failed)">
+    <classes>
+      <class name="com.clix.clixoerwebsite.CheckMathsCheckboxContentinTelegu">
+        <methods>
+          <include name="verifyMathsmodulesinTelegucheckbox"/>
+          <include name="bringup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.clix.clixoerwebsite.CheckMathsCheckboxContentinTelegu -->
+    </classes>
+  </test> <!-- TestHomepagemathsintelegu(failed) -->
+  <test thread-count="5" name="TestHomepagescienceinhindi(failed)">
+    <classes>
+      <class name="com.clix.clixoerwebsite.CheckScienceCheckboxContentinHindi">
+        <methods>
+          <include name="verifySciencemodulesinHindicheckbox"/>
+          <include name="bringup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.clix.clixoerwebsite.CheckScienceCheckboxContentinHindi -->
+    </classes>
+  </test> <!-- TestHomepagescienceinhindi(failed) -->
+  <test thread-count="5" name="TestHomepagescienceintelegu(failed)">
+    <classes>
+      <class name="com.clix.clixoerwebsite.CheckScienceCheckboxContentinTelegu">
+        <methods>
+          <include name="verifySciencemodulesinTelegucheckbox"/>
+          <include name="bringup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.clix.clixoerwebsite.CheckScienceCheckboxContentinTelegu -->
+    </classes>
+  </test> <!-- TestHomepagescienceintelegu(failed) -->
+  <test thread-count="5" name="Test FooterContactUsLinkValidation(failed)">
+    <classes>
+      <class name="com.clix.clixoerwebsite.FooterContactUsLinkValidation">
+        <methods>
+          <include name="navigateToUrl"/>
+          <include name="verifyContactUsLinkValidation"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.clix.clixoerwebsite.FooterContactUsLinkValidation -->
+    </classes>
+  </test> <!-- Test FooterContactUsLinkValidation(failed) -->
 </suite> <!-- Failed suite [Suite] -->

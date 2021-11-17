@@ -50,15 +50,15 @@ public class CoolOer {
 	
 	private By alertDisplay = By.cssSelector("div.alert-success");
 	
-//	private By multipleSubjectCheckboxDomainSubject = By.cssSelector("div#domain1 > div:nth-Child(1)  > label > div");
-//	
-//	private By artCheckboxDomainSubject = By.cssSelector("div#domain1 > div:nth-Child(2)  > label > div");
-//	
-//	private By scienceCheckboxDomainSubject = By.cssSelector("div#domain1 > div:nth-Child(3)  > label > div");
-//	
-//	private By languageCheckboxDomainSubject = By.cssSelector("div#domain1 > div:nth-Child(4)  > label > div");
-//	
-//	private By mathematicsCheckboxDomainSubject = By.cssSelector("div#domain1 > div:nth-Child(5)  > label > div");
+	private By multipleSubjectCheckboxDomainSubject = By.cssSelector("div#domain1 > div:nth-Child(1)  > label > div");
+	
+	private By artCheckboxDomainSubject = By.cssSelector("div#domain1 > div:nth-Child(2)  > label > div");
+	
+	private By scienceCheckboxDomainSubject = By.cssSelector("div#domain1 > div:nth-Child(3)  > label > div");
+	
+	private By languageCheckboxDomainSubject = By.cssSelector("div#domain1 > div:nth-Child(4)  > label > div");
+	
+	private By mathematicsCheckboxDomainSubject = By.cssSelector("div#domain1 > div:nth-Child(5)  > label > div");
 	
 	
 	public CoolOer(WebDriver driver) {
@@ -144,4 +144,35 @@ public class CoolOer {
 		w.until(ExpectedConditions.presenceOfElementLocated(alertDisplay));
 		return driver.findElement(alertDisplay);
 	}
+	
+	public WebElement getSubjectDomainMultipleSubjectsfilter() {
+		WebDriverWait w = new WebDriverWait(driver,10);
+		w.until(ExpectedConditions.presenceOfElementLocated(multipleSubjectCheckboxDomainSubject));
+		return driver.findElement(multipleSubjectCheckboxDomainSubject);
+	}
+	
+	public WebElement getArtMultipleSubjectsFilter() {
+		WebDriverWait w = new WebDriverWait(driver,10);
+		w.until(ExpectedConditions.presenceOfElementLocated(artCheckboxDomainSubject));
+		return driver.findElement(artCheckboxDomainSubject);		
+	}
+	
+	public WebElement getScienceSubjectFilter() {
+		WebDriverWait w = new WebDriverWait(driver,10);
+		w.until(ExpectedConditions.presenceOfElementLocated(scienceCheckboxDomainSubject));
+		return driver.findElement(scienceCheckboxDomainSubject);
+	}
+	
+	public WebElement getLanguageSubjectFilter() {
+		WebDriverWait w = new WebDriverWait(driver,10);
+		w.until(ExpectedConditions.presenceOfElementLocated(languageCheckboxDomainSubject));
+		return driver.findElement(languageCheckboxDomainSubject);
+	}
+	
+   public WebElement getMathematicsSubjectFilter() {
+	   WebDriverWait w = new WebDriverWait(driver,10);
+	   w.until(ExpectedConditions.presenceOfElementLocated(mathematicsCheckboxDomainSubject));
+	   return driver.findElement(mathematicsCheckboxDomainSubject);
+   }
+	
 }
