@@ -58,17 +58,16 @@ public class CoolOerEnglishResourceFilter extends base {
 	@Test
 	public void verifyTheNumberOfResourcesForEnglishFilter() throws InterruptedException {
 		
-		Thread.sleep(2000);
-		
+		Thread.sleep(2000);		
 		CoolOer co = new CoolOer(driver);
 		
-		int englishResourcesUnderKnowledgeDeepning2  = co.getResourceListUnderKnowledgeDeepning2().size();
+		int englishResourcesUnderKnowledgeDeepning  = co.getResourceListUnderKnowledgeDeepning2().size();
 		
 		int englishResourcesUnderCreativityAnd21stCenturySkills = co.getResourceListUnderCreativityAnd21stCenturySkills().size();
 		
 		int englishResourcesUnderTinkeringAndMaking = co.getResourcesListUnderTinkeringAndMaking().size();
 
-		int totalResourcesForEnglishFilter = englishResourcesUnderKnowledgeDeepning2+englishResourcesUnderCreativityAnd21stCenturySkills+englishResourcesUnderTinkeringAndMaking;
+		int totalResourcesForEnglishFilter = englishResourcesUnderKnowledgeDeepning+englishResourcesUnderCreativityAnd21stCenturySkills+englishResourcesUnderTinkeringAndMaking;
 		
 		if(totalResourcesForEnglishFilter == 6) {
 			Assert.assertTrue(true);
@@ -126,7 +125,7 @@ public class CoolOerEnglishResourceFilter extends base {
 				System.out.println(resourceList3);	
 			}
 		}
-		log.info("The Resources Filter for English Options are GeoGebra, PhET Interactive Simulations,SCRATCH, Storyweaver, Arvind Gupta Toys, metastudio.org");
+		log.info("The Resources Filter for English Options:" +resourcesTitle);
 		System.out.println("The Resources Filter for English Options are:" +resourcesTitle);	
 	}
 	

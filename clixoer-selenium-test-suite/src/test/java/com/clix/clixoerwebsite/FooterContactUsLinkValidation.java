@@ -35,7 +35,7 @@ public class FooterContactUsLinkValidation extends base {
 	  }
 	  
 	  @Test
-	  public void verifyAboutLinkIsDisplayed() {
+	  public void verifyContactUsLinkIsDisplayed() {
 		  
 		  FooterPage fp = new FooterPage(driver);
 		  boolean contactUsLinkInFooterIsDisplayed = fp.getContactUsFooterLink().isDisplayed();
@@ -48,7 +48,7 @@ public class FooterContactUsLinkValidation extends base {
 	  }
 	  
 	  @Test
-	  public void verifyAboutLinkValidation() {
+	  public void verifyContactUsLinkValidation() {
 
 		  FooterPage fp = new FooterPage(driver);
 		

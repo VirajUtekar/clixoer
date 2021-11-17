@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Oct 17 19:50:59 IST 2021</td>
+<td>Started on:</td><td>Wed Nov 17 16:45:24 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>17 seconds (17360 ms)</td>
+<tr><td>Total time:</td><td>18 seconds (18002 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,21 +75,21 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.clix.clixoerwebsite.FooterContactUsLinkValidation.verifyAboutLinkValidation()'><b>verifyAboutLinkValidation</b><br>Test class: com.clix.clixoerwebsite.FooterContactUsLinkValidation</td>
+<td title='com.clix.clixoerwebsite.FooterContactUsLinkValidation.verifyContactUsLinkValidation()'><b>verifyContactUsLinkValidation</b><br>Test class: com.clix.clixoerwebsite.FooterContactUsLinkValidation</td>
 <td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.cssSelector: div.py-5 &gt; div &gt; section &gt; div:nth-Child(1) &gt; div &gt; div &gt; div:nth-Child(2) &gt; div &gt; h5 (tried for 10 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 	at pageObjects.FooterPage.getContactUsPageHeading(FooterPage.java:82)
-	at com.clix.clixoerwebsite.FooterContactUsLinkValidation.verifyAboutLinkValidation(FooterContactUsLinkValidation.java:80)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at com.clix.clixoerwebsite.FooterContactUsLinkValidation.verifyContactUsLinkValidation(FooterContactUsLinkValidation.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.py-5 &gt; div &gt; section &gt; div:nth-Child(1) &gt; div &gt; div &gt; div:nth-Child(2) &gt; div &gt; h5&quot;}
-  (Session info: chrome=94.0.4606.61)
+  (Session info: chrome=95.0.4638.69)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;clixserver&apos;, ip: &apos;173.255.194.134&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-87-generic&apos;, java.version: &apos;11.0.11&apos;
+System info: host: &apos;clix-Inspiron-7560&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.11.0-40-generic&apos;, java.version: &apos;17&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.61, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: /tmp/.com.google.Chrome.8x8N02}, goog:chromeOptions: {debuggerAddress: localhost:37251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1c08d169dfe7919d11e4459b70dc451f
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /tmp/.com.google.Chrome.XRDLce}, goog:chromeOptions: {debuggerAddress: localhost:34935}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 47e84bdf9a5a017e860bd95b15482d91
 *** Element info: {Using=css selector, value=div.py-5 &gt; div &gt; section &gt; div:nth-Child(1) &gt; div &gt; div &gt; div:nth-Child(2) &gt; div &gt; h5}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -105,16 +105,16 @@ Session ID: 1c08d169dfe7919d11e4459b70dc451f
 	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
 	... 30 more
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1497863121", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1497863121'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.cssSelector: div.py-5 &gt; div &gt; section &gt; div:nth-Child(1) &gt; div &gt; div &gt; div:nth-Child(2) &gt; div &gt; h5 (tried for 10 second(s) with 500 milliseconds interval)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace503133749", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace503133749'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.cssSelector: div.py-5 &gt; div &gt; section &gt; div:nth-Child(1) &gt; div &gt; div &gt; div:nth-Child(2) &gt; div &gt; h5 (tried for 10 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 	at pageObjects.FooterPage.getContactUsPageHeading(FooterPage.java:82)
-	at com.clix.clixoerwebsite.FooterContactUsLinkValidation.verifyAboutLinkValidation(FooterContactUsLinkValidation.java:80)
+	at com.clix.clixoerwebsite.FooterContactUsLinkValidation.verifyContactUsLinkValidation(FooterContactUsLinkValidation.java:80)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
 	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
@@ -123,7 +123,7 @@ Session ID: 1c08d169dfe7919d11e4459b70dc451f
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at org.testng.TestRunner.privateRun(TestRunner.java:794)
 	at org.testng.TestRunner.run(TestRunner.java:596)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
@@ -140,18 +140,19 @@ Session ID: 1c08d169dfe7919d11e4459b70dc451f
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.py-5 &gt; div &gt; section &gt; div:nth-Child(1) &gt; div &gt; div &gt; div:nth-Child(2) &gt; div &gt; h5&quot;}
-  (Session info: chrome=94.0.4606.61)
+  (Session info: chrome=95.0.4638.69)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;clixserver&apos;, ip: &apos;173.255.194.134&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-87-generic&apos;, java.version: &apos;11.0.11&apos;
+System info: host: &apos;clix-Inspiron-7560&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.11.0-40-generic&apos;, java.version: &apos;17&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.61, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: /tmp/.com.google.Chrome.8x8N02}, goog:chromeOptions: {debuggerAddress: localhost:37251}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1c08d169dfe7919d11e4459b70dc451f
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /tmp/.com.google.Chrome.XRDLce}, goog:chromeOptions: {debuggerAddress: localhost:34935}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 47e84bdf9a5a017e860bd95b15482d91
 *** Element info: {Using=css selector, value=div.py-5 &gt; div &gt; section &gt; div:nth-Child(1) &gt; div &gt; div &gt; div:nth-Child(2) &gt; div &gt; h5}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -168,7 +169,7 @@ Session ID: 1c08d169dfe7919d11e4459b70dc451f
 	... 30 more
 </pre></div></td>
 <td>12</td>
-<td>com.clix.clixoerwebsite.FooterContactUsLinkValidation@1e044120</td></tr>
+<td>com.clix.clixoerwebsite.FooterContactUsLinkValidation@5bfa8cc5</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -178,10 +179,10 @@ Session ID: 1c08d169dfe7919d11e4459b70dc451f
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.clix.clixoerwebsite.FooterContactUsLinkValidation.verifyAboutLinkIsDisplayed()'><b>verifyAboutLinkIsDisplayed</b><br>Test class: com.clix.clixoerwebsite.FooterContactUsLinkValidation</td>
+<td title='com.clix.clixoerwebsite.FooterContactUsLinkValidation.verifyContactUsLinkIsDisplayed()'><b>verifyContactUsLinkIsDisplayed</b><br>Test class: com.clix.clixoerwebsite.FooterContactUsLinkValidation</td>
 <td></td>
 <td>0</td>
-<td>com.clix.clixoerwebsite.FooterContactUsLinkValidation@1e044120</td></tr>
+<td>com.clix.clixoerwebsite.FooterContactUsLinkValidation@5bfa8cc5</td></tr>
 </table><p>
 </body>
 </html>

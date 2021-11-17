@@ -16,16 +16,18 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
 public class base {
-	public WebDriver driver;
-	public Properties prop;
 
+	public WebDriver driver;
+
+	public Properties prop;
+	
 	public WebDriver initializeDriver() throws IOException {
-		
-		prop = new Properties();
 		
 		String file = System.getProperty("user.dir") + "/src/main/java/resources/data.properties";
 		
 		FileInputStream fis = new FileInputStream(file);
+		
+	    prop = new Properties();
 		
 		prop.load(fis);
 		
@@ -55,7 +57,7 @@ public class base {
 
 			else {
 
-				driver = new ChromeDriver();
+			 driver = new ChromeDriver();
 
 			}
 
@@ -65,7 +67,7 @@ public class base {
 			System.out.println("Tests to run in Firefox Browser");
 			// System Property for FirefoxDriver
 			System.setProperty("webdriver.gecko.driver",
-					(System.getProperty("user.dir") + "\\src\\main\\java\\resources\\geckodriver.exe"));
+					(System.getProperty("user.dir") + "/src/main/java/resources/geckodriver"));
 
 			// Instantiate a FirefoxDriver class.
 			driver = new FirefoxDriver();
