@@ -18,6 +18,7 @@ public class LandingPage {
 	// Nav Bar Page Objects
 	
 	private By languageSelectBox = By.cssSelector("nav#navbar > div > ul > div ");
+	private By advertisementBannerCloseIcon = By.cssSelector("div#Modal > div > div > div:nth-Child(1) > button");
 	private By englishlanguage = By.cssSelector("nav#navbar > div > ul > div > div > li:nth-Child(1) > form > input:nth-Child(4)");
 	private By hindilanguage = By.xpath("/html/body/nav[1]/div/ul/div/div/li[2]/form/input[4]");
 	private By telegulanguage = By.xpath("/html/body/nav[1]/div/ul/div/div/li[3]/form/input[4]");
@@ -55,6 +56,10 @@ public class LandingPage {
 	private By next = By.xpath("/html/body/nav[2]/ul/li[4]/a");
 	
 
+
+	public WebElement getadvertisementBanner() {
+		return driver.findElement(advertisementBannerCloseIcon);
+	}
 
 	 // END of Nav Bar Page Objects
 	 

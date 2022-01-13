@@ -12,6 +12,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import pageObjects.DomainPage;
+import pageObjects.LandingPage;
 import resources.base;
 
 public class DomainContactForm extends base {
@@ -28,68 +29,26 @@ public class DomainContactForm extends base {
 		log.info("url site is been navigated");
 		
 		driver.manage().window().maximize();
-		log.info("browser window is been maximized");
+		log.info("browser window is been maximized");		
 		
 	}
 	
-	@Test(dataProvider="getValidData")
-	public void domainPageContactFormValidationWithValidRecords(String firstname, String lastname, String email, String phone, String message) {
 	
-		DomainPage dp = new DomainPage(driver);
-//		dp.getAdvertisementBannerCloseIcon().click();
-//		log.info("advertisement banner is been closed");
-//	
-//		dp.getDomainNavigationMenu().click();
-//		log.info("domain navigation menu is been clicked");
-//		
-//		dp.getMathOption().click();
-//		log.info("math option under domain is selected");
-		
-		dp.getContactFormFirstNameField().sendKeys(firstname);
-		log.info("valid firstname is been entered into field");
-		
-		dp.getContactFormLastNameField().sendKeys(lastname);
-		log.info("valid lastname is been entered into field");
-		
-		dp.getContactFormEmailField().sendKeys(email);
-		log.info("valid email is been entered into field");
-		
-		dp.getContactFormPhoneField().sendKeys(phone);
-		log.info("valid phone is been entered into field");
-		
-		dp.getContactFormMessageField().sendKeys(message);
-		log.info("valid message is been entered into field");
-		
-		dp.getContactFormSubmit().click();
-		
-		boolean alertIsDisplayed = dp.getContactFormAlert().isDisplayed();
-		
-		if(alertIsDisplayed) {
-			
-			String successAlert = dp.getContactFormAlert().getText().replace("\n","").replace("\r","").trim();
-			
-			if(successAlert.contains("Your feedback sent successfully!")){
-				Assert.assertTrue(true);
-				log.info("alert is been displayed as:"+successAlert);
-			}
-			else
-			{
-				Assert.assertFalse(true);
-			}
-			
-		}
-		
-	}
-	
-	@Test(dataProvider="getInvalidData")
-	public void domainPageContactFormValidationWithInvalidRecords(String firstname, String lastname, String email, String phone, String message) {
-		
+	@Test(dataProvider="contactForm")
+	public void domainPageContactFormValidation(String firstname, String lastname, String email, String phone, String message) {
+
+
 		driver.navigate().refresh();
 		
 		DomainPage dp = new DomainPage(driver);
+		
+		driver.navigate().refresh();
+		log.info("site is been refreshed");
+		
+		
 		dp.getContactFormFirstNameField().sendKeys(firstname);
 		log.info("valid firstname is been entered into field");
-		
+
 		dp.getContactFormLastNameField().sendKeys(lastname);
 		log.info("valid lastname is been entered into field");
 		
@@ -110,7 +69,7 @@ public class DomainContactForm extends base {
 			
 			String invalidAlert = dp.getContactFormAlert().getText().replace("\n","").replace("\r","").trim();
 			
-			if(invalidAlert.contains("xYour feedback sent successfully!")) {
+			if(invalidAlert.contains("Your feedback sent successfully!")) {
 				Assert.assertTrue(true);
 				log.info("alert is been displayed as:"+invalidAlert);
 				System.out.println("alert is been displayed as:"+invalidAlert);
@@ -123,35 +82,23 @@ public class DomainContactForm extends base {
 		
 	}
 
-	@DataProvider
-	public Object[][] getValidData(){
+	@DataProvider(name="contactForm")
+	public Object[][] getData(){
 		
-		Object[][] data = new Object[1][5];
-		
+		Object[][] data = new Object[2][5];		
 		data[0][0]="Viraj";
 		data[0][1]="Utekar";
-		data[0][2]="utekar29viraj@gmail.com";
+		data[0][2]="viraj100@gmail.com";
 		data[0][3]="9292929292";
 		data[0][4]="correct";
-		
+		data[1][0] ="Viraj";
+		data[1][1]="Utekar";
+		data[1][2]="viraj100";
+		data[1][3]="9292929292";
+		data[1][4]="Incorrect";		
+
 		return data;
 	}
-	
-	
-	@DataProvider
-	public Object[][] getInvalidData(){
-	
-		Object[][] data = new Object[1][5];
-		
-		data[0][0] ="Viraj";
-		data[0][1]="Utekar";
-		data[0][2]="utekar29viraj@gmail.com";
-		data[0][3]="9292929292";
-		data[0][4]="Incorrect";
-	  
-		return data;
-	}
-	
 	
 	@AfterTest
 	public void terminate() {

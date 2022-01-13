@@ -6,12 +6,12 @@
 <listener class-name="com.clix.clixoerwebsite.Listeners"/>
 </listeners>
    
-<!--  <test thread-count="5" name="CucumberTest">
+ <test thread-count="5" name="CucumberTest">
 		<classes>
 			<class name="cucumberOptions.TestRunner" />
 		</classes>
-	</test>
- -->
+</test>
+
 	
 <test thread-count="5" name="TestHomepageenglishinenglish">
 		<classes>
@@ -107,15 +107,15 @@
 		<classes>
 			<class name="com.clix.clixoerwebsite.AboutPageTest" />
 		</classes>
-	</test>
+</test>
 	
 
 <test thread-count="5" name="Test Contactus">
 		<classes>
 			<class name="com.clix.clixoerwebsite.ValidateContactus" />
 		</classes>
-	</test>
- -->
+</test>
+ --> 
 
 <test thread-count="5" name="Test HomePageModulesCheck">
 		<classes>
@@ -142,11 +142,6 @@
 		</classes>
 	</test> 
  	
-	
-	
-	
-	
-	
 	
  <test thread-count="5" name="Test DomainEnglish">
 	  <classes>
@@ -236,8 +231,6 @@
          <class name="com.clix.clixoerwebsite.CoolOerMathematicsFilter"/>
     </classes> 
  </test>
-
- 
   
   <test thread-count="5" name="Test FooterAboutLinkValidation">
 	  <classes>
@@ -283,15 +276,13 @@
            <class name="com.clix.clixoerwebsite.CoolOerContactForm"/>
      </classes>
 </test> 
-
  
  <test thread-count="5" name="Test DomainContactForm">
      <classes>
            <class name="com.clix.clixoerwebsite.DomainContactForm"/>
      </classes>
-</test>	-->
- 	
-
+</test>
+ --> 	
 
  <!-- Test -->
 </suite> <!-- Suite -->

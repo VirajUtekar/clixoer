@@ -82,7 +82,7 @@ public class CoolOerLanguageFilter extends base {
 	}
 	
 	@Test
-	public void verifyTheNumberOfLanguageForArtFilter() {
+	public void verifyTheNumberOfLinksForLanguageFilter() {
 	
 		CoolOer co = new CoolOer(driver);
 		
@@ -95,7 +95,7 @@ public class CoolOerLanguageFilter extends base {
 	
 
 	@Test
-	public void verifyTheResoucesTitleForArtFilter() {
+	public void verifyTheResoucesTitleForLanguageFilter() {
 		
 		CoolOer co = new CoolOer(driver);
 

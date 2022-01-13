@@ -7,9 +7,12 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -37,7 +40,7 @@ public class CoolOerScienceFilter extends base {
 	}
 	
 	@Test
-	public void verifyTheArtFilterOptionIsChecked() throws InterruptedException {
+	public void verifyTheScienceFilterOptionIsChecked() throws InterruptedException {
 		
 		CoolOer co = new CoolOer(driver);
       
@@ -57,8 +60,9 @@ public class CoolOerScienceFilter extends base {
 		{
 			Assert.assertFalse(true);
 		}
-		
-		Thread.sleep(8000);		
+	
+         Thread.sleep(8000);       		
+	 
 	}
 	
 	@Test
@@ -79,19 +83,16 @@ public class CoolOerScienceFilter extends base {
 		System.out.println("number of resources for science filter is:"+totalResources);
 		log.info("number of resources for science filter is:"+totalResources);	
 	}
-	
+
 	@Test
 	public void verifyTheNumberOfLinksForScienceFilter() {
 	
 		CoolOer co = new CoolOer(driver);
-		
 		int numberOfLinks = co.getNumberOfLinksOnPage().size();
 		
 		Assert.assertEquals(numberOfLinks,148);
-		System.out.println("number of links for science filter is:"+numberOfLinks);
-		
+		System.out.println("number of links for science filter is:"+numberOfLinks);		
 	}
-	
 
 	@Test
 	public void verifyTheResoucesTitleForScienceFilter() {
