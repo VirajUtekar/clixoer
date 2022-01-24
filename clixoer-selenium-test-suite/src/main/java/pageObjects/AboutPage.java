@@ -19,7 +19,7 @@ public class AboutPage {
 	private By email = By.name("email");
 	private By phone = By.name("phone");
 	private By message = By.name("message");
-	private By sendbutton = By.id("send-message");
+	private By sendbutton = By.cssSelector("div.container-contact100 > div > form > div:nth-Child(10) > input");
 	private By messagesentalert = By.cssSelector("div.alert-success");
 	
 	

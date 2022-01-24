@@ -89,7 +89,7 @@ public class CoolOerHindiResourceFilter extends base {
 	}
 
 	@Test
-	public void verifyTheResourcesTitleForEnglishFilter() {
+	public void verifyTheResourcesTitleForHindiFilter() {
   	
 		CoolOer co = new CoolOer(driver);
 		
@@ -125,7 +125,7 @@ public class CoolOerHindiResourceFilter extends base {
 				System.out.println(resourceList3);	
 			}
 		}
-		log.info("The Resources Filter for Hindi Options are जियोजेब्रा (GeoGebra), PhET इंटरैक्टिव सिम्युलेशन, स्क्रैच (SCRATCH), अरविंद गुप्ता खिलौने");
+		log.info("The Resources Filter for Hindi Options are"+resourcesTitle);
 		System.out.println("The Resources Filter for Hindi Options are:" +resourcesTitle);	
 	}
 
