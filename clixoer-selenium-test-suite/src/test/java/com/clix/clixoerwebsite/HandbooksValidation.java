@@ -76,17 +76,12 @@ public class HandbooksValidation extends base {
 			Thread.sleep(2000);
 			String paginationSelector = "body > nav > ul > li:nth-child("+i+")> a";
 			driver.findElement(By.cssSelector(paginationSelector)).click();
-			Thread.sleep(3000);
-			
+			Thread.sleep(3000);	
 			List<WebElement> titles = driver.findElements(By.className("caption"));
-			
-		
-			                                                 
+		                                                
 			for (WebElement title : titles)
 			{
 				titlenames.add(title.getText());
-				
-				
 				
 			}
 		
@@ -106,9 +101,9 @@ public class HandbooksValidation extends base {
 		
 	
 	@AfterTest
-
 	public void teardown() {
-		driver.close();
+		driver.quit();
+		log.info("browser driver is been quit");
 	}
 	
 }

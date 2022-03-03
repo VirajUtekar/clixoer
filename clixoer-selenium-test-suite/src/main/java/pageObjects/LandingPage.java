@@ -1,11 +1,10 @@
 package pageObjects;
 
 import java.util.List;
-
-import org.apache.http.util.ByteArrayBuffer;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+
 
 public class LandingPage {
 	 
@@ -17,7 +16,7 @@ public class LandingPage {
 	}
 	// Nav Bar Page Objects
 	
-	private By languageSelectBox = By.cssSelector("nav#navbar > div > ul > div ");
+	private By languageSelectBox = By.cssSelector("nav#navbar > div > ul > div");
 	private By advertisementBannerCloseIcon = By.cssSelector("div#Modal > div > div > div:nth-Child(1) > button");
 	private By englishlanguage = By.cssSelector("nav#navbar > div > ul > div > div > li:nth-Child(1) > form > input:nth-Child(4)");
 	private By hindilanguage = By.xpath("/html/body/nav[1]/div/ul/div/div/li[2]/form/input[4]");
@@ -33,7 +32,7 @@ public class LandingPage {
 	private By about =By.cssSelector("a[href*='about']");
 	private By help =By.cssSelector("a[href*='help']");
 	private By language =By.id("dropdownMenuLink");
-	private By eb1 =By.xpath("//*[@id=\"jar\"]/div/div[1]/div/div[2]/div/div[1]");
+	private By eb1 = By.xpath("//*[@id=\"jar\"]/div/div[1]/div/div[2]/div/div[1]");
 	private By eb2 = By.xpath("//*[@id=\"jar\"]/div/div[2]/div/div[2]/div/div[1]");
 	private By links =By.tagName("a");
 	private By gr1 = By.xpath("//*[@id=\"jar\"]/div/div[1]/div/div[2]/div/div[1]");
@@ -50,12 +49,9 @@ public class LandingPage {
 	private By modules = By.xpath("/html/body/div[4]/div[2]/div[1]/nav/ul/section/li[1]/a");
 	private By interactives = By.xpath("/html/body/div[4]/div[2]/div[1]/nav/ul/section/li[2]/a");
 	private By handbooks = By.xpath("/html/body/div[4]/div[2]/div[1]/nav/ul/section/li[3]/a");
-	
 	private By prev = By.xpath("/html/body/nav[2]/ul/li[1]");
-	private By pagnation = By.xpath("/html/body/nav[2]/ul/li[2]");
 	private By next = By.xpath("/html/body/nav[2]/ul/li[4]/a");
 	
-
 
 	public WebElement getadvertisementBanner() {
 		return driver.findElement(advertisementBannerCloseIcon);
@@ -69,28 +65,22 @@ public class LandingPage {
 	
 	public WebElement getEnglishLanguage()
 	 {
-		 return driver.findElement(englishlanguage);
-		 
+		 return driver.findElement(englishlanguage); 
 	 }
 	public WebElement getHindiLanguage()
 	 {
-		 return driver.findElement(hindilanguage);
-		 
+		 return driver.findElement(hindilanguage);	 
 	 }
 	public WebElement getTeleguLanguage()
 	 {
-		 return driver.findElement(telegulanguage);
-		 
+		 return driver.findElement(telegulanguage);	 
 	 }
-	 
-	 
-	
 	
 	public WebElement getElibrary()
 	 {
-		 return driver.findElement(elibrary);
-		 
+		 return driver.findElement(elibrary);		 
 	 }
+	
 	 public WebElement getTisscool()
 	 {
 		 return driver.findElement(tisscool);
@@ -133,38 +123,39 @@ public class LandingPage {
 	 }
 	 public WebElement getEnglishcheckbox()
 	 {
-		 return driver.findElement(englishcheckbox);
-		 
-	 }
-	 public WebElement getMathscheckbox()
-	 {
-		 return driver.findElement(mathscheckbox);
-		 
-	 }
-	 public WebElement getSciencecheckbox()
-	 {
-		 return driver.findElement(sciencecheckbox);
-		 
-	 }
-	 public WebElement geti2ccheckbox()
-	 {
-		 return driver.findElement(i2ccheckbox);
-		 
+		 return driver.findElement(englishcheckbox); 
 	 }
 	 
+	 public WebElement getMathscheckbox()
+	 {
+		 return driver.findElement(mathscheckbox); 
+	 }
 	
+	 public WebElement getSciencecheckbox()
+	 {
+		 return driver.findElement(sciencecheckbox); 
+	 }
+	
+	 public WebElement geti2ccheckbox()
+	 {
+		 return driver.findElement(i2ccheckbox);	 
+	 }
+	 
 	 public WebElement getGr1()
 	 {
 		 return driver.findElement(gr1);
 	 }
+	
 	 public WebElement getGr2()
 	 {
 		 return driver.findElement(gr2);
 	 }
+	
 	 public WebElement getPr()
 	 {
 		 return driver.findElement(pr);
 	 }
+	
 	 public WebElement getLe()
 	 {
 		 return driver.findElement(le);
@@ -219,6 +210,5 @@ public class LandingPage {
 	{
 		return driver.findElement(next);
 	}
-	 
 	 
 }

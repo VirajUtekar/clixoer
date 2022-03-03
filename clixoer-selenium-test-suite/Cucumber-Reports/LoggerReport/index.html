@@ -43,14 +43,6 @@
 							</a>
 						</li>
 												<li>
-							<a href="exception.html">
-							<span class="nav-icon">
-							<i class="fa fa-warning"></i>
-							</span>
-							<span class="nav-text">Exceptions</span>
-							</a>
-						</li>
-						<li>
 							<a href="dashboard.html">
 							<span class="nav-icon">
 							<i class="fa fa-dashboard"></i>
@@ -95,7 +87,7 @@
 									</a>
 									<div class="dropdown-menu pt-0 mt-2 animate fadeIn">
 										<a class="dropdown-item" href="#"><span class="tf" status="pass"><i class="fa fa-dot-circle-o text-success"></i>Pass</span></a>
-										<a class="dropdown-item" href="#"><span class="tf" status="fail"><i class="fa fa-dot-circle-o text-danger"></i>Fail</span></a>
+										
 										
 										
 										
@@ -116,32 +108,32 @@
 								<div class="col-md-8 col-sm-12">
 									<div class="logger-content">
 										<h6 class="mb-3 ml-1">Test Logs</h6>
-											<div class="tsc" status="fail">
-											<div class="st fail test l0" 
+											<div class="tsc" status="pass">
+											<div class="st pass test l0" 
 												tags=""
 												devices="">
-												<span class="tt">11.17.2021 16:19:08</span>&nbsp;
-												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tt">03.03.2022 18:54:11</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">[Navigate to Help Page] started</span>
 												
 											</div>
-											<div class="st fail test l1" 
+											<div class="st pass test l1" 
 												tags=""
 												devices="">
-												<span class="tt">11.17.2021 16:19:08</span>&nbsp;
-												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tt">03.03.2022 18:54:11</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">|---[Home Page Loading] started</span>
 												
 											</div>
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.17.2021 16:19:08</span>&nbsp;
+												<span class="tt">03.03.2022 18:54:11</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given user is on landing page] started</span>
 												
 												<div class="st pass">
-													<span class="tt">11.17.2021 16:19:18</span>&nbsp;
+													<span class="tt">03.03.2022 18:54:35</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given user is on landing page]</span>
 													
@@ -151,53 +143,190 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.17.2021 16:19:18</span>&nbsp;
+												<span class="tt">03.03.2022 18:54:35</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When user checks for navigation pane and clicks on help] started</span>
 												
 												<div class="st pass">
-													<span class="tt">11.17.2021 16:19:26</span>&nbsp;
+													<span class="tt">03.03.2022 18:54:40</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When user checks for navigation pane and clicks on help]</span>
 													
 													<span class="td"></span>
 												</div>
 											</div>
-											<div class="st fail test l2" 
+											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">11.17.2021 16:19:26</span>&nbsp;
-												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tt">03.03.2022 18:54:40</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then help page opens] started</span>
 												
-												<div class="st fail">
-													<span class="tt">11.17.2021 16:19:37</span>&nbsp;
-													<span class="ts">fail</span>&nbsp;&nbsp; 
+												<div class="st pass">
+													<span class="tt">03.03.2022 18:54:41</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then help page opens]</span>
 													
-													<span class="td">threw an exception<br><textarea disabled class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=95.0.4638.69)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'clix-Inspiron-7560', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-40-generic', java.version: '17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /tmp/.com.google.Chrome.u66nWn}, goog:chromeOptions: {debuggerAddress: localhost:43287}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 207616674f276459a0b2add64d92ec79
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at stepDefination.StepDefination.help_page_opens(StepDefination.java:62)
-	at ✽.help page opens(file:///home/clix/Desktop/automation/clixoer/clixoer-selenium-test-suite/src/test/java/features/help.feature:6)
-</textarea></span>
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l1" 
+												tags=""
+												devices="">
+												<span class="tt">03.03.2022 18:54:41</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">|---[Help Page Validation] started</span>
+												
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">03.03.2022 18:54:41</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given user is on help page] started</span>
+												
+												<div class="st pass">
+													<span class="tt">03.03.2022 18:55:07</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given user is on help page]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">03.03.2022 18:55:07</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When user clicks English tab] started</span>
+												
+												<div class="st pass">
+													<span class="tt">03.03.2022 18:55:08</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When user clicks English tab]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">03.03.2022 18:55:08</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then english help opens] started</span>
+												
+												<div class="st pass">
+													<span class="tt">03.03.2022 18:55:10</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then english help opens]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l1" 
+												tags=""
+												devices="">
+												<span class="tt">03.03.2022 18:55:10</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">|---[Help Page Validation] started</span>
+												
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">03.03.2022 18:55:10</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given user is on help page] started</span>
+												
+												<div class="st pass">
+													<span class="tt">03.03.2022 18:55:34</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given user is on help page]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">03.03.2022 18:55:34</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When user clicks Maths tab] started</span>
+												
+												<div class="st pass">
+													<span class="tt">03.03.2022 18:55:34</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When user clicks Maths tab]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">03.03.2022 18:55:34</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then maths help opens] started</span>
+												
+												<div class="st pass">
+													<span class="tt">03.03.2022 18:55:36</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then maths help opens]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l1" 
+												tags=""
+												devices="">
+												<span class="tt">03.03.2022 18:55:36</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">|---[Help Page Validation] started</span>
+												
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">03.03.2022 18:55:36</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given user is on help page] started</span>
+												
+												<div class="st pass">
+													<span class="tt">03.03.2022 18:59:00</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given user is on help page]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">03.03.2022 18:59:00</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When user clicks Science tab] started</span>
+												
+												<div class="st pass">
+													<span class="tt">03.03.2022 18:59:00</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When user clicks Science tab]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">03.03.2022 18:59:00</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then science help opens] started</span>
+												
+												<div class="st pass">
+													<span class="tt">03.03.2022 18:59:02</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then science help opens]</span>
+													
+													<span class="td"></span>
 												</div>
 											</div>
 											</div>

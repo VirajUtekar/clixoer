@@ -26,6 +26,7 @@ public class Checki2cCheckboxContentinEnglish extends base{
 	public LandingPage landingpage;
 	
 	public static Logger log = LogManager.getLogger(base.class.getName());
+
 @BeforeTest
 public void bringup() throws IOException
 {
@@ -62,15 +63,10 @@ public void bringup() throws IOException
 	@Test
 	public void verifyi2cmodulesinEnglishcheckbox()
 	
-
 	{
-		
-		
-		
 		if (landingpage.geti2ccheckbox().isDisplayed())
 		{
 		log.info("Check Box Exists since its visible"+landingpage.geti2ccheckbox().isDisplayed());
-		
 		
 		}
 		
@@ -81,7 +77,7 @@ public void bringup() throws IOException
 public void checki2cContentChecked()
 {
 	landingpage.geti2ccheckbox().click();
-	WebDriverWait wait = new WebDriverWait(driver, 15);
+	WebDriverWait wait = new WebDriverWait(driver,10);
 	wait.until(ExpectedConditions.textToBePresentInElementLocated(By.cssSelector("#jar > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div > div:nth-of-type(1)"), "i2C"));
 	System.out.println("Content Checked "+driver.findElement(By.cssSelector("#jar > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div > div:nth-of-type(1)")).getText());															   
 	
@@ -91,11 +87,8 @@ public void checki2cContentChecked()
 	Assert.assertTrue(landingpage.getAs().isDisplayed());	
 	Assert.assertEquals(i2ctext,"i2C");
 	
-	
-	
 	log.info("i2c Modules exists in English Language");
 	System.out.println("i2c Modules exists in English Language");
-	
 
 }
 
@@ -120,14 +113,9 @@ public void counti2cModules() throws InterruptedException
 
 public void teardown()
 {
-	driver.close();
+	driver.quit();
+	log.info("browser driver is been closed");
 }
 
 }
 
-
-
-
-	
-
-	

@@ -100,12 +100,12 @@
 				<div class="p-2 px-3 text-muted text-sm">Tags</div>
 					<div class="list-item attr">
 						<div class="list-body">
-							<a href="#" class="item-title _500">org.openqa.selenium.ElementNotInteractableException</a>
+							<a href="#" class="item-title _500">org.openqa.selenium.WebDriverException</a>
 							<div class="item-except text-sm text-muted h-1x">
 								1 tests
 							</div>
 							<div class="tc d-none">
-								<h5 class="mb-4">org.openqa.selenium.ElementNotInteractableException</h5>
+								<h5 class="mb-4">org.openqa.selenium.WebDriverException</h5>
 								<table class="table">
 									<thead><tr>
 										<th id="status-col"></th>
@@ -117,10 +117,10 @@
 									</tr></thead>
 									<tbody>
 	
-<tr class="s-fail" test-id="6" parent-id="2">
+<tr class="s-fail" test-id="14" parent-id="2">
 	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
-	<td class="_600">Then help page opens <br/><span class="text-muted text-sm">Home Page Loading</span></td>
-	<td>0h 0m 10s+591msc</td>
+	<td class="_600">Given user is on help page <br/><span class="text-muted text-sm">Help Page Validation</span></td>
+	<td>1h 1m 39s+771msc</td>
 	<td></td>
 	<td>
 	</td>
@@ -129,28 +129,30 @@
 <tr class="details">
 	<td colspan="5">
 		
-		<textarea disabled class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=95.0.4638.69)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'clix-Inspiron-7560', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.11.0-40-generic', java.version: '17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /tmp/.com.google.Chrome.u66nWn}, goog:chromeOptions: {debuggerAddress: localhost:43287}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 207616674f276459a0b2add64d92ec79
+		<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&u=https%3A//staging-clixoer.tiss.edu/home/help/&c=UTF-8&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20staging-clixoer.tiss.edu.
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'clix-Inspiron-7560', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.13.0-30-generic', java.version: '17.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [775330f8-c78f-4fdd-aa1c-590ce4a0cdef, refresh {}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 97.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220202182137, moz:debuggerAddress: localhost:48285, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 7718, moz:profile: /tmp/rust_mozprofilePe83it, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 5.13.0-30-generic, proxy: Proxy(), se:cdp: ws://localhost:48285/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 775330f8-c78f-4fdd-aa1c-590ce4a0cdef
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at stepDefination.StepDefination.help_page_opens(StepDefination.java:62)
-	at ✽.help page opens(file:///home/clix/Desktop/automation/clixoer/clixoer-selenium-test-suite/src/test/java/features/help.feature:6)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:613)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:617)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.refresh(RemoteWebDriver.java:1023)
+	at stepDefination.StepDefination.user_is_on_help_page(StepDefination.java:99)
+	at ✽.user is on help page(file:///home/clix/Desktop/automation/clixoer/clixoer-selenium-test-suite/src/test/java/features/help.feature:12)
 </textarea>
 	</td>
 </tr>
@@ -178,7 +180,7 @@ Session ID: 207616674f276459a0b2add64d92ec79
 						            </div>
 									<ul class="nav nav-xs flex-row no-border pull-right">
 <li><a href="#" class="b-l"><span class="badge badge-pull">ExtentReports</span></a></li>
-<li><a href="#" class="b-l"><span class="badge badge-pull">Nov 17, 2021 04:19:08 pm</span></a></li>
+<li><a href="#" class="b-l"><span class="badge badge-pull">Mar 2, 2022 10:42:46 am</span></a></li>
 <li><a href="#" class="b-l"><span class="badge badge-pull">4.0</span></a></li>
 								    </ul>
 								</div>

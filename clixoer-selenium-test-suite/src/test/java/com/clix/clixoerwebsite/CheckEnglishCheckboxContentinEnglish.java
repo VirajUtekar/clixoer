@@ -48,6 +48,7 @@ public class CheckEnglishCheckboxContentinEnglish extends base {
 	@Test
 
 	public void countLinks() {
+		
 		List<WebElement> links = driver.findElements(By.xpath("//a")); // Identify the number of Link on webpage and
 																		// assign into Webelement List
 
@@ -74,7 +75,7 @@ public class CheckEnglishCheckboxContentinEnglish extends base {
 	@Test
 	public void checkEnglishContentChecked() {
 		landingpage.getEnglishcheckbox().click();
-		WebDriverWait wait = new WebDriverWait(driver, 15);
+		WebDriverWait wait = new WebDriverWait(driver,10);
 		wait.until(ExpectedConditions.textToBePresentInElementLocated(
 				By.cssSelector("#jar > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div > div:nth-of-type(1)"),
 				"Communicative"));
@@ -114,7 +115,6 @@ public class CheckEnglishCheckboxContentinEnglish extends base {
 																												// List
 
 		int linkCount = links.size(); // Count the total Link list on Web Page
-
 		System.out.println("Total Number of English module count on webpage = " + linkCount); // Print the total count
 																								// of links on webpage
 
@@ -128,7 +128,8 @@ public class CheckEnglishCheckboxContentinEnglish extends base {
 	@AfterTest
 
 	public void teardown() {
-		driver.close();
+		driver.quit();
+		log.info("browser driver is been quit");
 	}
 
 }

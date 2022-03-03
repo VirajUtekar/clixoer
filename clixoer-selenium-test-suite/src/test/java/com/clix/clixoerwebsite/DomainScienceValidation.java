@@ -40,8 +40,8 @@ public class DomainScienceValidation extends base {
 	public void verifyDomainScienceOptionIsSelected() {
 	   
 		DomainPage dp = new DomainPage(driver);
-		dp.getAdvertisementBannerCloseIcon().click();
-		log.info("Advertisement banner is been closed");
+		
+		driver.navigate().refresh();
 		
 	    dp.getDomainNavigationMenu().click();
 	    log.info("Domain navigation menu option is been clicked");

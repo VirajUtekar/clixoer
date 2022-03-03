@@ -51,9 +51,8 @@ public class FooterPrivacyPolicyLinkValidation extends base {
 	  public void verifyPrivacyPolicyLinkValidation() {
 
 		  FooterPage fp = new FooterPage(driver);
-		
-		  fp.getAdvertisementCloseIcon().click();
-		  log.info("advertisement banner close icon is been clicked");
+
+		  driver.navigate().refresh();
 		  
 		  fp.getPrivacyPolicyFooterLink().click();
 		  log.info("privacy policy link in footer is clicked");

@@ -1,6 +1,5 @@
 package com.clix.clixoerwebsite;
 
-import static org.testng.Assert.assertEquals;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -89,6 +88,7 @@ public class CheckPaginationContent extends base {
 	@AfterTest
 	public void teardown() {
 		driver.quit();
+		log.info("browser driver is been closed");
 	
 	}
 }

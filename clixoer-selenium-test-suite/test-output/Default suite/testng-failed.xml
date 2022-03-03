@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.clix.clixoerwebsite.CoolOerArtFilter">
+      <class name="com.clix.clixoerwebsite.CheckEnglishCheckboxContentinEnglish">
         <methods>
-          <include name="navigateToUrl"/>
-          <include name="terminate"/>
-          <include name="verifyTheArtFilterOptionIsChecked"/>
+          <include name="countLinks"/>
+          <include name="teardown"/>
+          <include name="bringup"/>
         </methods>
-      </class> <!-- com.clix.clixoerwebsite.CoolOerArtFilter -->
+      </class> <!-- com.clix.clixoerwebsite.CheckEnglishCheckboxContentinEnglish -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

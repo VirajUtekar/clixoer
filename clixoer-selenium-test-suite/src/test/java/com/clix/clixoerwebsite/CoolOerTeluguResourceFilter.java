@@ -122,7 +122,8 @@ public static Logger log = LogManager.getLogger(base.class.getName());
 
 	@AfterTest
 	public void terminate() {
-	  driver.quit();	
+	  driver.quit();
+	  log.info("browser driver is been quit");
 	}
 	
 	

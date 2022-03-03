@@ -32,39 +32,31 @@ public class CheckEnglishCheckboxContentinHindi extends base {
 
 		driver.get(prop.getProperty("url"));
 		log.info("URL is Fetched");
-
 	}
 
+	
 	@Test
-
 	public void basePageNavigation() throws IOException {
 
 		driver.navigate().refresh();
 		driver.manage().window().fullscreen();
 		landingpage = new LandingPage(driver);
-		
-		
+				
 	}
-	@Test
-	public void verifyEnglishmodulesinHindicheckbox()
+	
 
-	{
-		
-		landingpage.getLanguageMenuOption().click();
-		
-		landingpage.getHindiLanguage().click();
-		
-		if (landingpage.getEnglishcheckbox().isDisplayed()) {
-			log.info("Check Box Exists since its visible" + landingpage.getEnglishcheckbox().isDisplayed());
-
-		}
-
-	}
-
-	@Test
+	@Test   
 	public void checkEnglishContentCheckedinHindi() {
+		
+
+		WebElement englishCheckbox  = landingpage.getEnglishcheckbox();
+		WebDriverWait w1 = new WebDriverWait(driver,10);
+		w1.until(ExpectedConditions.elementToBeClickable(englishCheckbox));
 		landingpage.getEnglishcheckbox().click();
-		WebDriverWait wait = new WebDriverWait(driver, 15);
+		
+		
+
+		WebDriverWait wait = new WebDriverWait(driver,15);
 		wait.until(ExpectedConditions.textToBePresentInElementLocated(
 				By.cssSelector("#jar > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div > div:nth-of-type(1)"),
 				"Communicative"));
@@ -72,6 +64,7 @@ public class CheckEnglishCheckboxContentinHindi extends base {
 				.findElement(By.cssSelector(
 						"#jar > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div > div:nth-of-type(1)"))
 				.getText());
+
 		String eb1text = landingpage.getEb1().getText();
 		eb1text.trim().replace("\r", "").replace("\n", "");
 		Assert.assertTrue(landingpage.getEb1().isDisplayed());
@@ -86,22 +79,12 @@ public class CheckEnglishCheckboxContentinHindi extends base {
 		log.error("All English Modules doesnt exists here its an error");
 
 	}
-
+	
 	@Test
 	public void countEnglishModulesinHindi() {
-		landingpage.getEnglishcheckbox().click();
-		List<WebElement> links = driver.findElements(By.xpath("//*[@class=\"module_module\"]/div/span/img")); // Identify
-																												// the
-																												// number
-																												// of
-																												// Link
-																												// on
-																												// webpage
-																												// and
-																												// assign
-																												// into
-																												// Webelement
-																												// List
+		
+	
+		List<WebElement> links = driver.findElements(By.xpath("//*[@class=\"module_module\"]/div/span/img")); 
 
 		int linkCount = links.size(); // Count the total Link list on Web Page
 
@@ -114,11 +97,28 @@ public class CheckEnglishCheckboxContentinHindi extends base {
 		log.info("English Modules Checked in Hindi");
 
 	}
+	
+	@Test
+	public void verifyEnglishmodulesinHindicheckbox()
 
+		{
+			
+			landingpage.getLanguageMenuOption().click();
+			
+			landingpage.getHindiLanguage().click();
+			
+			if (landingpage.getEnglishcheckbox().isDisplayed()) {
+				log.info("Check Box Exists since its visible" + landingpage.getEnglishcheckbox().isDisplayed());
+
+			}
+
+		}	
+	
 	@AfterTest
 
 	public void teardown() {
-		driver.close();
+		driver.quit();
+		log.info("browser driver is been closed");
 	}
 
 }

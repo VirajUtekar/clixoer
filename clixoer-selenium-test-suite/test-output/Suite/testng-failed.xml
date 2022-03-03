@@ -4,15 +4,38 @@
   <listeners>
     <listener class-name="com.clix.clixoerwebsite.Listeners"/>
   </listeners>
-  <test thread-count="5" name="Test CoolOerContactForm(failed)">
+  <test thread-count="5" name="Test HomePageModulesCheck(failed)">
     <classes>
-      <class name="com.clix.clixoerwebsite.CoolOerContactForm">
+      <class name="com.clix.clixoerwebsite.HomePageModulesCheck">
+        <methods>
+          <include name="checkPrevPaginationDisabled"/>
+          <include name="bringup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.clix.clixoerwebsite.HomePageModulesCheck -->
+    </classes>
+  </test> <!-- Test HomePageModulesCheck(failed) -->
+  <test thread-count="5" name="Test DomainModulesPagination(failed)">
+    <classes>
+      <class name="com.clix.clixoerwebsite.DomainModulesPagination">
+        <methods>
+          <include name="navigateToUrl"/>
+          <include name="verifyThePaginationOptions"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.clix.clixoerwebsite.DomainModulesPagination -->
+    </classes>
+  </test> <!-- Test DomainModulesPagination(failed) -->
+  <test thread-count="5" name="Test CoolOerScienceFilter(failed)">
+    <classes>
+      <class name="com.clix.clixoerwebsite.CoolOerScienceFilter">
         <methods>
           <include name="terminate"/>
+          <include name="verifyTheNumberOfResourcesForScienceFilter"/>
           <include name="navigateToUrl"/>
-          <include name="CoolOerPageContactFormValidation" invocation-numbers="1"/>
+          <include name="verifyTheNumberOfLinksForScienceFilter"/>
         </methods>
-      </class> <!-- com.clix.clixoerwebsite.CoolOerContactForm -->
+      </class> <!-- com.clix.clixoerwebsite.CoolOerScienceFilter -->
     </classes>
-  </test> <!-- Test CoolOerContactForm(failed) -->
+  </test> <!-- Test CoolOerScienceFilter(failed) -->
 </suite> <!-- Failed suite [Suite] -->

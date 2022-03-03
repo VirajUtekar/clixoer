@@ -89,7 +89,7 @@ public class base {
 			System.out.println("Define browser correctly");
 		}
 
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 
 		return driver;
 	}

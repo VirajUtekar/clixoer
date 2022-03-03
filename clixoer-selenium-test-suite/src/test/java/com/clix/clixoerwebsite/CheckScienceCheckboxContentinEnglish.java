@@ -81,7 +81,7 @@ public void bringup() throws IOException
 public void checkScienceContentChecked()
 {
 	landingpage.getSciencecheckbox().click();
-	WebDriverWait wait = new WebDriverWait(driver, 15);
+	WebDriverWait wait = new WebDriverWait(driver,15);
 	wait.until(ExpectedConditions.textToBePresentInElementLocated(By.cssSelector("#jar > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div > div:nth-of-type(1)"), "Atomic"));
 	System.out.println("Content Checked "+driver.findElement(By.cssSelector("#jar > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div > div:nth-of-type(1)")).getText());															   
 	
@@ -146,7 +146,8 @@ public void countScienceModules()
 
 public void teardown()
 {
-	driver.close();
+	driver.quit();
+	log.info("browser driver is been closed");
 }
 
 }

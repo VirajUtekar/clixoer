@@ -1,5 +1,6 @@
 package pageObjects;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -21,12 +22,11 @@ public class FooterPage {
 	private By contactUsFooterLink = By.cssSelector("footer.mainfooter > div > div > div:nth-Child(1) > div:nth-Child(4) > ul > li:nth-Child(5) > a");
     private By contactUsPageHeading = By.cssSelector("div.container > h1");
 	private By githubFooterLink = By.cssSelector("footer.mainfooter > div > div > div:nth-Child(1) > div:nth-Child(4) > ul > li:nth-Child(6) > a");
-	private By githubValidation = By.cssSelector("");
+	
 	
 	public FooterPage(WebDriver driver) {
 		// TODO Auto-generated constructor stub
-		this.driver = driver;
-		
+		this.driver = driver;		
 	}
 	
 	public WebElement getAdvertisementCloseIcon() {
@@ -78,8 +78,8 @@ public class FooterPage {
 	}
 	
 	public WebElement getContactUsPageHeading() {
-		WebDriverWait w = new WebDriverWait(driver,10);
-		w.until(ExpectedConditions.presenceOfElementLocated(aboutPageHeading));
+		WebDriverWait w = new WebDriverWait(driver,20);
+		w.until(ExpectedConditions.presenceOfElementLocated(contactUsPageHeading));
 		return driver.findElement(contactUsPageHeading);
 	}
 	
@@ -87,9 +87,4 @@ public class FooterPage {
 		return driver.findElement(githubFooterLink);
 	}
 	
-	public WebElement getGitHubValidation() {
-		WebDriverWait w = new WebDriverWait(driver,10);
-		w.until(ExpectedConditions.presenceOfElementLocated(githubValidation));
-		return driver.findElement(githubValidation);
-	}
 }

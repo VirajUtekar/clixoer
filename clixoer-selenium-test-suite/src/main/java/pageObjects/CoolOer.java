@@ -1,5 +1,6 @@
 package pageObjects;
 
+
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -173,6 +174,5 @@ public class CoolOer {
 	   WebDriverWait w = new WebDriverWait(driver,10);
 	   w.until(ExpectedConditions.presenceOfElementLocated(mathematicsCheckboxDomainSubject));
 	   return driver.findElement(mathematicsCheckboxDomainSubject);
-   }
-	
+   }	
 }

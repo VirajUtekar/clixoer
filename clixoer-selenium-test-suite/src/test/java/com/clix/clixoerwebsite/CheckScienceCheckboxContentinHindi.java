@@ -34,20 +34,61 @@ public void bringup() throws IOException
 
 	driver.get(prop.getProperty("url"));
 	log.info("URL is Fetched");
-
 }
+
 	@Test
-	
 	public void basePageNavigation() throws IOException
 	{
-		
 		driver.navigate().refresh();
 		driver.manage().window().fullscreen();
 		landingpage = new LandingPage(driver);
-				
 	}
+	
 	@Test
-
+	public void checkScienceContentChecked()
+	{
+		landingpage.getSciencecheckbox().click();
+		WebDriverWait wait = new WebDriverWait(driver,15);
+		wait.until(ExpectedConditions.textToBePresentInElementLocated(By.cssSelector("#jar > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div > div:nth-of-type(1)"), "Atomic"));
+		System.out.println("Content Checked "+driver.findElement(By.cssSelector("#jar > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div > div:nth-of-type(1)")).getText());															   
+		
+		
+		String astext =landingpage.getAs().getText();
+		astext.trim().replace("\r","").replace("\n","");
+		Assert.assertTrue(landingpage.getAs().isDisplayed());	
+		Assert.assertEquals(astext,"Atomic Structure");
+		
+		String batext =landingpage.getBa().getText();
+		batext.trim().replace("\r","").replace("\n","");
+		Assert.assertTrue(landingpage.getBa().isDisplayed());		
+		Assert.assertEquals(batext,"Basic Astronomy");
+		
+		String estext =landingpage.getEs().getText();
+		estext.trim().replace("\r","").replace("\n","");
+		Assert.assertTrue(landingpage.getEs().isDisplayed());		
+		Assert.assertEquals(estext,"Ecosystem");
+		
+		String hdtext =landingpage.getHd().getText();
+		hdtext.trim().replace("\r","").replace("\n","");
+		Assert.assertTrue(landingpage.getHd().isDisplayed());		
+		Assert.assertEquals(hdtext,"Health and Disease");
+		
+		String sdtext =landingpage.getSd().getText();
+		sdtext.trim().replace("\r","").replace("\n","");
+		Assert.assertTrue(landingpage.getSd().isDisplayed());		
+		Assert.assertEquals(sdtext,"Sound");
+		
+		String umtext =landingpage.getUm().getText();
+		batext.trim().replace("\r","").replace("\n","");
+		Assert.assertTrue(landingpage.getUm().isDisplayed());		
+		Assert.assertEquals(umtext,"Understanding Motion");
+		
+		log.info("Science Modules exists in Hindi Language");
+		
+	}
+	
+	
+	@Test
 	public void countLinks()
 	{
 		 List<WebElement> links = driver.findElements(By.xpath("//a"));    //Identify the number of Link on webpage and assign into Webelement List 
@@ -56,6 +97,21 @@ public void bringup() throws IOException
          
          System.out.println("Total Number of link count on webpage by one class = "  + linkCount);    //Print the total count of links on webpage
 	    log.info("The number of links is" + linkCount);
+	}
+
+	@Test
+	public void countScienceModules()
+	{
+		List<WebElement> links = driver.findElements(By.xpath("//*[@class=\"module_module\"]/div/span/img"));    //Identify the number of Link on webpage and assign into Webelement List 
+	     
+	     int linkCount = links.size();     // Count the total Link list on Web Page
+	     
+	     System.out.println("Total Number of Science module count on webpage = "  + linkCount);    //Print the total count of links on webpage
+
+	      System.out.println("The number of Science modules is" + linkCount);
+	    log.info("The number of Science modules is" + linkCount);
+	    assertEquals(linkCount, 6);
+	    log.info("Science Modules Checked in Hindi");
 	}
 
 	
@@ -75,78 +131,14 @@ public void bringup() throws IOException
 		}
 
 	}
-
-	
-@Test
-public void checkScienceContentChecked()
-{
-	landingpage.getSciencecheckbox().click();
-	WebDriverWait wait = new WebDriverWait(driver, 15);
-	wait.until(ExpectedConditions.textToBePresentInElementLocated(By.cssSelector("#jar > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div > div:nth-of-type(1)"), "Atomic"));
-	System.out.println("Content Checked "+driver.findElement(By.cssSelector("#jar > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div > div:nth-of-type(1)")).getText());															   
-	
-	
-	String astext =landingpage.getAs().getText();
-	astext.trim().replace("\r","").replace("\n","");
-	Assert.assertTrue(landingpage.getAs().isDisplayed());	
-	Assert.assertEquals(astext,"Atomic Structure");
-	
-	String batext =landingpage.getBa().getText();
-	batext.trim().replace("\r","").replace("\n","");
-	Assert.assertTrue(landingpage.getBa().isDisplayed());		
-	Assert.assertEquals(batext,"Basic Astronomy");
-	
-	String estext =landingpage.getEs().getText();
-	estext.trim().replace("\r","").replace("\n","");
-	Assert.assertTrue(landingpage.getEs().isDisplayed());		
-	Assert.assertEquals(estext,"Ecosystem");
-	
-	String hdtext =landingpage.getHd().getText();
-	hdtext.trim().replace("\r","").replace("\n","");
-	Assert.assertTrue(landingpage.getHd().isDisplayed());		
-	Assert.assertEquals(hdtext,"Health and Disease");
-	
-	String sdtext =landingpage.getSd().getText();
-	sdtext.trim().replace("\r","").replace("\n","");
-	Assert.assertTrue(landingpage.getSd().isDisplayed());		
-	Assert.assertEquals(sdtext,"Sound");
-	
-	String umtext =landingpage.getUm().getText();
-	batext.trim().replace("\r","").replace("\n","");
-	Assert.assertTrue(landingpage.getUm().isDisplayed());		
-	Assert.assertEquals(umtext,"Understanding Motion");
-	
-	log.info("Science Modules exists in Hindi Language");
-	
-
-}
-
-@Test
-public void countScienceModules()
-{
-	landingpage.getSciencecheckbox().click();
-	 List<WebElement> links = driver.findElements(By.xpath("//*[@class=\"module_module\"]/div/span/img"));    //Identify the number of Link on webpage and assign into Webelement List 
-     
-     int linkCount = links.size();     // Count the total Link list on Web Page
-     
-     System.out.println("Total Number of Science module count on webpage = "  + linkCount);    //Print the total count of links on webpage
-
-      System.out.println("The number of Science modules is" + linkCount);
-    log.info("The number of Science modules is" + linkCount);
-    assertEquals(linkCount, 6);
-    log.info("Science Modules Checked in Hindi");
-}
-
-
-	
-
 	
 
 @AfterTest
 
 public void teardown()
 {
-	driver.close();
+	driver.quit();
+	log.info("browser driver is been closed");
 }
 
 }

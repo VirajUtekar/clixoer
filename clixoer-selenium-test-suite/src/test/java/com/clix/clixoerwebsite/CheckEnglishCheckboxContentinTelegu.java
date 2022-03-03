@@ -41,30 +41,13 @@ public class CheckEnglishCheckboxContentinTelegu extends base {
 
 		driver.navigate().refresh();
 		driver.manage().window().fullscreen();
-		landingpage = new LandingPage(driver);
-		
-		
+		landingpage = new LandingPage(driver);		
 	}
-	@Test
-	public void verifyEnglishmodulesinTelegucheckbox() throws InterruptedException
-
-	{
-		
-		landingpage.getLanguageMenuOption().click();
-		
-		landingpage.getTeleguLanguage().click();
-		
-		if (landingpage.getEnglishcheckbox().isDisplayed()) {
-			log.info("Check Box Exists since its visible" + landingpage.getEnglishcheckbox().isDisplayed());
-
-		}
-
-	}
-
+	
 	@Test
 	public void checkEnglishContentCheckedinTelegu() {
 		landingpage.getEnglishcheckbox().click();
-		WebDriverWait wait = new WebDriverWait(driver, 15);
+		WebDriverWait wait = new WebDriverWait(driver,10);
 		wait.until(ExpectedConditions.textToBePresentInElementLocated(
 				By.cssSelector("#jar > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div > div:nth-of-type(1)"),
 				"Communicative"));
@@ -86,22 +69,11 @@ public class CheckEnglishCheckboxContentinTelegu extends base {
 		log.error("All English Modules doesnt exists here its an error");
 
 	}
-
+	
 	@Test
 	public void countEnglishModulesinTelegu() {
-		landingpage.getEnglishcheckbox().click();
-		List<WebElement> links = driver.findElements(By.xpath("//*[@class=\"module_module\"]/div/span/img")); // Identify
-																												// the
-																												// number
-																												// of
-																												// Link
-																												// on
-																												// webpage
-																												// and
-																												// assign
-																												// into
-																												// Webelement
-																												// List
+
+		List<WebElement> links = driver.findElements(By.xpath("//*[@class=\"module_module\"]/div/span/img")); 
 
 		int linkCount = links.size(); // Count the total Link list on Web Page
 
@@ -112,13 +84,29 @@ public class CheckEnglishCheckboxContentinTelegu extends base {
 		log.info("The number of modules is" + linkCount);
 		assertEquals(linkCount, 2);
 		log.info("English Modules Checked in Telegu");
+	}
+
+	@Test
+	public void verifyEnglishmodulesinTelegucheckbox() throws InterruptedException
+
+	{
+		
+		landingpage.getLanguageMenuOption().click();
+		
+		landingpage.getTeleguLanguage().click();
+		
+		if (landingpage.getEnglishcheckbox().isDisplayed()) {
+			log.info("Check Box Exists since its visible" + landingpage.getEnglishcheckbox().isDisplayed());
+
+		}
 
 	}
 
 	@AfterTest
 
 	public void teardown() {
-		driver.close();
+		driver.quit();
+		log.info("browser driver is been closed");
 	}
 
 }

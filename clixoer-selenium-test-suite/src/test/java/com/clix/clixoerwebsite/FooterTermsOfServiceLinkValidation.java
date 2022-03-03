@@ -51,9 +51,8 @@ public class FooterTermsOfServiceLinkValidation extends base {
 	  public void verifyTermsOfServiceLinkValidation() {
 
 		  FooterPage fp = new FooterPage(driver);
-		
-		  fp.getAdvertisementCloseIcon().click();
-		  log.info("advertisement banner close icon is been clicked");
+
+		  driver.navigate().refresh();
 		  
 		  fp.getTermsOfServiceFooterLink().click();
 		  log.info("terms of service link in footer is clicked");

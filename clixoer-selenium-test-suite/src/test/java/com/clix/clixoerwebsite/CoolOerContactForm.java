@@ -1,6 +1,5 @@
 package com.clix.clixoerwebsite;
 
-import static org.testng.Assert.assertTrue;
 
 import java.io.IOException;
 

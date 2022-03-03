@@ -51,10 +51,9 @@ public class FooterContactUsLinkValidation extends base {
 	  public void verifyContactUsLinkValidation() {
 
 		  FooterPage fp = new FooterPage(driver);
-		
-		  fp.getAdvertisementCloseIcon().click();
-		  log.info("advertisement banner close icon is been clicked");
-		  
+
+		  driver.navigate().refresh();
+
 		  fp.getContactUsFooterLink().click();
 		  log.info("contact us link in footer is clicked");
 		  System.out.println("contact us link in footer is clicked");

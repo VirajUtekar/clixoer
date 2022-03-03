@@ -1,5 +1,6 @@
 package pageObjects;
 
+
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -70,8 +71,6 @@ public class DomainPage {
 	}
 	
 	public WebElement getDomainNavigationMenu() {
-		WebDriverWait w = new WebDriverWait(driver,10);
-		w.until(ExpectedConditions.presenceOfElementLocated(domainNavigationOption));
 		return driver.findElement(domainNavigationOption);
 	}
 	

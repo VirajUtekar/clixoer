@@ -108,9 +108,9 @@ public class CheckInteractives extends base {
 		
 	
 	@AfterTest
-
 	public void teardown() {
-		driver.close();
+		driver.quit();
+		log.info("browser driver is been quit");
 	}
 	
 }

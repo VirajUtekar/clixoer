@@ -41,8 +41,8 @@ public class DomainMathValidation extends base {
 	public void verifyDomainMathOptionIsSelected() {
 		
 		DomainPage dp = new DomainPage(driver);
-		dp.getAdvertisementBannerCloseIcon().click();
-		log.info("Advertisement Banner is closed");
+		
+		driver.navigate().refresh();
 		
 		dp.getDomainNavigationMenu().click();
 		log.info("Domain navigation menu is been clicked");

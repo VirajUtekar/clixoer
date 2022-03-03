@@ -51,9 +51,8 @@ public class FooterCreditLinkValidation extends base{
 	  public void verifyCreditLinkValidation() {
 
 		  FooterPage fp = new FooterPage(driver);
-		
-		  fp.getAdvertisementCloseIcon().click();
-		  log.info("advertisement banner close icon is been clicked");
+
+		  driver.navigate().refresh();
 		  
 		  fp.getCreditFooterLink().click();
 		  log.info("credit link in footer is clicked");
@@ -80,8 +79,7 @@ public class FooterCreditLinkValidation extends base{
 		     
 		     String creditPageHeadingVerify = fp.getCreditPageHeading().getText().replace("\r","").replace("\n", "").trim();
 		     
-		     if(creditPageHeadingVerify.contains("Credits")) {
-		    	
+		     if(creditPageHeadingVerify.contains("Credits")) {		    	
 		    	 Assert.assertTrue(true);
 		    	 log.info("The page heading contains:"+creditPageHeadingVerify);
 		    	 System.out.println("The page heading contains:"+creditPageHeadingVerify);

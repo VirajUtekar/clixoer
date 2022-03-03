@@ -136,7 +136,8 @@ public class CoolOerPunjabiResourceFilter extends base {
 
 	@AfterTest
 	public void terminate() {
-	  driver.quit();	
+	  driver.quit();
+	  log.info("browser driver is been closed");
 	}
 	
 }

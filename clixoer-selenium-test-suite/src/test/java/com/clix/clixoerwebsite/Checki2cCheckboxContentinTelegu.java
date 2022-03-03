@@ -69,7 +69,7 @@ public void bringup() throws IOException
 public void checki2cContentChecked()
 {
 	landingpage.geti2ccheckbox().click();
-	WebDriverWait wait = new WebDriverWait(driver, 15);
+	WebDriverWait wait = new WebDriverWait(driver,10);
 	wait.until(ExpectedConditions.textToBePresentInElementLocated(By.cssSelector("#jar > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div > div:nth-of-type(1)"), "i2C"));
 	System.out.println("Content Checked "+driver.findElement(By.cssSelector("#jar > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div > div:nth-of-type(1)")).getText());															   
 		
@@ -106,7 +106,8 @@ public void checki2cContentChecked()
 
 public void teardown()
 {
-	driver.close();
+	driver.quit();
+	log.info("browser driver is been closed");
 }
 
 }

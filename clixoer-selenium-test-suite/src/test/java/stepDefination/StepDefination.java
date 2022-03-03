@@ -45,33 +45,46 @@ public class StepDefination extends base {
     	driver.get(prop.getProperty("url"));
     	log.info("URL is Fetched through cucumber");
     	driver.navigate().refresh();
-		driver.manage().window().fullscreen();
+		driver.manage().window().maximize();
 		landingpage = new LandingPage(driver);
     }
-    
     
 
     @When("^user checks for navigation pane and clicks on help$")
     public void user_checks_for_navigation_pane_and_clicks_on_help() throws Throwable {
-    	landingpage.getHelp().click();
-   
+
+    	boolean helpNavIsDisplayed = landingpage.getHelp().isDisplayed();
+    	if(helpNavIsDisplayed) {
+
+    		landingpage.getHelp().click();
+    		log.info("help navigation menu option is been clicked");
+    		System.out.println("help navigation option is been clicked");
+    	}
+    	else
+    	{
+    		System.out.println("no");
+    	}
     }
 
     @Then("^help page opens$")
     public void help_page_opens() throws Throwable {
-    	landingpage.getHelp().click();
-    	WebDriverWait wait = new WebDriverWait(driver, 15);
-		wait.until(ExpectedConditions.textToBePresentInElementLocated(
-				By.cssSelector("#home > div > h1"),
-				"Help"));
-		String bodytext= driver.findElement(By.cssSelector("#home > div > h1")).getText();
-    	
-		System.out.println("First Output is"+bodytext);
-    	bodytext.trim().replace("\r","").replace("\n","");
-    	System.out.println("Second Output is"+bodytext);
-    	Assert.assertEquals(bodytext,"Help Videos - English");
-    	driver.close();
 
+    	
+		  WebDriverWait wait = new WebDriverWait(driver,10);
+		  wait.until(ExpectedConditions.textToBePresentInElementLocated(
+		  By.cssSelector("#home > div > h1"), "Help")); String bodytext=
+		  driver.findElement(By.cssSelector("#home > div > h1")).getText().trim();
+		  
+		  System.out.println("First Output is"+bodytext);
+		  bodytext.trim().replace("\r","").replace("\n","");
+		  System.out.println("Second Output is"+bodytext);
+		  Assert.assertEquals(bodytext,"Help Videos - English"); driver.quit();
+		     	
+    	
+			/*
+			 * String urlText = driver.getCurrentUrl(); Assert.assertEquals(urlText,
+			 * "https://staging-clixoer.tiss.edu/home/help/"); driver.quit();
+			 */
     	
   }
     @Given("user is on help page")
@@ -83,16 +96,14 @@ public class StepDefination extends base {
     	driver.get(prop.getProperty("helpurl"));
     	log.info("Help URL is Fetched through cucumber");
     	driver.navigate().refresh();
-		driver.manage().window().fullscreen();
+		driver.manage().window().maximize();
 		helppage = new HelpPage(driver);
         // Write code here that turns the phrase above into concrete actions
     }
 
     @When("user clicks English tab")
     public void user_clicks_English_tab() {
-    	helppage.getEnglishHelp().click();
-    	
-    	
+    	helppage.getEnglishHelp().click();    	
         // Write code here that turns the phrase above into concrete actions
         
     }
@@ -100,7 +111,7 @@ public class StepDefination extends base {
     @Then("english help opens")
     public void english_help_opens() {
         // Write code here that turns the phrase above into concrete actions
-    	WebDriverWait wait = new WebDriverWait(driver, 15);
+    	WebDriverWait wait = new WebDriverWait(driver,15);
 		wait.until(ExpectedConditions.textToBePresentInElementLocated(
 				By.cssSelector("#home > div > h1"),
 				"Help"));
@@ -109,8 +120,7 @@ public class StepDefination extends base {
     	bodytext.trim().replace("\r","").replace("\n","");
     	System.out.println("Second Output is"+bodytext);
     	Assert.assertEquals(bodytext,"Help Videos - English");
-    	driver.close();
-
+    	driver.quit();
     }
 
     @When("user clicks Maths tab")
@@ -122,7 +132,7 @@ public class StepDefination extends base {
 
     @Then("maths help opens")
     public void maths_help_opens() {
-    	WebDriverWait wait = new WebDriverWait(driver, 15);
+    	WebDriverWait wait = new WebDriverWait(driver,15);
 		wait.until(ExpectedConditions.textToBePresentInElementLocated(
 				By.cssSelector("html > body > div:nth-of-type(3) > div > div:nth-of-type(2) > div > div:nth-of-type(1) > h1"),
 				"Mathematics"));
@@ -131,7 +141,7 @@ public class StepDefination extends base {
     	bodytext.trim().replace("\r","").replace("\n","");
     	System.out.println("Second Output is"+bodytext);
     	Assert.assertEquals(bodytext,"Help Videos - Mathematics");
-    	driver.close();
+    	driver.quit();
         // Write code here that turns the phrase above into concrete actions
        
     }
@@ -145,7 +155,7 @@ public class StepDefination extends base {
 
     @Then("science help opens")
     public void science_help_opens() {
-    	WebDriverWait wait = new WebDriverWait(driver, 15);
+    	WebDriverWait wait = new WebDriverWait(driver,15);
 		wait.until(ExpectedConditions.textToBePresentInElementLocated(
 				By.cssSelector("html > body > div:nth-of-type(3) > div > div:nth-of-type(3) > h1"),
 				"Coming"));
@@ -154,12 +164,10 @@ public class StepDefination extends base {
     	bodytext.trim().replace("\r","").replace("\n","");
     	System.out.println("Second Output is"+bodytext);
     	Assert.assertEquals(bodytext,"Coming Soon!");
-    	driver.close();
+    	driver.quit();
         // Write code here that turns the phrase above into concrete actions
         
     }
-
-
 
 
 }

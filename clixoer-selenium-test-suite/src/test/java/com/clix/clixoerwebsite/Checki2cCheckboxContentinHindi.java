@@ -46,18 +46,52 @@ public void bringup() throws IOException
 		landingpage = new LandingPage(driver);
 				
 	}
+	
 	@Test
+	public void checki2cContentChecked()
+	{
+		landingpage.geti2ccheckbox().click();
+		WebDriverWait wait = new WebDriverWait(driver,10);
+		wait.until(ExpectedConditions.textToBePresentInElementLocated(By.cssSelector("#jar > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div > div:nth-of-type(1)"), "i2C"));
+		System.out.println("Content Checked "+driver.findElement(By.cssSelector("#jar > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div > div:nth-of-type(1)")).getText());															   
+		
+		
+		String i2ctext =landingpage.getAs().getText();
+		i2ctext.trim().replace("\r","").replace("\n","");
+		Assert.assertTrue(landingpage.getAs().isDisplayed());	
+		Assert.assertEquals(i2ctext,"i2C");
+		
+		log.info("i2c Modules exists in Hindi Language");
+		   System.out.println("i2c Modules exists in Hindi Language Count");
+	}
+	
 
+	@Test
 	public void countLinks()
 	{
 		 List<WebElement> links = driver.findElements(By.xpath("//a"));    //Identify the number of Link on webpage and assign into Webelement List 
-         
+        
          int linkCount = links.size();     // Count the total Link list on Web Page
          
          System.out.println("Total Number of link count on webpage by one class = "  + linkCount);    //Print the total count of links on webpage
-	    log.info("The number of links is" + linkCount);
+   	    log.info("The number of links is" + linkCount);
 	}
-	
+
+	@Test
+	public void counti2cModules() throws InterruptedException
+	{
+		 List<WebElement> links = driver.findElements(By.cssSelector("div.cards-elibrary  > div > div > div:nth-Child(2) > div"));    //Identify the number of Link on webpage and assign into Webelement List      
+
+		 int linkCount = links.size();     // Count the total Link list on Web Page
+	     
+	     System.out.println("Total Number of i2c module count on webpage = "  + linkCount);    //Print the total count of links on webpage
+
+	      System.out.println("The number of i2c modules is" + linkCount);
+	    log.info("The number of i2c modules is" + linkCount);
+	    assertEquals(linkCount, 1);
+	    log.info("i2c Modules Checked in Hindi");
+	    System.out.println("i2c Modules exists in Hindi Language Counted");
+	}
 	
 	@Test
 	public void verifyi2cmodulesinHindicheckbox()
@@ -74,57 +108,11 @@ public void bringup() throws IOException
 		}		
 	}
 
-	
-@Test
-public void checki2cContentChecked()
-{
-	landingpage.geti2ccheckbox().click();
-	WebDriverWait wait = new WebDriverWait(driver, 15);
-	wait.until(ExpectedConditions.textToBePresentInElementLocated(By.cssSelector("#jar > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div > div:nth-of-type(1)"), "i2C"));
-	System.out.println("Content Checked "+driver.findElement(By.cssSelector("#jar > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div > div:nth-of-type(1)")).getText());															   
-	
-	
-	String i2ctext =landingpage.getAs().getText();
-	i2ctext.trim().replace("\r","").replace("\n","");
-	Assert.assertTrue(landingpage.getAs().isDisplayed());	
-	Assert.assertEquals(i2ctext,"i2C");
-	
-	
-	
-	log.info("i2c Modules exists in Hindi Language");
-	   System.out.println("i2c Modules exists in Hindi Language Count");
-	  
-	
-
-}
-@Test
-public void counti2cModules() throws InterruptedException
-{
-	Thread.sleep(1000);
-	 List<WebElement> links = driver.findElements(By.xpath("//*[@class=\"module_module\"]/div/span/img"));    //Identify the number of Link on webpage and assign into Webelement List 
-     
-     int linkCount = links.size();     // Count the total Link list on Web Page
-     
-     System.out.println("Total Number of i2c module count on webpage = "  + linkCount);    //Print the total count of links on webpage
-
-      System.out.println("The number of i2c modules is" + linkCount);
-    log.info("The number of i2c modules is" + linkCount);
-    assertEquals(linkCount, 1);
-    log.info("i2c Modules Checked in Hindi");
-    System.out.println("i2c Modules exists in Hindi Language Counted");
-}	
-
-
-
-	
-
-	
-
 @AfterTest
-
 public void teardown()
 {
-	driver.close();
+	driver.quit();
+	log.info("browser driver is been closed");
 }
 
 }

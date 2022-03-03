@@ -55,7 +55,7 @@ public class ValidateContactus extends base {
 		aboutpage.getPhone().sendKeys(phone);
 		aboutpage.getMessage().sendKeys(message);
 
-		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
+		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		aboutpage.getSendButton().click();
 		System.out.println(aboutpage.getMessageAlert().getText());
 		

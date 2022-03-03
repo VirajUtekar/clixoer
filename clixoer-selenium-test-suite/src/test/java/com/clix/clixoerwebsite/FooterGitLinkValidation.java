@@ -2,13 +2,10 @@ package com.clix.clixoerwebsite;
 
 import java.io.IOException;
 import java.util.Iterator;
-import java.util.List;
 import java.util.Set;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -42,15 +39,13 @@ public class FooterGitLinkValidation extends base {
 		
 		FooterPage fp = new FooterPage(driver);
 		
-		fp.getAdvertisementCloseIcon().click();
-		log.info("advertisement banner is been closed");
-		
 		boolean gitLinkIsDisplayed = fp.getGitHubFooterLink().isDisplayed();
-		
+	
 		if(gitLinkIsDisplayed) {
 	
-			System.out.println("The git hub link in footer is displayed");
-			
+			System.out.println("The git hub link in footer is displayed");		
+	
+			driver.navigate().refresh();
 			fp.getGitHubFooterLink().click();
 			log.info("github link in footer is clicked");
 			System.out.println("github link in footer is clicked");
